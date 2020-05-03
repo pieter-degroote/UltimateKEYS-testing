@@ -1,4 +1,4 @@
-# UlitmateKEYS - Testing
+# UltimateKEYS - Testing
 A testing repository for UltimateKEYS
 
 ## For official releases, please see :
