@@ -5,6 +5,6 @@ A testing repository for UltimateKEYS
 
 **UltimateKEYS - Github : &nbsp;https://github.com/pieter-degroote/UltimateKEYS**
 
-**Website : &nbsp;https://pieter-degroote.github.io/UltimateKEYS/**
-
 **Releases : &nbsp;https://github.com/pieter-degroote/UltimateKEYS/releases**
+
+**Website : &nbsp;https://pieter-degroote.github.io/UltimateKEYS/**
