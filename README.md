@@ -11,7 +11,7 @@ These scripts should have the exact same functionality as the main editions, but
 
 See the files **`UltimateKEYS CE - YYYY-MM-DD.ahk`** and **`UltimateKEYS SW CE - YYYY-MM-DD.ahk`**.
 
-A test version allowing faster access to letters with a circumflex accent (â, ê, î, ô, û), at the cost of the removal of some dead keys (which is useful for French and accented English).
+A test version allowing faster access to letters with a circumflex accent (â, ê, î, ô, û), at the cost of removing some dead keys (which is useful for French and accented English).
 
 ## For official releases, please see :
 
