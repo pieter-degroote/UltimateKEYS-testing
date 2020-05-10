@@ -5,9 +5,13 @@ A testing repository for UltimateKEYS
 
 See the files **`UltimateKEYS - KBDUSX - YYYY-MM-DD.ahk`** and **`UltimateKEYS SW - KBDUSX - YYYY-MM-DD.ahk`**.
 
+These scripts should have the exact same functionality as the main editions, but are intended as an overlay for 'United States-International'.
+
 ## CE (Compact Edition) for French and English :
 
 See the files **`UltimateKEYS CE - YYYY-MM-DD.ahk`** and **`UltimateKEYS SW CE - YYYY-MM-DD.ahk`**.
+
+A test version allowing faster access to letters with a circumflex accent (â, ê, î, ô, û), at the cost of the removal of some dead keys (which is useful for French and accented English).
 
 ## For official releases, please see :
 
