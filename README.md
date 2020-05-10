@@ -1,11 +1,11 @@
 # UltimateKEYS - Testing
 A testing repository for UltimateKEYS
 
-## Overlay script for United States-International keyboard layout :
+## Overlay scripts for United States-International keyboard layout :
 
 See the files **`UltimateKEYS - KBDUSX - YYYY-MM-DD.ahk`** and **`UltimateKEYS SW - KBDUSX - YYYY-MM-DD.ahk`**.
 
-These scripts should have the exact same functionality as the main editions, but are intended as an overlay for 'United States-International'.
+These scripts should have the exact same functionality as the main editions, but are intended as overlays for 'United States-International'.
 
 ## CE (Compact Edition) for French and English :
 
