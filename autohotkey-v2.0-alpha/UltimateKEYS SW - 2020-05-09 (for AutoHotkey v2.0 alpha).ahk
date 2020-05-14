@@ -840,19 +840,19 @@ dkMathSymbols.item[" "] := "√"  ; (u+221a) square root
 
 ; Configuration :  Switch positions of symbols and digits
 
-$1::Send "{U+0021}"  ; (u+0021) exclamation mark
+$1::Send "{!}"  ; (u+0021) exclamation mark
 $+1::Send "1"   ; (u+0031) digit 1
 
-$2::Send "{U+0040}"  ; (u+0040) at sign
+$2::Send "@"    ; (u+0040) at sign
 $+2::Send "2"   ; (u+0032) digit 2
 
-$3::Send "{U+0023}"  ; (u+0023) number sign
+$3::Send "{#}"  ; (u+0023) number sign
 $+3::Send "3"   ; (u+0033) digit 3
 
-$4::Send "{U+0024}"  ; (u+0024) dollar sign
+$4::Send "$"    ; (u+0024) dollar sign
 $+4::Send "4"   ; (u+0034) digit 4
 
-$5::Send "{U+0025}"  ; (u+0025) percent sign
+$5::Send "`%"   ; (u+0025) percent sign
 $+5::Send "5"   ; (u+0035) digit 5
 
 $6::Send "{^}"  ; (u+005e) circumflex accent
@@ -864,10 +864,10 @@ $+7::Send "7"   ; (u+0037) digit 7
 $8::Send "*"    ; (u+002a) asterisk
 $+8::Send "8"   ; (u+0038) digit 8
 
-$9::Send "{U+0028}"  ; (u+0028) left parenthesis
+$9::Send "("    ; (u+0028) left parenthesis
 $+9::Send "9"   ; (u+0039) digit 9
 
-$0::Send "{U+0029}"  ; (u+0029) right parenthesis
+$0::Send ")"    ; (u+0029) right parenthesis
 $+0::Send "0"   ; (u+0030) digit 0
 
 
