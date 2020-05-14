@@ -13,9 +13,7 @@ See the folder **`autohotkey-v2.0-alpha`** for experimental support.
 
 ## CE (Compact Edition) for French and English :
 
-See the files **`UltimateKEYS CE - YYYY-MM-DD.ahk`** and **`UltimateKEYS SW CE - YYYY-MM-DD.ahk`**.
-
-A simplified test version allowing faster access to letters with a circumflex accent (â, ê, î, ô, û), at the cost of removing some dead keys (which is useful for French and accented English).
+See the folder **`compact-edition`** for a simplified test version which allows faster access to letters with a circumflex accent (â, ê, î, ô, û), but at the cost of removing some dead keys (which can be useful for French and accented English).
 
 ## Concept with 'chained dead keys' :
 
