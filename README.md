@@ -3,7 +3,7 @@ A testing repository for UltimateKEYS
 
 ## Overlay scripts for United States-International keyboard layout :
 
-See the files **`UltimateKEYS - KBDUSX - YYYY-MM-DD.ahk`** and **`UltimateKEYS SW - KBDUSX - YYYY-MM-DD.ahk`**.
+See the folder **`autohotkey-v1.1-kbdusx`** for the overlay scripts for "United States-International".
 
 These scripts should have the exact same functionality as the main editions, but are intended as overlays for 'United States-International'.
 
