@@ -13,6 +13,10 @@ See the files **`UltimateKEYS CE - YYYY-MM-DD.ahk`** and **`UltimateKEYS SW CE -
 
 A simplified test version allowing faster access to letters with a circumflex accent (â, ê, î, ô, û), at the cost of removing some dead keys (which is useful for French and accented English).
 
+## Concept with 'chained dead keys' :
+
+See the folder **`concept-chained-dead-keys`** for experiments featuring `If, Else` and `Switch Case` structures.
+
 ## For official releases, please see :
 
 [![GitHub Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)
