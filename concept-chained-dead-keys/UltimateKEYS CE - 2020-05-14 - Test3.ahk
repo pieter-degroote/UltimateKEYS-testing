@@ -554,8 +554,8 @@ return
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Switch key {
     Case "``": {
-    Input, key2, L1, {bs}{del}{esc}{home}{end}
-    Send % dkCurrency.item(key2)
+      Input, key2, L1, {bs}{del}{esc}{home}{end}
+      Send % dkCurrency.item(key2)
     }
     Default:
       Send % dkMisc.item(key)
