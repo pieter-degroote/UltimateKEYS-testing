@@ -15,7 +15,8 @@
 
 
 
-SendMode "Event"
+SendMode "Event"  ; allows chaining of customized key combinations
+
 
 ; Dead Key :  Circumflex Accent
 
@@ -530,7 +531,7 @@ dkNotSign.item["c"] := "©"  ; (u+00a9) copyright sign
 dkNotSign.item["C"] := "¤"  ; (u+00a4) currency sign
 dkNotSign.item["d"] := "†"  ; (u+2020) dagger
 dkNotSign.item["D"] := "‡"  ; (u+2021) double dagger
-dkNotSign.item["e"] := "…"  ; (u+2026) ellipsis
+dkNotSign.item["e"] := "…"  ; (u+2026) horizontal ellipsis
 dkNotSign.item["E"] := "℮"  ; (u+212e) estimated symbol
 dkNotSign.item["f"] := "♀"  ; (u+2640) Venus symbol (female)
 dkNotSign.item["F"] := "♀"  ; (u+2640) Venus symbol (female)
