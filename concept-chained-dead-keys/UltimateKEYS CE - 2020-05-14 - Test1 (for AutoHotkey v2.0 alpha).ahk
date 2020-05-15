@@ -14,7 +14,7 @@
 
 
 
-; SendMode "Event"  ; optional, but not required because there is no key chaining in this simplified version
+SendMode "Event"
 
 ; Dead Key :  Miscellaneous
 
