@@ -29,8 +29,6 @@ dkMisc.item("u") := "ū"  ; (u+016b) u with macron
 dkMisc.item("U") := "Ū"  ; (u+016a) U with macron
 dkMisc.item("y") := "ȳ"  ; (u+0233) y with macron
 dkMisc.item("Y") := "Ȳ"  ; (u+0232) Y with macron
-dkMisc.item("c") := "¤"  ; (u+00a4) currency sign
-dkMisc.item("C") := "¤"  ; (u+00a4) currency sign
 dkMisc.item("e") := "…"  ; (u+2026) ellipsis
 dkMisc.item("E") := "…"  ; (u+2026) ellipsis
 dkMisc.item("n") := "ⁿ"  ; (u+207f) superscript n
@@ -553,7 +551,7 @@ return
 >!\::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Switch key {
-    Case "``": {
+    Case "c": {
       Input, key2, L1, {bs}{del}{esc}{home}{end}
       Send % dkCurrency.item(key2)
     }
