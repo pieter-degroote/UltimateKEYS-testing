@@ -17,7 +17,7 @@ See the folder **`compact-edition`** for a simplified test version which allows 
 
 ## Concept with 'chained dead keys' :
 
-See the folder **`concept-chained-dead-keys`** for experiments featuring `If, Else` and `Switch Case` structures.
+See the folder **`concept-chained-dead-keys`** for experiments featuring `If Else` and `Switch Case` structures.
 
 ## For official releases, please see :
 
