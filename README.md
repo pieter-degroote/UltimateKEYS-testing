@@ -5,7 +5,7 @@ A testing repository for UltimateKEYS
 
 See the folder **`autohotkey-v1.1-kbdusx`** for the overlay scripts for "United States-International".
 
-These scripts should have the exact same functionality as the main editions, but are intended as overlays for 'United States-International'.
+These scripts should have the exact same functionality as the main editions, but are intended as overlays for "United States-International" (all regular AHK scripts are overlays for standard US QWERTY instead).
 
 ## Experimental support for AutoHotkey v2.0 alpha :
 
