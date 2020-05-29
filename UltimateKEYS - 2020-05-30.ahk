@@ -496,7 +496,7 @@ dkGraveAccent.item["6"] := "{u+2006}"  ; six-per-em space
 dkGraveAccent.item["7"] := "{u+2009}"  ; thin space
 dkGraveAccent.item["8"] := "{u+200a}"  ; hair space
 dkGraveAccent.item["9"] := "{u+2007}"  ; figure space
-dkGraveAccent.item["0"] := "​{u+200b}"  ; zero-width space
+dkGraveAccent.item["0"] := "{u+200b}"  ; zero-width space
 dkGraveAccent.item["-"] := "{u+00a0}"  ; non-breaking space
 dkGraveAccent.item["="] := "{u+202f}"  ; narrow no-break space
 dkGraveAccent.item["!"] := "{u+2000}"  ; en quad
