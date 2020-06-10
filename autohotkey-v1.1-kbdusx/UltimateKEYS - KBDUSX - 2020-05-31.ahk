@@ -62,8 +62,8 @@ dkCircumflex.item[chr(0x00dc)] := "{u+00db}"  ; (Ü -> Û) U with circumflex
 
 dkCircumflex.item["n"] := "{u+20a6}"  ; (₦) Nigerian naira
 dkCircumflex.item["N"] := "{u+20a6}"  ; (₦) Nigerian naira
-dkCircumflex.item["^"] := "{^}"       ;     circumflex accent
-dkCircumflex.item[" "] := "{^}"       ;     circumflex accent
+dkCircumflex.item["^"] := "{^} "      ;     circumflex accent
+dkCircumflex.item[" "] := "{^} "      ;     circumflex accent
 
 
 ; Dead Key :  Caron
@@ -501,8 +501,8 @@ dkGraveAccent.item["-"] := "{u+00a0}"  ; non-breaking space
 dkGraveAccent.item["="] := "{u+202f}"  ; narrow no-break space
 dkGraveAccent.item["!"] := "{u+2000}"  ; en quad
 dkGraveAccent.item["@"] := "{u+2001}"  ; em quad
-dkGraveAccent.item["``"] := "``"       ; grave accent
-dkGraveAccent.item[" "] := "``"        ; grave accent
+dkGraveAccent.item["``"] := "`` "      ; grave accent
+dkGraveAccent.item[" "] := "`` "       ; grave accent
 
 
 ; Dead Key :  Tilde
@@ -524,8 +524,8 @@ dkTilde.item["v"] := "{u+1e7d}"  ; (ṽ) v with tilde
 dkTilde.item["V"] := "{u+1e7c}"  ; (Ṽ) V with tilde
 dkTilde.item["y"] := "{u+1ef9}"  ; (ỹ) y with tilde
 dkTilde.item["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
-dkTilde.item["~"] := "~"         ;     tilde
-dkTilde.item[" "] := "~"         ;     tilde
+dkTilde.item["~"] := "~ "        ;     tilde
+dkTilde.item[" "] := "~ "        ;     tilde
 
 
 ; Dead Key :  Not Sign
