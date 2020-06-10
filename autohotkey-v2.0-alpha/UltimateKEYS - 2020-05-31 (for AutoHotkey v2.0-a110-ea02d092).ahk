@@ -17,6 +17,8 @@
 
 SendMode "Event"  ; allows chaining of customized key combinations
 
+dkEndKeys := "{bs}{del}{esc}{home}{end}"  ; ends dead key input on specific keys
+
 
 ; Dead Key :  Circumflex Accent
 
@@ -1217,91 +1219,91 @@ return
 >!+;::Send "{u+00b7}"  ; (·) middle dot
 
 >!6::
-  key := InputHook("L1", "{bs}{del}{esc}{home}{end}")
+  key := InputHook("L1", dkEndKeys)
   key.Start()
   key.Wait()
   Send dkCircumflex.item[key.Input]
 return
 >!+6::
-  key := InputHook("L1", "{bs}{del}{esc}{home}{end}")
+  key := InputHook("L1", dkEndKeys)
   key.Start()
   key.Wait()
   Send dkCaron.item[key.Input]
 return
 
 >!7::
-  key := InputHook("L1", "{bs}{del}{esc}{home}{end}")
+  key := InputHook("L1", dkEndKeys)
   key.Start()
   key.Wait()
   Send dkRingDotAbove.item[key.Input]
 return
 >!+7::
-  key := InputHook("L1", "{bs}{del}{esc}{home}{end}")
+  key := InputHook("L1", dkEndKeys)
   key.Start()
   key.Wait()
   Send dkMacronStroke.item[key.Input]
 return
 
 >!-::
-  key := InputHook("L1", "{bs}{del}{esc}{home}{end}")
+  key := InputHook("L1", dkEndKeys)
   key.Start()
   key.Wait()
   Send dkCedillaOgonek.item[key.Input]
 return
 >!_::
-  key := InputHook("L1", "{bs}{del}{esc}{home}{end}")
+  key := InputHook("L1", dkEndKeys)
   key.Start()
   key.Wait()
   Send dkBreveSpecial.item[key.Input]
 return
 
 >!'::
-  key := InputHook("L1", "{bs}{del}{esc}{home}{end}")
+  key := InputHook("L1", dkEndKeys)
   key.Start()
   key.Wait()
   Send dkAcuteAccent.item[key.Input]
 return
 >!"::
-  key := InputHook("L1", "{bs}{del}{esc}{home}{end}")
+  key := InputHook("L1", dkEndKeys)
   key.Start()
   key.Wait()
   Send dkDiaeresis.item[key.Input]
 return
 
 >!`::
-  key := InputHook("L1", "{bs}{del}{esc}{home}{end}")
+  key := InputHook("L1", dkEndKeys)
   key.Start()
   key.Wait()
   Send dkGraveAccent.item[key.Input]
 return
 >!~::
-  key := InputHook("L1", "{bs}{del}{esc}{home}{end}")
+  key := InputHook("L1", dkEndKeys)
   key.Start()
   key.Wait()
   Send dkTilde.item[key.Input]
 return
 
 >!\::
-  key := InputHook("L1", "{bs}{del}{esc}{home}{end}")
+  key := InputHook("L1", dkEndKeys)
   key.Start()
   key.Wait()
   Send dkNotSign.item[key.Input]
 return
 >!|::
-  key := InputHook("L1", "{bs}{del}{esc}{home}{end}")
+  key := InputHook("L1", dkEndKeys)
   key.Start()
   key.Wait()
   Send dkBrokenBar.item[key.Input]
 return
 
 >!m::
-  key := InputHook("L1", "{bs}{del}{esc}{home}{end}")
+  key := InputHook("L1", dkEndKeys)
   key.Start()
   key.Wait()
   Send dkGreekAlphabet.item[key.Input]
 return
 >!+m::
-  key := InputHook("L1", "{bs}{del}{esc}{home}{end}")
+  key := InputHook("L1", dkEndKeys)
   key.Start()
   key.Wait()
   Send dkMathSymbols.item[key.Input]
