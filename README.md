@@ -11,10 +11,6 @@ See the folder **`autohotkey-kbdusx`** for the overlay scripts for "United State
 
 These scripts should have the exact same functionality as the main editions, but are intended as overlays for "United States-International" (all regular AHK scripts are overlays for standard US QWERTY instead).
 
-## CE (Compact Edition) for French and English :
-
-See the folder **`compact-edition`** for a simplified test version which allows faster access to letters with a circumflex accent (â, ê, î, ô, û), but at the cost of removing some dead keys (this can be useful for French and accented English).
-
 ## Concept with 'chained dead keys' :
 
 See the folder **`concept-chained-dead-keys`** for experiments featuring `If Else` and `Switch Case` structures.
