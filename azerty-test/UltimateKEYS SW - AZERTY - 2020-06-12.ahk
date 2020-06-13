@@ -1,4 +1,4 @@
-; UltimateKEYS SW - 2020-06-12.ahk
+; UltimateKEYS SW - AZERTY - 2020-06-12.ahk
 
 ; Created by :  Pieter Degroote
 
