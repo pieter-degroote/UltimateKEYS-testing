@@ -106,22 +106,6 @@ dkCaron.item["z"] := "{u+017e}"  ; (ž) z with caron
 dkCaron.item["Z"] := "{u+017d}"  ; (Ž) Z with caron
 dkCaron.item["3"] := "{u+01ef}"  ; (ǯ) small letter ezh with caron
 dkCaron.item["#"] := "{u+01ee}"  ; (Ǯ) capital letter ezh with caron
-
-; Smart error-tolerant optimization for circumflex in French (begin)
-
-dkCaron.item[chr(0x00e4)] := "{u+00c2}"  ; (ä -> Â) a with circumflex
-dkCaron.item[chr(0x00c4)] := "{u+00c2}"  ; (Ä -> Â) A with circumflex
-dkCaron.item[chr(0x00eb)] := "{u+00ca}"  ; (ë -> Ê) e with circumflex
-dkCaron.item[chr(0x00cb)] := "{u+00ca}"  ; (Ë -> Ê) E with circumflex
-dkCaron.item[chr(0x00ef)] := "{u+00ce}"  ; (ï -> Î) i with circumflex
-dkCaron.item[chr(0x00cf)] := "{u+00ce}"  ; (Ï -> Î) I with circumflex
-dkCaron.item[chr(0x00f6)] := "{u+00d4}"  ; (ö -> Ô) o with circumflex
-dkCaron.item[chr(0x00d6)] := "{u+00d4}"  ; (Ö -> Ô) O with circumflex
-dkCaron.item[chr(0x00fc)] := "{u+00db}"  ; (ü -> Û) u with circumflex
-dkCaron.item[chr(0x00dc)] := "{u+00db}"  ; (Ü -> Û) U with circumflex
-
-; Smart error-tolerant optimization for circumflex in French (end)
-
 dkCaron.item[" "] := "{u+02c7}"  ; (ˇ) caron
 
 
