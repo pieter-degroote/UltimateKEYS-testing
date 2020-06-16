@@ -11,6 +11,10 @@ See the folder **`autohotkey-kbdusx`** for the overlay scripts for "United State
 
 These scripts should have the exact same functionality as the main editions, but are intended as overlays for "United States-International" (all regular AHK scripts are overlays for standard US QWERTY instead).
 
+## AZERTY version :
+
+See the folder **`azerty-test`** for an experimental edition featuring an AZERTY version of the keyboard layout.
+
 ## Concept with 'chained dead keys' :
 
 See the folder **`concept-chained-dead-keys`** for experiments featuring `If Else` and `Switch Case` structures.
