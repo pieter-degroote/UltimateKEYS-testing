@@ -35,4 +35,4 @@ Otherwise, it might be impossible to type any Unicode character higher than "Bas
 
 **Releases : &nbsp;https://github.com/pieter-degroote/UltimateKEYS/releases**
 
-**Website : &nbsp;https://pieter-degroote.github.io/UltimateKEYS/**
+**Website : &nbsp;[www.ultimatekeys.info](https://pieter-degroote.github.io/UltimateKEYS/)**
