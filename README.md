@@ -17,11 +17,6 @@ These scripts should have the exact same functionality as the main editions, but
 
 See the folder **`azerty-test`** for an experimental edition featuring an AZERTY version of the keyboard layout.
 
-## Concept with 'chained dead keys' :
-
-See the folder **`concept-chained-dead-keys`** for experiments featuring `If Else` and `Switch Case` structures.
-
-
 ## Important - Security Warning :
 
 **=&gt; Win/Linux : &nbsp;Only use "BASIC LATIN" characters (codes 32 to 126) for the Windows, Microsoft Live and Linux passwords !**
