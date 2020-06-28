@@ -26,7 +26,7 @@ Otherwise, it might be impossible to type any Unicode character higher than "Bas
 
 ## For official releases, please see :
 
-**UltimateKEYS - Github : &nbsp;https://github.com/pieter-degroote/UltimateKEYS**
+**UltimateKEYS - GitHub : &nbsp;https://github.com/pieter-degroote/UltimateKEYS**
 
 **Releases : &nbsp;https://github.com/pieter-degroote/UltimateKEYS/releases**
 
