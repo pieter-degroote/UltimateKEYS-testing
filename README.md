@@ -17,6 +17,10 @@ These scripts should have the exact same functionality as the main editions, but
 
 See the folder **`azerty-test`** for an experimental edition featuring an AZERTY version of the keyboard layout.
 
+## Belgian AZERTY (variants) :
+
+Belgian AZERTY layouts in AHK (overlay scripts for US QWERTY). These scripts can also be used to learn about the different key remappings and assignments in AutoHotkey.
+
 ## Important - Security Warning :
 
 **=&gt; Win/Linux : &nbsp;Only use "BASIC LATIN" characters (codes 32 to 126) for the Windows, Microsoft Live and Linux passwords !**
