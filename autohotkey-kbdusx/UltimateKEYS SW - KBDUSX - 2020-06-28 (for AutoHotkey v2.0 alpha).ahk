@@ -11,7 +11,7 @@
 
 ; Keyboard layout (on Windows OS) :  United States-International
 
-; AutoHotkey v2.0-a114-65fd90d8 (https://www.autohotkey.com/)
+; AutoHotkey v2.0-a115-f7c71ea8 (https://www.autohotkey.com/)
 
 
 
