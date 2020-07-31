@@ -48,7 +48,6 @@ dkCircumflex.item["y"] := "{u+0177}"  ; (ŷ) y with circumflex
 dkCircumflex.item["Y"] := "{u+0176}"  ; (Ŷ) Y with circumflex
 dkCircumflex.item["z"] := "{u+1e91}"  ; (ẑ) z with circumflex
 dkCircumflex.item["Z"] := "{u+1e90}"  ; (Ẑ) Z with circumflex
-dkCircumflex.item["^"] := "{^}"       ;     circumflex accent
 dkCircumflex.item[" "] := "{^}"       ;     circumflex accent
 
 
@@ -105,7 +104,6 @@ dkAcuteAccent.item["y"] := "{u+00fd}"  ; (ý) y with acute
 dkAcuteAccent.item["Y"] := "{u+00dd}"  ; (Ý) Y with acute
 dkAcuteAccent.item["z"] := "{u+017a}"  ; (ź) z with acute
 dkAcuteAccent.item["Z"] := "{u+0179}"  ; (Ź) Z with acute
-dkAcuteAccent.item["'"] := "{u+00b4}"  ; (´) acute accent
 dkAcuteAccent.item[" "] := "{u+00b4}"  ; (´) acute accent
 
 
@@ -131,7 +129,6 @@ dkDiaeresis.item["x"] := "{u+1e8d}"  ; (ẍ) x with diaeresis
 dkDiaeresis.item["X"] := "{u+1e8c}"  ; (Ẍ) X with diaeresis
 dkDiaeresis.item["y"] := "{u+00ff}"  ; (ÿ) y with diaeresis
 dkDiaeresis.item["Y"] := "{u+0178}"  ; (Ÿ) Y with diaeresis
-dkDiaeresis.item[chr(34)] := "{u+00a8}" ; (¨) diaeresis
 dkDiaeresis.item[" "] := "{u+00a8}"  ; (¨) diaeresis
 
 
@@ -154,7 +151,6 @@ dkGraveAccent.item["w"] := "{u+1e81}"  ; (ẁ) w with grave
 dkGraveAccent.item["W"] := "{u+1e80}"  ; (Ẁ) W with grave
 dkGraveAccent.item["y"] := "{u+1ef3}"  ; (ỳ) y with grave
 dkGraveAccent.item["Y"] := "{u+1ef2}"  ; (Ỳ) Y with grave
-dkGraveAccent.item["``"] := "``"       ; grave accent
 dkGraveAccent.item[" "] := "``"        ; grave accent
 
 
@@ -177,7 +173,6 @@ dkTilde.item["v"] := "{u+1e7d}"  ; (ṽ) v with tilde
 dkTilde.item["V"] := "{u+1e7c}"  ; (Ṽ) V with tilde
 dkTilde.item["y"] := "{u+1ef9}"  ; (ỹ) y with tilde
 dkTilde.item["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
-dkTilde.item["~"] := "~"         ;     tilde
 dkTilde.item[" "] := "~"         ;     tilde
 
 
