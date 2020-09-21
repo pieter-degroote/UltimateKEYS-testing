@@ -1456,5 +1456,8 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey (for second character with RAlt+Shift)
 }
 
->!space::Send "{u+00a0}"   ; non-breaking space
->!+space::Send "{u+00a0}"  ; non-breaking space
+>!space::Send "{u+00a0}"  ; non-breaking space
+>!+space:: {
+  Send "{u+00a0}"         ; non-breaking space
+  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+}
