@@ -1467,5 +1467,8 @@ return
   Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey (for second character with RAlt+Shift)
 return
 
->!space::Send {u+00a0}   ; non-breaking space
->!+space::Send {u+00a0}  ; non-breaking space
+>!space::Send {u+00a0}  ; non-breaking space
+>!+space::
+  Send {u+00a0}         ; non-breaking space
+  Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
+return
