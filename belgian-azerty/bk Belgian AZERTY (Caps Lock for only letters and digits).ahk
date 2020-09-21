@@ -365,7 +365,6 @@ $?::Send {+}  ; plus sign
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkTilde.item[key]
   key := ""  ; avoids leaking content via debug properties
-  Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey (for second character with RAlt+Shift)
 return
 
 >!q::
@@ -379,7 +378,6 @@ return
     Send {u+00e6}  ; (æ) letter ae
   else
     Send {u+00c6}  ; (Æ) letter AE
-  Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
 return
 
 >!w::
@@ -393,7 +391,6 @@ return
     Send {u+00e5}  ; (å) a with ring above
   else
     Send {u+00c5}  ; (Å) A with ring above
-  Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
 return
 
 >!c::
@@ -407,7 +404,6 @@ return
     Send {u+00e7}  ; (ç) c with cedilla
   else
     Send {u+00c7}  ; (Ç) C with cedilla
-  Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
 return
 
 >!d::
@@ -421,7 +417,6 @@ return
     Send {u+00f0}  ; (ð) small letter eth
   else
     Send {u+00d0}  ; (Ð) capital letter eth
-  Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
 return
 
 >!k::
@@ -435,7 +430,6 @@ return
     Send {u+0153}  ; (œ) ligature oe
   else
     Send {u+0152}  ; (Œ) ligature OE
-  Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
 return
 
 >!l::
@@ -449,7 +443,6 @@ return
     Send {u+00f8}  ; (ø) o with stroke
   else
     Send {u+00d8}  ; (Ø) O with stroke
-  Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
 return
 
 >!n::
@@ -463,7 +456,6 @@ return
     Send {u+00f1}  ; (ñ) n with tilde
   else
     Send {u+00d1}  ; (Ñ) N with tilde
-  Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
 return
 
 >!t::
@@ -477,7 +469,6 @@ return
     Send {u+00fe}  ; (þ) small letter thorn
   else
     Send {u+00de}  ; (Þ) capital letter thorn
-  Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
 return
 
 >!e::Send {u+20ac}  ; (€) euro sign
@@ -491,20 +482,17 @@ $"::Send `%        ; percent sign
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkAcuteAccent.item[key]
   key := ""  ; avoids leaking content via debug properties
-  Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey (for second character with RAlt+Shift)
 return
 
 $[::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkCircumflex.item[key]
   key := ""  ; avoids leaking content via debug properties
-  Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey (for second character with RAlt+Shift)
 return
 ${::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkDiaeresis.item[key]
   key := ""  ; avoids leaking content via debug properties
-  Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey (for second character with RAlt+Shift)
 return
 
 >![::Send [  ; left square bracket
@@ -521,7 +509,6 @@ $|::Send {u+00a3}  ; (£) pound sign
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkGraveAccent.item[key]
   key := ""  ; avoids leaking content via debug properties
-  Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey (for second character with RAlt+Shift)
 return
 
 $`::Send {u+00b2}  ; (²) superscript 2
@@ -531,8 +518,5 @@ $sc056::Send <   ; less-than sign
 $+sc056::Send >  ; greater-than sign
 >!sc056::Send \  ; reverse solidus (backslash)
 
->!space::Send {u+00a0}  ; non-breaking space
->!+space::
-  Send {u+00a0}         ; non-breaking space
-  Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
-return
+>!space::Send {u+00a0}   ; non-breaking space
+>!+space::Send {u+00a0}  ; non-breaking space
