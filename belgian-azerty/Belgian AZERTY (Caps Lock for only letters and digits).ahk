@@ -188,13 +188,13 @@ $1::
     Send 1   ; digit 1
   else
     Send &   ; ampersand
-return
+  return
 $+1::
   if GetKeyState("CapsLock", "T")
     Send &   ; ampersand
   else
     Send 1   ; digit 1
-return
+  return
 
 >!1::Send |  ; vertical line
 
@@ -203,13 +203,13 @@ $2::
     Send 2         ; digit 2
   else
     Send {u+00e9}  ; (é) e with acute
-return
+  return
 $+2::
   if GetKeyState("CapsLock", "T")
     Send {u+00e9}  ; (é) e with acute
   else
     Send 2         ; digit 2
-return
+  return
 
 >!2::Send @        ; at sign
 
@@ -218,13 +218,13 @@ $3::
     Send 3     ; digit 3
   else
     Send `"    ; quotation mark
-return
+  return
 $+3::
   if GetKeyState("CapsLock", "T")
     Send `"    ; quotation mark
   else
     Send 3     ; digit 3
-return
+  return
 
 >!3::Send {#}  ; number sign
 
@@ -233,13 +233,13 @@ $4::
     Send 4     ; digit 4
   else
     Send '     ; apostrophe
-return
+  return
 $+4::
   if GetKeyState("CapsLock", "T")
     Send '     ; apostrophe
   else
     Send 4     ; digit 4
-return
+  return
 
 >!4::Send {{}  ; left curly bracket
 
@@ -248,13 +248,13 @@ $5::
     Send 5   ; digit 5
   else
     Send (   ; left parenthesis
-return
+  return
 $+5::
   if GetKeyState("CapsLock", "T")
     Send (   ; left parenthesis
   else
     Send 5   ; digit 5
-return
+  return
 
 >!5::Send [  ; left square bracket
 
@@ -263,13 +263,13 @@ $6::
     Send 6         ; digit 6
   else
     Send {u+00a7}  ; (§) section sign
-return
+  return
 $+6::
   if GetKeyState("CapsLock", "T")
     Send {u+00a7}  ; (§) section sign
   else
     Send 6         ; digit 6
-return
+  return
 
 >!6::Send {^}      ; circumflex accent
 
@@ -278,39 +278,39 @@ $7::
     Send 7         ; digit 7
   else
     Send {u+00e8}  ; (è) e with grave
-return
+  return
 $+7::
   if GetKeyState("CapsLock", "T")
     Send {u+00e8}  ; (è) e with grave
   else
     Send 7         ; digit 7
-return
+  return
 
 $8::
   if GetKeyState("CapsLock", "T")
     Send 8    ; digit 8
   else
     Send {!}  ; exclamation mark
-return
+  return
 $+8::
   if GetKeyState("CapsLock", "T")
     Send {!}  ; exclamation mark
   else
     Send 8    ; digit 8
-return
+  return
 
 $9::
   if GetKeyState("CapsLock", "T")
     Send 9         ; digit 9
   else
     Send {u+00e7}  ; (ç) c with cedilla
-return
+  return
 $+9::
   if GetKeyState("CapsLock", "T")
     Send {u+00e7}  ; (ç) c with cedilla
   else
     Send 9         ; digit 9
-return
+  return
 
 >!9::Send {{}      ; left curly bracket
 
@@ -319,13 +319,13 @@ $0::
     Send 0         ; digit 0
   else
     Send {u+00e0}  ; (à) a with grave
-return
+  return
 $+0::
   if GetKeyState("CapsLock", "T")
     Send {u+00e0}  ; (à) a with grave
   else
     Send 0         ; digit 0
-return
+  return
 
 >!0::Send {}}      ; left curly bracket
 
@@ -340,14 +340,14 @@ $;::
     Send M  ; letter M
   else
     Send m  ; letter m
-return
+  return
 
 $+;::
   if GetKeyState("CapsLock", "T")
     Send m  ; letter m
   else
     Send M  ; letter M
-return
+  return
 
 $m::Send `,  ; comma
 $+m::Send ?  ; question mark
@@ -366,119 +366,119 @@ $?::Send {+}  ; plus sign
   Send % dkTilde.item[key]
   key := ""  ; avoids leaking content via debug properties
   Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey (for second character with RAlt+Shift)
-return
+  return
 
 >!q::
   if GetKeyState("CapsLock", "T")
     Send {u+00c6}  ; (Æ) letter AE
   else
     Send {u+00e6}  ; (æ) letter ae
-return
+  return
 >!+q::
   if GetKeyState("CapsLock", "T")
     Send {u+00e6}  ; (æ) letter ae
   else
     Send {u+00c6}  ; (Æ) letter AE
   Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
-return
+  return
 
 >!w::
   if GetKeyState("CapsLock", "T")
     Send {u+00c5}  ; (Å) A with ring above
   else
     Send {u+00e5}  ; (å) a with ring above
-return
+  return
 >!+w::
   if GetKeyState("CapsLock", "T")
     Send {u+00e5}  ; (å) a with ring above
   else
     Send {u+00c5}  ; (Å) A with ring above
   Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
-return
+  return
 
 >!c::
   if GetKeyState("CapsLock", "T")
     Send {u+00c7}  ; (Ç) C with cedilla
   else
     Send {u+00e7}  ; (ç) c with cedilla
-return
+  return
 >!+c::
   if GetKeyState("CapsLock", "T")
     Send {u+00e7}  ; (ç) c with cedilla
   else
     Send {u+00c7}  ; (Ç) C with cedilla
   Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
-return
+  return
 
 >!d::
   if GetKeyState("CapsLock", "T")
     Send {u+00d0}  ; (Ð) capital letter eth
   else
     Send {u+00f0}  ; (ð) small letter eth
-return
+  return
 >!+d::
   if GetKeyState("CapsLock", "T")
     Send {u+00f0}  ; (ð) small letter eth
   else
     Send {u+00d0}  ; (Ð) capital letter eth
   Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
-return
+  return
 
 >!k::
   if GetKeyState("CapsLock", "T")
     Send {u+0152}  ; (Œ) ligature OE
   else
     Send {u+0153}  ; (œ) ligature oe
-return
+  return
 >!+k::
   if GetKeyState("CapsLock", "T")
     Send {u+0153}  ; (œ) ligature oe
   else
     Send {u+0152}  ; (Œ) ligature OE
   Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
-return
+  return
 
 >!l::
   if GetKeyState("CapsLock", "T")
     Send {u+00d8}  ; (Ø) O with stroke
   else
     Send {u+00f8}  ; (ø) o with stroke
-return
+  return
 >!+l::
   if GetKeyState("CapsLock", "T")
     Send {u+00f8}  ; (ø) o with stroke
   else
     Send {u+00d8}  ; (Ø) O with stroke
   Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
-return
+  return
 
 >!n::
   if GetKeyState("CapsLock", "T")
     Send {u+00d1}  ; (Ñ) N with tilde
   else
     Send {u+00f1}  ; (ñ) n with tilde
-return
+  return
 >!+n::
   if GetKeyState("CapsLock", "T")
     Send {u+00f1}  ; (ñ) n with tilde
   else
     Send {u+00d1}  ; (Ñ) N with tilde
   Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
-return
+  return
 
 >!t::
   if GetKeyState("CapsLock", "T")
     Send {u+00de}  ; (Þ) capital letter thorn
   else
     Send {u+00fe}  ; (þ) small letter thorn
-return
+  return
 >!+t::
   if GetKeyState("CapsLock", "T")
     Send {u+00fe}  ; (þ) small letter thorn
   else
     Send {u+00de}  ; (Þ) capital letter thorn
   Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
-return
+  return
 
 >!e::Send {u+20ac}  ; (€) euro sign
 
@@ -492,20 +492,20 @@ $"::Send `%        ; percent sign
   Send % dkAcuteAccent.item[key]
   key := ""  ; avoids leaking content via debug properties
   Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey (for second character with RAlt+Shift)
-return
+  return
 
 $[::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkCircumflex.item[key]
   key := ""  ; avoids leaking content via debug properties
   Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey (for second character with RAlt+Shift)
-return
+  return
 ${::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkDiaeresis.item[key]
   key := ""  ; avoids leaking content via debug properties
   Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey (for second character with RAlt+Shift)
-return
+  return
 
 >![::Send [  ; left square bracket
 
@@ -522,7 +522,7 @@ $|::Send {u+00a3}  ; (£) pound sign
   Send % dkGraveAccent.item[key]
   key := ""  ; avoids leaking content via debug properties
   Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey (for second character with RAlt+Shift)
-return
+  return
 
 $`::Send {u+00b2}  ; (²) superscript 2
 $~::Send {u+00b3}  ; (³) superscript 3
@@ -535,4 +535,4 @@ $+sc056::Send >  ; greater-than sign
 >!+space::
   Send {u+00a0}         ; non-breaking space
   Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
-return
+  return
