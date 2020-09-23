@@ -1,4 +1,4 @@
-; UltimateKEYS  - AZERTY - 2020-09-24.ahk
+; UltimateKEYS - AZERTY - 2020-09-24.ahk
 
 ; Created by :  Pieter Degroote
 
