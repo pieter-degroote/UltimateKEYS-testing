@@ -355,12 +355,15 @@ $+;:: {
 
 $m::Send ","   ; comma
 $+m::Send "?"  ; question mark
+>!m::Send "\"  ; reverse solidus (backslash)
 
 $,::Send ";"   ; semicolon
 $<::Send "."   ; full stop (period)
+>!,::Send "<"  ; less-than sign
 
 $.::Send ":"   ; colon
 $>::Send "/"   ; solidus (slash)
+>!.::Send ">"  ; greater-than sign
 
 $/::Send "="    ; equals sign
 $?::Send "{+}"  ; plus sign
