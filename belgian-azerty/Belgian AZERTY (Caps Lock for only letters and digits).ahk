@@ -427,6 +427,20 @@ $?::Send {+}  ; plus sign
   Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
   return
 
+>!n::
+  if GetKeyState("CapsLock", "T")
+    Send {u+00d1}  ; (Ñ) N with tilde
+  else
+    Send {u+00f1}  ; (ñ) n with tilde
+  return
+>!+n::
+  if GetKeyState("CapsLock", "T")
+    Send {u+00f1}  ; (ñ) n with tilde
+  else
+    Send {u+00d1}  ; (Ñ) N with tilde
+  Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
+  return
+
 >!k::
   if GetKeyState("CapsLock", "T")
     Send {u+0152}  ; (Œ) ligature OE
@@ -452,20 +466,6 @@ $?::Send {+}  ; plus sign
     Send {u+00f8}  ; (ø) o with stroke
   else
     Send {u+00d8}  ; (Ø) O with stroke
-  Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
-  return
-
->!n::
-  if GetKeyState("CapsLock", "T")
-    Send {u+00d1}  ; (Ñ) N with tilde
-  else
-    Send {u+00f1}  ; (ñ) n with tilde
-  return
->!+n::
-  if GetKeyState("CapsLock", "T")
-    Send {u+00f1}  ; (ñ) n with tilde
-  else
-    Send {u+00d1}  ; (Ñ) N with tilde
   Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
   return
 
