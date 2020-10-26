@@ -1073,6 +1073,19 @@ $"::Send "`" "    ; quotation mark
     Send "{u+00cd}"  ; (Í) I with acute
 }
 
+<^>!n:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00d1}"  ; (Ñ) N with tilde
+  else
+    Send "{u+00f1}"  ; (ñ) n with tilde
+}
+<^>!+n:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00f1}"  ; (ñ) n with tilde
+  else
+    Send "{u+00d1}"  ; (Ñ) N with tilde
+}
+
 <^>!o:: {
   if GetKeyState("CapsLock", "T")
     Send "{u+00d6}"  ; (Ö) O with diaeresis
@@ -1136,19 +1149,6 @@ $"::Send "`" "    ; quotation mark
     Send "{u+00f8}"  ; (ø) o with stroke
   else
     Send "{u+00d8}"  ; (Ø) O with stroke
-}
-
-<^>!n:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00d1}"  ; (Ñ) N with tilde
-  else
-    Send "{u+00f1}"  ; (ñ) n with tilde
-}
-<^>!+n:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00f1}"  ; (ñ) n with tilde
-  else
-    Send "{u+00d1}"  ; (Ñ) N with tilde
 }
 
 <^>!t:: {
