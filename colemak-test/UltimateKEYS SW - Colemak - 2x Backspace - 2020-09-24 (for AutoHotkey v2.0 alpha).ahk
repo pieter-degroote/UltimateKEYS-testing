@@ -1121,6 +1121,20 @@ $+0::Send "0"   ; digit 0
   Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
 }
 
+>!n:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00d1}"  ; (Ñ) N with tilde
+  else
+    Send "{u+00f1}"  ; (ñ) n with tilde
+}
+>!+n:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00f1}"  ; (ñ) n with tilde
+  else
+    Send "{u+00d1}"  ; (Ñ) N with tilde
+  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+}
+
 >!o:: {
   if GetKeyState("CapsLock", "T")
     Send "{u+00d6}"  ; (Ö) O with diaeresis
@@ -1188,20 +1202,6 @@ $+0::Send "0"   ; digit 0
     Send "{u+00f8}"  ; (ø) o with stroke
   else
     Send "{u+00d8}"  ; (Ø) O with stroke
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
-}
-
->!n:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00d1}"  ; (Ñ) N with tilde
-  else
-    Send "{u+00f1}"  ; (ñ) n with tilde
-}
->!+n:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00f1}"  ; (ñ) n with tilde
-  else
-    Send "{u+00d1}"  ; (Ñ) N with tilde
   Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
 }
 
