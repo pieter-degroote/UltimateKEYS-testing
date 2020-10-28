@@ -151,7 +151,7 @@ dkGraveAccent.item["w"] := "{u+1e81}"  ; (ẁ) w with grave
 dkGraveAccent.item["W"] := "{u+1e80}"  ; (Ẁ) W with grave
 dkGraveAccent.item["y"] := "{u+1ef3}"  ; (ỳ) y with grave
 dkGraveAccent.item["Y"] := "{u+1ef2}"  ; (Ỳ) Y with grave
-dkGraveAccent.item[" "] := "``"        ; grave accent
+dkGraveAccent.item[" "] := "``"        ;     grave accent
 
 
 ; Dead Key :  Tilde
