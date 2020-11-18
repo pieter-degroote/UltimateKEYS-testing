@@ -901,7 +901,7 @@ dkMathSymbols.item["|"] := "{u+2228}"  ; (∨) logical or
 dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 
 
-; Configuration :  Right Alt on US QWERTY
+; Configuration :  'Right Alt' and 'Right Alt + Shift' on US QWERTY
 
 >!a::
   if GetKeyState("CapsLock", "T")

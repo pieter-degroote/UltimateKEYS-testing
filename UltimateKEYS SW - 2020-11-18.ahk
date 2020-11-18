@@ -934,7 +934,7 @@ $0::Send )    ; right parenthesis
 $+0::Send 0   ; digit 0
 
 
-; Configuration :  Right Alt on US QWERTY
+; Configuration :  'Right Alt' and 'Right Alt + Shift' on US QWERTY
 
 >!a::
   if GetKeyState("CapsLock", "T")
