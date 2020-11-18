@@ -214,9 +214,9 @@ dkRingDotAbove.item["_"] := "{u+21b0}"          ; (↰) upwards arrow with tip l
 dkRingDotAbove.item["="] := "{u+21b3}"          ; (↳) downwards arrow with tip rightwards
 dkRingDotAbove.item["+"] := "{u+21b1}"          ; (↱) upwards arrow with tip rightwards
 dkRingDotAbove.item["["] := "{u+21c4}"          ; (⇄) rightwards arrow over leftwards arrow
-dkRingDotAbove.item["{"] := "{u+21c6}"          ; (⇆) leftwards arrow over rightwards arrow
 dkRingDotAbove.item["]"] := "{u+21c5}"          ; (⇅) upwards arrow leftwards of downwards arrow
-dkRingDotAbove.item["}"] := "{u+21f5}"          ; (⇵) downwards arrow leftwards of upwards arrow
+dkRingDotAbove.item[";"] := "{u+21c6}"          ; (⇆) leftwards arrow over rightwards arrow
+dkRingDotAbove.item["'"] := "{u+21f5}"          ; (⇵) downwards arrow leftwards of upwards arrow
 dkRingDotAbove.item["/"] := "{u+21a8}"          ; (↨) up down arrow with base
 dkRingDotAbove.item[" "] := "{u+02d9}"          ; (˙) dot above
 
