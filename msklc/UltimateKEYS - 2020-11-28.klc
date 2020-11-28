@@ -872,8 +872,6 @@ DEADKEY	0020	// Dead Key :  Math Symbols
 004e	2115	// N -> ℕ    natural numbers
 006f	2218	// o -> ∘    ring operator
 004f	2205	// O -> ∅    empty set
-00f6	2299	// ö -> ⊙    circled dot operator
-00d6	229a	// Ö -> ⊚    circled ring operator
 0070	2202	// p -> ∂    partial differential
 0050	2119	// P -> ℙ    prime numbers
 0071	211a	// q -> ℚ    rational numbers
