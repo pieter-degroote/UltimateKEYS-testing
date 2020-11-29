@@ -5,8 +5,8 @@ Testing repository for UltimateKEYS
 
 ## Switching between 'Classic' and 'SW' behavior with Scroll Lock toggle
 
-This version allows you to switch dynamically between 'classic' and 'SW' by using the Scroll Lock.  
-Scroll Lock disabled :  classic behavior  
+This version allows you to switch dynamically between 'Classic' and 'SW' by using the Scroll Lock.  
+Scroll Lock disabled :  Classic behavior  
 Scroll Lock enabled :  SW behavior  
 -&gt; See the folder **`scroll-lock`**.
 
