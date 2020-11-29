@@ -1,4 +1,4 @@
-; UltimateKEYS - 2020-11-28.ahk
+; UltimateKEYS - Scroll Lock - 2020-11-28.ahk
 
 ; Created by :  Pieter Degroote
 
