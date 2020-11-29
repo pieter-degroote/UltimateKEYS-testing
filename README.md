@@ -3,6 +3,13 @@ Testing repository for UltimateKEYS
 
 **Official release :**&emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)
 
+## Switching between 'Classic' and 'SW' behavior with Scroll Lock toggle
+
+This version allows you to switch dynamically between 'classic' and 'SW' by using the Scroll Lock.  
+Scroll Lock disabled :  classic behavior  
+Scroll Lock enabled :  SW behavior  
+-&gt; See the folder **`scroll-lock`**.
+
 ## Experimental support for AutoHotkey v2.0 alpha :
 
 See the folder **`autohotkey-v2.0-alpha`** for experimental support.
