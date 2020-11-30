@@ -126,16 +126,16 @@ dkCaron["v"] := "{u+01da}"  ; (ǚ) u with diaeresis and caron
 dkCaron["V"] := "{u+01d9}"  ; (Ǚ) U with diaeresis and caron
 dkCaron["z"] := "{u+017e}"  ; (ž) z with caron
 dkCaron["Z"] := "{u+017d}"  ; (Ž) Z with caron
-dkCaron["#"] := "{u+01ef}"  ; (ǯ) small letter ezh with caron
-dkCaron["3"] := "{u+01ee}"  ; (Ǯ) capital letter ezh with caron
-dkCaron["@"] := "{u+25bc}"  ; (▼) black down-pointing triangle
-dkCaron["2"] := "{u+25bd}"  ; (▽) white down-pointing triangle
-dkCaron["$"] := "{u+25c0}"  ; (◀) black left-pointing triangle
-dkCaron["4"] := "{u+25c1}"  ; (◁) white left-pointing triangle
-dkCaron["^"] := "{u+25b6}"  ; (▶) black right-pointing triangle
-dkCaron["6"] := "{u+25b7}"  ; (▷) white right-pointing triangle
-dkCaron["*"] := "{u+25b2}"  ; (▲) black up-pointing triangle
-dkCaron["8"] := "{u+25b3}"  ; (△) white up-pointing triangle
+dkCaron["3"] := "{u+01ef}"  ; (ǯ) small letter ezh with caron
+dkCaron["#"] := "{u+01ee}"  ; (Ǯ) capital letter ezh with caron
+dkCaron["2"] := "{u+25bc}"  ; (▼) black down-pointing triangle
+dkCaron["@"] := "{u+25bd}"  ; (▽) white down-pointing triangle
+dkCaron["4"] := "{u+25c0}"  ; (◀) black left-pointing triangle
+dkCaron["$"] := "{u+25c1}"  ; (◁) white left-pointing triangle
+dkCaron["6"] := "{u+25b6}"  ; (▶) black right-pointing triangle
+dkCaron["^"] := "{u+25b7}"  ; (▷) white right-pointing triangle
+dkCaron["8"] := "{u+25b2}"  ; (▲) black up-pointing triangle
+dkCaron["*"] := "{u+25b3}"  ; (△) white up-pointing triangle
 dkCaron[" "] := "{u+02c7}"  ; (ˇ) caron
 
 
@@ -382,8 +382,8 @@ dkBreveSpecial[chr(0x00e5)] := "{u+2c73}"  ; (å -> ⱳ) w with hook
 dkBreveSpecial[chr(0x00c5)] := "{u+2c72}"  ; (Å -> Ⱳ) W with hook
 dkBreveSpecial["y"] := "{u+021d}"          ; (ȝ) small letter yogh
 dkBreveSpecial["Y"] := "{u+021c}"          ; (Ȝ) capital letter yogh
-dkBreveSpecial["#"] := "{u+0292}"          ; (ʒ) small letter ezh
-dkBreveSpecial["3"] := "{u+01b7}"          ; (Ʒ) capital letter ezh
+dkBreveSpecial["3"] := "{u+0292}"          ; (ʒ) small letter ezh
+dkBreveSpecial["#"] := "{u+01b7}"          ; (Ʒ) capital letter ezh
 dkBreveSpecial[" "] := "{u+02d8}"          ; (˘) breve
 
 
@@ -783,31 +783,31 @@ dkGreekAlphabet["w"] := "{u+03c8}"  ; (ψ) small psi
 dkGreekAlphabet["W"] := "{u+03a8}"  ; (Ψ) capital psi
 dkGreekAlphabet["q"] := "{u+03c9}"  ; (ω) small omega
 dkGreekAlphabet["Q"] := "{u+03a9}"  ; (Ω) capital omega
-dkGreekAlphabet["!"] := "{u+00b9}"  ; (¹) superscript 1
-dkGreekAlphabet["@"] := "{u+00b2}"  ; (²) superscript 2
-dkGreekAlphabet["#"] := "{u+00b3}"  ; (³) superscript 3
-dkGreekAlphabet["$"] := "{u+2074}"  ; (⁴) superscript 4
-dkGreekAlphabet["%"] := "{u+2075}"  ; (⁵) superscript 5
-dkGreekAlphabet["^"] := "{u+2076}"  ; (⁶) superscript 6
-dkGreekAlphabet["&"] := "{u+2077}"  ; (⁷) superscript 7
-dkGreekAlphabet["*"] := "{u+2078}"  ; (⁸) superscript 8
-dkGreekAlphabet["("] := "{u+2079}"  ; (⁹) superscript 9
-dkGreekAlphabet[")"] := "{u+2070}"  ; (⁰) superscript 0
+dkGreekAlphabet["1"] := "{u+00b9}"  ; (¹) superscript 1
+dkGreekAlphabet["2"] := "{u+00b2}"  ; (²) superscript 2
+dkGreekAlphabet["3"] := "{u+00b3}"  ; (³) superscript 3
+dkGreekAlphabet["4"] := "{u+2074}"  ; (⁴) superscript 4
+dkGreekAlphabet["5"] := "{u+2075}"  ; (⁵) superscript 5
+dkGreekAlphabet["6"] := "{u+2076}"  ; (⁶) superscript 6
+dkGreekAlphabet["7"] := "{u+2077}"  ; (⁷) superscript 7
+dkGreekAlphabet["8"] := "{u+2078}"  ; (⁸) superscript 8
+dkGreekAlphabet["9"] := "{u+2079}"  ; (⁹) superscript 9
+dkGreekAlphabet["0"] := "{u+2070}"  ; (⁰) superscript 0
 dkGreekAlphabet["-"] := "{u+207b}"  ; (⁻) superscript -
 dkGreekAlphabet["="] := "{u+207c}"  ; (⁼) superscript =
 dkGreekAlphabet["+"] := "{u+207a}"  ; (⁺) superscript +
 dkGreekAlphabet["["] := "{u+207d}"  ; (⁽) superscript (
 dkGreekAlphabet["]"] := "{u+207e}"  ; (⁾) superscript )
-dkGreekAlphabet["1"] := "{u+2081}"  ; (₁) subscript 1
-dkGreekAlphabet["2"] := "{u+2082}"  ; (₂) subscript 2
-dkGreekAlphabet["3"] := "{u+2083}"  ; (₃) subscript 3
-dkGreekAlphabet["4"] := "{u+2084}"  ; (₄) subscript 4
-dkGreekAlphabet["5"] := "{u+2085}"  ; (₅) subscript 5
-dkGreekAlphabet["6"] := "{u+2086}"  ; (₆) subscript 6
-dkGreekAlphabet["7"] := "{u+2087}"  ; (₇) subscript 7
-dkGreekAlphabet["8"] := "{u+2088}"  ; (₈) subscript 8
-dkGreekAlphabet["9"] := "{u+2089}"  ; (₉) subscript 9
-dkGreekAlphabet["0"] := "{u+2080}"  ; (₀) subscript 0
+dkGreekAlphabet["!"] := "{u+2081}"  ; (₁) subscript 1
+dkGreekAlphabet["@"] := "{u+2082}"  ; (₂) subscript 2
+dkGreekAlphabet["#"] := "{u+2083}"  ; (₃) subscript 3
+dkGreekAlphabet["$"] := "{u+2084}"  ; (₄) subscript 4
+dkGreekAlphabet["%"] := "{u+2085}"  ; (₅) subscript 5
+dkGreekAlphabet["^"] := "{u+2086}"  ; (₆) subscript 6
+dkGreekAlphabet["&"] := "{u+2087}"  ; (₇) subscript 7
+dkGreekAlphabet["*"] := "{u+2088}"  ; (₈) subscript 8
+dkGreekAlphabet["("] := "{u+2089}"  ; (₉) subscript 9
+dkGreekAlphabet[")"] := "{u+2080}"  ; (₀) subscript 0
 dkGreekAlphabet[";"] := "{u+208b}"  ; (₋) subscript -
 dkGreekAlphabet["'"] := "{u+208c}"  ; (₌) subscript =
 dkGreekAlphabet[chr(34)] := "{u+208a}"  ; (₊) subscript +
@@ -870,8 +870,8 @@ dkMathSymbols["3"] := "{u+221b}"  ; (∛) cube root
 dkMathSymbols["#"] := "{u+221b}"  ; (∛) cube root
 dkMathSymbols["4"] := "{u+221c}"  ; (∜) fourth root
 dkMathSymbols["$"] := "{u+221c}"  ; (∜) fourth root
-dkMathSymbols["5"] := "{u+2031}"  ; (‱) per ten thousand sign
-dkMathSymbols["%"] := "{u+2030}"  ; (‰) per mille sign
+dkMathSymbols["5"] := "{u+2030}"  ; (‰) per mille sign
+dkMathSymbols["%"] := "{u+2031}"  ; (‱) per ten thousand sign
 dkMathSymbols["6"] := "{u+2220}"  ; (∠) angle symbol
 dkMathSymbols["^"] := "{u+2220}"  ; (∠) angle symbol
 dkMathSymbols["7"] := "{u+2227}"  ; (∧) logical and
@@ -905,37 +905,189 @@ dkMathSymbols["|"] := "{u+2228}"  ; (∨) logical or
 dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 
 
-; Configuration :  Switch positions of symbols and digits
+funcSendSecondChar(char) {
+; keeps correct operation after dead key press when Scroll Lock is on
 
-$1::Send "{!}"  ; exclamation mark
-$+1::Send "1"   ; digit 1
+  if GetKeyState("ScrollLock", "T") {
+    if (char == "1")
+      return "!"
+    else if (char == "2")
+      return "@"
+    else if (char == "3")
+      return "#"
+    else if (char == "4")
+      return "$"
+    else if (char == "5")
+      return "%"
+    else if (char == "6")
+      return "^"
+    else if (char == "7")
+      return "&"
+    else if (char == "8")
+      return "*"
+    else if (char == "9")
+      return "("
+    else if (char == "0")
+      return ")"
+    else if (char == "!")
+      return "1"
+    else if (char == "@")
+      return "2"
+    else if (char == "#")
+      return "3"
+    else if (char == "$")
+      return "4"
+    else if (char == "%")
+      return "5"
+    else if (char == "^")
+      return "6"
+    else if (char == "&")
+      return "7"
+    else if (char == "*")
+      return "8"
+    else if (char == "(")
+      return "9"
+    else if (char == ")")
+      return "0"
+    else
+      return char
+  }
+  else
+    return char
+}
 
-$2::Send "@"    ; at sign
-$+2::Send "2"   ; digit 2
 
-$3::Send "{#}"  ; number sign
-$+3::Send "3"   ; digit 3
+; Configuration :  Switch positions of symbols and digits with Scroll Lock toggle
 
-$4::Send "$"    ; dollar sign
-$+4::Send "4"   ; digit 4
+$1:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "{!}"  ; exclamation mark
+  else
+    Send "1"    ; digit 1
+}
+$+1:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "1"    ; digit 1
+  else
+    Send "{!}"  ; exclamation mark
+}
 
-$5::Send "`%"   ; percent sign
-$+5::Send "5"   ; digit 5
+$2:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "@"  ; at sign
+  else
+    Send "2"  ; digit 2
+}
+$+2:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "2"  ; digit 2
+  else
+    Send "@"  ; at sign
+}
 
-$6::Send "{^}"  ; circumflex accent
-$+6::Send "6"   ; digit 6
+$3:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "{#}"  ; number sign
+  else
+    Send "3"    ; digit 3
+}
+$+3:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "3"    ; digit 3
+  else
+    Send "{#}"  ; number sign
+}
 
-$7::Send "&"    ; ampersand
-$+7::Send "7"   ; digit 7
+$4:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "$"  ; dollar sign
+  else
+    Send "4"  ; digit 4
+}
+$+4:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "4"  ; digit 4
+  else
+    Send "$"  ; dollar sign
+}
 
-$8::Send "*"    ; asterisk
-$+8::Send "8"   ; digit 8
+$5:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "`%"  ; percent sign
+  else
+    Send "5"   ; digit 5
+}
+$+5:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "5"   ; digit 5
+  else
+    Send "`%"  ; percent sign
+}
 
-$9::Send "("    ; left parenthesis
-$+9::Send "9"   ; digit 9
+$6:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "{^}"  ; circumflex accent
+  else
+    Send "6"    ; digit 6
+}
+$+6:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "6"    ; digit 6
+  else
+    Send "{^}"  ; circumflex accent
+}
 
-$0::Send ")"    ; right parenthesis
-$+0::Send "0"   ; digit 0
+$7:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "&"  ; ampersand
+  else
+    Send "7"  ; digit 7
+}
+$+7:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "7"  ; digit 7
+  else
+    Send "&"  ; ampersand
+}
+
+$8:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "*"  ; asterisk
+  else
+    Send "8"  ; digit 8
+}
+$+8:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "8"  ; digit 8
+  else
+    Send "*"  ; asterisk
+}
+
+$9:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "("  ; left parenthesis
+  else
+    Send "9"  ; digit 9
+}
+$+9:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "9"  ; digit 9
+  else
+    Send "("  ; left parenthesis
+}
+
+$0:: {
+  if GetKeyState("ScrollLock", "T")
+    Send ")"  ; right parenthesis
+  else
+    Send "0"  ; digit 0
+}
+$+0:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "0"  ; digit 0
+  else
+    Send ")"  ; right parenthesis
+}
 
 
 ; Configuration :  'Right Alt' and 'Right Alt + Shift' on US QWERTY
@@ -1468,8 +1620,8 @@ $+0::Send "0"   ; digit 0
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkCircumflex.Has(ih.Input)
-    Send dkCircumflex[ih.Input]
+  if dkCircumflex.Has(funcSendSecondChar(ih.Input))
+    Send dkCircumflex[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues (for second character)
 }
 >!+6:: {
@@ -1477,8 +1629,8 @@ $+0::Send "0"   ; digit 0
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkCaron.Has(ih.Input)
-    Send dkCaron[ih.Input]
+  if dkCaron.Has(funcSendSecondChar(ih.Input))
+    Send dkCaron[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues (for second character)
 }
 
@@ -1487,8 +1639,8 @@ $+0::Send "0"   ; digit 0
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkRingDotAbove.Has(ih.Input)
-    Send dkRingDotAbove[ih.Input]
+  if dkRingDotAbove.Has(funcSendSecondChar(ih.Input))
+    Send dkRingDotAbove[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!+7:: {
@@ -1496,8 +1648,8 @@ $+0::Send "0"   ; digit 0
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkMacronStroke.Has(ih.Input)
-    Send dkMacronStroke[ih.Input]
+  if dkMacronStroke.Has(funcSendSecondChar(ih.Input))
+    Send dkMacronStroke[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 
@@ -1506,8 +1658,8 @@ $+0::Send "0"   ; digit 0
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkCedillaOgonek.Has(ih.Input)
-    Send dkCedillaOgonek[ih.Input]
+  if dkCedillaOgonek.Has(funcSendSecondChar(ih.Input))
+    Send dkCedillaOgonek[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!_:: {
@@ -1515,8 +1667,8 @@ $+0::Send "0"   ; digit 0
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkBreveSpecial.Has(ih.Input)
-    Send dkBreveSpecial[ih.Input]
+  if dkBreveSpecial.Has(funcSendSecondChar(ih.Input))
+    Send dkBreveSpecial[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 
@@ -1525,8 +1677,8 @@ $+0::Send "0"   ; digit 0
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkAcuteAccent.Has(ih.Input)
-    Send dkAcuteAccent[ih.Input]
+  if dkAcuteAccent.Has(funcSendSecondChar(ih.Input))
+    Send dkAcuteAccent[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!":: {
@@ -1534,8 +1686,8 @@ $+0::Send "0"   ; digit 0
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkDiaeresis.Has(ih.Input)
-    Send dkDiaeresis[ih.Input]
+  if dkDiaeresis.Has(funcSendSecondChar(ih.Input))
+    Send dkDiaeresis[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 
@@ -1544,8 +1696,8 @@ $+0::Send "0"   ; digit 0
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkGraveAccent.Has(ih.Input)
-    Send dkGraveAccent[ih.Input]
+  if dkGraveAccent.Has(funcSendSecondChar(ih.Input))
+    Send dkGraveAccent[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!~:: {
@@ -1553,8 +1705,8 @@ $+0::Send "0"   ; digit 0
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkTilde.Has(ih.Input)
-    Send dkTilde[ih.Input]
+  if dkTilde.Has(funcSendSecondChar(ih.Input))
+    Send dkTilde[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 
@@ -1563,8 +1715,8 @@ $+0::Send "0"   ; digit 0
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkNotSign.Has(ih.Input)
-    Send dkNotSign[ih.Input]
+  if dkNotSign.Has(funcSendSecondChar(ih.Input))
+    Send dkNotSign[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!|:: {
@@ -1572,8 +1724,8 @@ $+0::Send "0"   ; digit 0
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkBrokenBar.Has(ih.Input)
-    Send dkBrokenBar[ih.Input]
+  if dkBrokenBar.Has(funcSendSecondChar(ih.Input))
+    Send dkBrokenBar[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 
@@ -1582,8 +1734,8 @@ $+0::Send "0"   ; digit 0
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkGreekAlphabet.Has(ih.Input)
-    Send dkGreekAlphabet[ih.Input]
+  if dkGreekAlphabet.Has(funcSendSecondChar(ih.Input))
+    Send dkGreekAlphabet[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!+m:: {
@@ -1591,7 +1743,7 @@ $+0::Send "0"   ; digit 0
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkMathSymbols.Has(ih.Input)
-    Send dkMathSymbols[ih.Input]
+  if dkMathSymbols.Has(funcSendSecondChar(ih.Input))
+    Send dkMathSymbols[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }

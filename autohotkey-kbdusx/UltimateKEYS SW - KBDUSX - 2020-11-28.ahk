@@ -122,16 +122,16 @@ dkCaron.item["v"] := "{u+01da}"  ; (ǚ) u with diaeresis and caron
 dkCaron.item["V"] := "{u+01d9}"  ; (Ǚ) U with diaeresis and caron
 dkCaron.item["z"] := "{u+017e}"  ; (ž) z with caron
 dkCaron.item["Z"] := "{u+017d}"  ; (Ž) Z with caron
-dkCaron.item["#"] := "{u+01ef}"  ; (ǯ) small letter ezh with caron
-dkCaron.item["3"] := "{u+01ee}"  ; (Ǯ) capital letter ezh with caron
-dkCaron.item["@"] := "{u+25bc}"  ; (▼) black down-pointing triangle
-dkCaron.item["2"] := "{u+25bd}"  ; (▽) white down-pointing triangle
-dkCaron.item["$"] := "{u+25c0}"  ; (◀) black left-pointing triangle
-dkCaron.item["4"] := "{u+25c1}"  ; (◁) white left-pointing triangle
-dkCaron.item["^"] := "{u+25b6}"  ; (▶) black right-pointing triangle
-dkCaron.item["6"] := "{u+25b7}"  ; (▷) white right-pointing triangle
-dkCaron.item["*"] := "{u+25b2}"  ; (▲) black up-pointing triangle
-dkCaron.item["8"] := "{u+25b3}"  ; (△) white up-pointing triangle
+dkCaron.item["3"] := "{u+01ef}"  ; (ǯ) small letter ezh with caron
+dkCaron.item["#"] := "{u+01ee}"  ; (Ǯ) capital letter ezh with caron
+dkCaron.item["2"] := "{u+25bc}"  ; (▼) black down-pointing triangle
+dkCaron.item["@"] := "{u+25bd}"  ; (▽) white down-pointing triangle
+dkCaron.item["4"] := "{u+25c0}"  ; (◀) black left-pointing triangle
+dkCaron.item["$"] := "{u+25c1}"  ; (◁) white left-pointing triangle
+dkCaron.item["6"] := "{u+25b6}"  ; (▶) black right-pointing triangle
+dkCaron.item["^"] := "{u+25b7}"  ; (▷) white right-pointing triangle
+dkCaron.item["8"] := "{u+25b2}"  ; (▲) black up-pointing triangle
+dkCaron.item["*"] := "{u+25b3}"  ; (△) white up-pointing triangle
 dkCaron.item[" "] := "{u+02c7}"  ; (ˇ) caron
 
 
@@ -378,8 +378,8 @@ dkBreveSpecial.item[chr(0x00e5)] := "{u+2c73}"  ; (å -> ⱳ) w with hook
 dkBreveSpecial.item[chr(0x00c5)] := "{u+2c72}"  ; (Å -> Ⱳ) W with hook
 dkBreveSpecial.item["y"] := "{u+021d}"          ; (ȝ) small letter yogh
 dkBreveSpecial.item["Y"] := "{u+021c}"          ; (Ȝ) capital letter yogh
-dkBreveSpecial.item["#"] := "{u+0292}"          ; (ʒ) small letter ezh
-dkBreveSpecial.item["3"] := "{u+01b7}"          ; (Ʒ) capital letter ezh
+dkBreveSpecial.item["3"] := "{u+0292}"          ; (ʒ) small letter ezh
+dkBreveSpecial.item["#"] := "{u+01b7}"          ; (Ʒ) capital letter ezh
 dkBreveSpecial.item[" "] := "{u+02d8}"          ; (˘) breve
 
 
@@ -779,31 +779,31 @@ dkGreekAlphabet.item["w"] := "{u+03c8}"  ; (ψ) small psi
 dkGreekAlphabet.item["W"] := "{u+03a8}"  ; (Ψ) capital psi
 dkGreekAlphabet.item["q"] := "{u+03c9}"  ; (ω) small omega
 dkGreekAlphabet.item["Q"] := "{u+03a9}"  ; (Ω) capital omega
-dkGreekAlphabet.item["!"] := "{u+00b9}"  ; (¹) superscript 1
-dkGreekAlphabet.item["@"] := "{u+00b2}"  ; (²) superscript 2
-dkGreekAlphabet.item["#"] := "{u+00b3}"  ; (³) superscript 3
-dkGreekAlphabet.item["$"] := "{u+2074}"  ; (⁴) superscript 4
-dkGreekAlphabet.item["%"] := "{u+2075}"  ; (⁵) superscript 5
-dkGreekAlphabet.item["^"] := "{u+2076}"  ; (⁶) superscript 6
-dkGreekAlphabet.item["&"] := "{u+2077}"  ; (⁷) superscript 7
-dkGreekAlphabet.item["*"] := "{u+2078}"  ; (⁸) superscript 8
-dkGreekAlphabet.item["("] := "{u+2079}"  ; (⁹) superscript 9
-dkGreekAlphabet.item[")"] := "{u+2070}"  ; (⁰) superscript 0
+dkGreekAlphabet.item["1"] := "{u+00b9}"  ; (¹) superscript 1
+dkGreekAlphabet.item["2"] := "{u+00b2}"  ; (²) superscript 2
+dkGreekAlphabet.item["3"] := "{u+00b3}"  ; (³) superscript 3
+dkGreekAlphabet.item["4"] := "{u+2074}"  ; (⁴) superscript 4
+dkGreekAlphabet.item["5"] := "{u+2075}"  ; (⁵) superscript 5
+dkGreekAlphabet.item["6"] := "{u+2076}"  ; (⁶) superscript 6
+dkGreekAlphabet.item["7"] := "{u+2077}"  ; (⁷) superscript 7
+dkGreekAlphabet.item["8"] := "{u+2078}"  ; (⁸) superscript 8
+dkGreekAlphabet.item["9"] := "{u+2079}"  ; (⁹) superscript 9
+dkGreekAlphabet.item["0"] := "{u+2070}"  ; (⁰) superscript 0
 dkGreekAlphabet.item["-"] := "{u+207b}"  ; (⁻) superscript -
 dkGreekAlphabet.item["="] := "{u+207c}"  ; (⁼) superscript =
 dkGreekAlphabet.item["+"] := "{u+207a}"  ; (⁺) superscript +
 dkGreekAlphabet.item["["] := "{u+207d}"  ; (⁽) superscript (
 dkGreekAlphabet.item["]"] := "{u+207e}"  ; (⁾) superscript )
-dkGreekAlphabet.item["1"] := "{u+2081}"  ; (₁) subscript 1
-dkGreekAlphabet.item["2"] := "{u+2082}"  ; (₂) subscript 2
-dkGreekAlphabet.item["3"] := "{u+2083}"  ; (₃) subscript 3
-dkGreekAlphabet.item["4"] := "{u+2084}"  ; (₄) subscript 4
-dkGreekAlphabet.item["5"] := "{u+2085}"  ; (₅) subscript 5
-dkGreekAlphabet.item["6"] := "{u+2086}"  ; (₆) subscript 6
-dkGreekAlphabet.item["7"] := "{u+2087}"  ; (₇) subscript 7
-dkGreekAlphabet.item["8"] := "{u+2088}"  ; (₈) subscript 8
-dkGreekAlphabet.item["9"] := "{u+2089}"  ; (₉) subscript 9
-dkGreekAlphabet.item["0"] := "{u+2080}"  ; (₀) subscript 0
+dkGreekAlphabet.item["!"] := "{u+2081}"  ; (₁) subscript 1
+dkGreekAlphabet.item["@"] := "{u+2082}"  ; (₂) subscript 2
+dkGreekAlphabet.item["#"] := "{u+2083}"  ; (₃) subscript 3
+dkGreekAlphabet.item["$"] := "{u+2084}"  ; (₄) subscript 4
+dkGreekAlphabet.item["%"] := "{u+2085}"  ; (₅) subscript 5
+dkGreekAlphabet.item["^"] := "{u+2086}"  ; (₆) subscript 6
+dkGreekAlphabet.item["&"] := "{u+2087}"  ; (₇) subscript 7
+dkGreekAlphabet.item["*"] := "{u+2088}"  ; (₈) subscript 8
+dkGreekAlphabet.item["("] := "{u+2089}"  ; (₉) subscript 9
+dkGreekAlphabet.item[")"] := "{u+2080}"  ; (₀) subscript 0
 dkGreekAlphabet.item[";"] := "{u+208b}"  ; (₋) subscript -
 dkGreekAlphabet.item["'"] := "{u+208c}"  ; (₌) subscript =
 dkGreekAlphabet.item[chr(34)] := "{u+208a}"  ; (₊) subscript +
@@ -866,8 +866,8 @@ dkMathSymbols.item["3"] := "{u+221b}"  ; (∛) cube root
 dkMathSymbols.item["#"] := "{u+221b}"  ; (∛) cube root
 dkMathSymbols.item["4"] := "{u+221c}"  ; (∜) fourth root
 dkMathSymbols.item["$"] := "{u+221c}"  ; (∜) fourth root
-dkMathSymbols.item["5"] := "{u+2031}"  ; (‱) per ten thousand sign
-dkMathSymbols.item["%"] := "{u+2030}"  ; (‰) per mille sign
+dkMathSymbols.item["5"] := "{u+2030}"  ; (‰) per mille sign
+dkMathSymbols.item["%"] := "{u+2031}"  ; (‱) per ten thousand sign
 dkMathSymbols.item["6"] := "{u+2220}"  ; (∠) angle symbol
 dkMathSymbols.item["^"] := "{u+2220}"  ; (∠) angle symbol
 dkMathSymbols.item["7"] := "{u+2227}"  ; (∧) logical and
@@ -901,43 +901,195 @@ dkMathSymbols.item["|"] := "{u+2228}"  ; (∨) logical or
 dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 
 
-; Configuration :  Switch positions of symbols and digits; no dead keys on standard layout
+funcSendSecondChar(char) {
+; keeps correct operation after dead key press when Scroll Lock is on
 
-$1::Send {!}         ; exclamation mark
-$+1::Send 1          ; digit 1
+  if GetKeyState("ScrollLock", "T") {
+    if (char == "1")
+      return "!"
+    else if (char == "2")
+      return "@"
+    else if (char == "3")
+      return "#"
+    else if (char == "4")
+      return "$"
+    else if (char == "5")
+      return "%"
+    else if (char == "6")
+      return "^"
+    else if (char == "7")
+      return "&"
+    else if (char == "8")
+      return "*"
+    else if (char == "9")
+      return "("
+    else if (char == "0")
+      return ")"
+    else if (char == "!")
+      return "1"
+    else if (char == "@")
+      return "2"
+    else if (char == "#")
+      return "3"
+    else if (char == "$")
+      return "4"
+    else if (char == "%")
+      return "5"
+    else if (char == "^")
+      return "6"
+    else if (char == "&")
+      return "7"
+    else if (char == "*")
+      return "8"
+    else if (char == "(")
+      return "9"
+    else if (char == ")")
+      return "0"
+    else
+      return char
+  }
+  else
+    return char
+}
 
-$2::Send @           ; at sign
-$+2::Send 2          ; digit 2
 
-$3::Send {#}         ; number sign
-$+3::Send 3          ; digit 3
+; Configuration :  Switch positions of symbols and digits with Scroll Lock toggle; no dead keys on standard layout
 
-$4::Send $           ; dollar sign
-$+4::Send 4          ; digit 4
+$1::
+  if GetKeyState("ScrollLock", "T")
+    Send {!}  ; exclamation mark
+  else
+    Send 1    ; digit 1
+  return
+$+1::
+  if GetKeyState("ScrollLock", "T")
+    Send 1    ; digit 1
+  else
+    Send {!}  ; exclamation mark
+  return
 
-$5::Send `%          ; percent sign
-$+5::Send 5          ; digit 5
+$2::
+  if GetKeyState("ScrollLock", "T")
+    Send @  ; at sign
+  else
+    Send 2  ; digit 2
+  return
+$+2::
+  if GetKeyState("ScrollLock", "T")
+    Send 2  ; digit 2
+  else
+    Send @  ; at sign
+  return
 
-$6::Send {^}{space}  ; circumflex accent
-$+6::Send 6          ; digit 6
+$3::
+  if GetKeyState("ScrollLock", "T")
+    Send {#}  ; number sign
+  else
+    Send 3    ; digit 3
+  return
+$+3::
+  if GetKeyState("ScrollLock", "T")
+    Send 3    ; digit 3
+  else
+    Send {#}  ; number sign
+  return
 
-$7::Send &           ; ampersand
-$+7::Send 7          ; digit 7
+$4::
+  if GetKeyState("ScrollLock", "T")
+    Send $  ; dollar sign
+  else
+    Send 4  ; digit 4
+  return
+$+4::
+  if GetKeyState("ScrollLock", "T")
+    Send 4  ; digit 4
+  else
+    Send $  ; dollar sign
+  return
 
-$8::Send *           ; asterisk
-$+8::Send 8          ; digit 8
+$5::
+  if GetKeyState("ScrollLock", "T")
+    Send `%  ; percent sign
+  else
+    Send 5   ; digit 5
+  return
+$+5::
+  if GetKeyState("ScrollLock", "T")
+    Send 5   ; digit 5
+  else
+    Send `%  ; percent sign
+  return
 
-$9::Send (           ; left parenthesis
-$+9::Send 9          ; digit 9
+$6::
+  if GetKeyState("ScrollLock", "T")
+    Send {^}{space}  ; circumflex accent
+  else
+    Send 6           ; digit 6
+  return
+$+6::
+  if GetKeyState("ScrollLock", "T")
+    Send 6           ; digit 6
+  else
+    Send {^}{space}  ; circumflex accent
+  return
 
-$0::Send )           ; right parenthesis
-$+0::Send 0          ; digit 0
+$7::
+  if GetKeyState("ScrollLock", "T")
+    Send &  ; ampersand
+  else
+    Send 7  ; digit 7
+  return
+$+7::
+  if GetKeyState("ScrollLock", "T")
+    Send 7  ; digit 7
+  else
+    Send &  ; ampersand
+  return
 
-$`::Send ``{space}   ; grave accent
-$~::Send ~{space}    ; tilde
+$8::
+  if GetKeyState("ScrollLock", "T")
+    Send *  ; asterisk
+  else
+    Send 8  ; digit 8
+  return
+$+8::
+  if GetKeyState("ScrollLock", "T")
+    Send 8  ; digit 8
+  else
+    Send *  ; asterisk
+  return
 
-$'::Send '{space}    ; apostrophe
-$"::Send `"{space}   ; quotation mark
+$9::
+  if GetKeyState("ScrollLock", "T")
+    Send (  ; left parenthesis
+  else
+    Send 9  ; digit 9
+  return
+$+9::
+  if GetKeyState("ScrollLock", "T")
+    Send 9  ; digit 9
+  else
+    Send (  ; left parenthesis
+  return
+
+$0::
+  if GetKeyState("ScrollLock", "T")
+    Send )  ; right parenthesis
+  else
+    Send 0  ; digit 0
+  return
+$+0::
+  if GetKeyState("ScrollLock", "T")
+    Send 0  ; digit 0
+  else
+    Send )  ; right parenthesis
+  return
+
+$`::Send ``{space}  ; grave accent
+$~::Send ~{space}   ; tilde
+
+$'::Send '{space}   ; apostrophe
+$"::Send `"{space}  ; quotation mark
 
 
 ; Configuration :  'AltGr' and 'AltGr + Shift' on United States-International
@@ -1320,77 +1472,77 @@ $"::Send `"{space}   ; quotation mark
 
 <^>!6::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkCircumflex.item[key]
+  Send % dkCircumflex.item[funcSendSecondChar(key)]
   key := ""  ; avoids leaking content via debug properties
   return
 <^>!+6::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkCaron.item[key]
+  Send % dkCaron.item[funcSendSecondChar(key)]
   key := ""  ; avoids leaking content via debug properties
   return
 
 <^>!7::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkRingDotAbove.item[key]
+  Send % dkRingDotAbove.item[funcSendSecondChar(key)]
   key := ""
   return
 <^>!+7::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkMacronStroke.item[key]
+  Send % dkMacronStroke.item[funcSendSecondChar(key)]
   key := ""
   return
 
 <^>!-::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkCedillaOgonek.item[key]
+  Send % dkCedillaOgonek.item[funcSendSecondChar(key)]
   key := ""
   return
 <^>!_::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkBreveSpecial.item[key]
+  Send % dkBreveSpecial.item[funcSendSecondChar(key)]
   key := ""
   return
 
 <^>!'::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkAcuteAccent.item[key]
+  Send % dkAcuteAccent.item[funcSendSecondChar(key)]
   key := ""
   return
 <^>!"::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkDiaeresis.item[key]
+  Send % dkDiaeresis.item[funcSendSecondChar(key)]
   key := ""
   return
 
 <^>!`::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkGraveAccent.item[key]
+  Send % dkGraveAccent.item[funcSendSecondChar(key)]
   key := ""
   return
 <^>!~::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkTilde.item[key]
+  Send % dkTilde.item[funcSendSecondChar(key)]
   key := ""
   return
 
 <^>!\::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkNotSign.item[key]
+  Send % dkNotSign.item[funcSendSecondChar(key)]
   key := ""
   return
 <^>!|::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkBrokenBar.item[key]
+  Send % dkBrokenBar.item[funcSendSecondChar(key)]
   key := ""
   return
 
 <^>!m::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkGreekAlphabet.item[key]
+  Send % dkGreekAlphabet.item[funcSendSecondChar(key)]
   key := ""
   return
 <^>!+m::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkMathSymbols.item[key]
+  Send % dkMathSymbols.item[funcSendSecondChar(key)]
   key := ""
   return
