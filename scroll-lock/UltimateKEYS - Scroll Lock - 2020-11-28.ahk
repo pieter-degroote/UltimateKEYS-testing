@@ -901,6 +901,58 @@ dkMathSymbols.item["|"] := "{u+2228}"  ; (∨) logical or
 dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 
 
+funcSendSecondChar(char) {
+; keeps correct operation after dead key press when Scroll Lock is on
+
+  if GetKeyState("ScrollLock", "T") {
+    if (char == "1")
+      return "!"
+    else if (char == "2")
+      return "@"
+    else if (char == "3")
+      return "#"
+    else if (char == "4")
+      return "$"
+    else if (char == "5")
+      return "%"
+    else if (char == "6")
+      return "^"
+    else if (char == "7")
+      return "&"
+    else if (char == "8")
+      return "*"
+    else if (char == "9")
+      return "("
+    else if (char == "0")
+      return ")"
+    else if (char == "!")
+      return "1"
+    else if (char == "@")
+      return "2"
+    else if (char == "#")
+      return "3"
+    else if (char == "$")
+      return "4"
+    else if (char == "%")
+      return "5"
+    else if (char == "^")
+      return "6"
+    else if (char == "&")
+      return "7"
+    else if (char == "*")
+      return "8"
+    else if (char == "(")
+      return "9"
+    else if (char == ")")
+      return "0"
+    else
+      return char
+  }
+  else
+    return char
+}
+
+
 ; Configuration :  Switch positions of symbols and digits with Scroll Lock toggle
 
 $1::
@@ -1561,14 +1613,14 @@ $+0::
 >!6::
   Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkCircumflex.item[key]
+  Send % dkCircumflex.item[funcSendSecondChar(key)]
   key := ""  ; avoids leaking content via debug properties
   Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues (for second character)
   return
 >!+6::
   Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkCaron.item[key]
+  Send % dkCaron.item[funcSendSecondChar(key)]
   key := ""  ; avoids leaking content via debug properties
   Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues (for second character)
   return
@@ -1576,14 +1628,14 @@ $+0::
 >!7::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkRingDotAbove.item[key]
+  Send % dkRingDotAbove.item[funcSendSecondChar(key)]
   key := ""
   Send {blind}{vkE8}
   return
 >!+7::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkMacronStroke.item[key]
+  Send % dkMacronStroke.item[funcSendSecondChar(key)]
   key := ""
   Send {blind}{vkE8}
   return
@@ -1591,14 +1643,14 @@ $+0::
 >!-::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkCedillaOgonek.item[key]
+  Send % dkCedillaOgonek.item[funcSendSecondChar(key)]
   key := ""
   Send {blind}{vkE8}
   return
 >!_::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkBreveSpecial.item[key]
+  Send % dkBreveSpecial.item[funcSendSecondChar(key)]
   key := ""
   Send {blind}{vkE8}
   return
@@ -1606,14 +1658,14 @@ $+0::
 >!'::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkAcuteAccent.item[key]
+  Send % dkAcuteAccent.item[funcSendSecondChar(key)]
   key := ""
   Send {blind}{vkE8}
   return
 >!"::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkDiaeresis.item[key]
+  Send % dkDiaeresis.item[funcSendSecondChar(key)]
   key := ""
   Send {blind}{vkE8}
   return
@@ -1621,14 +1673,14 @@ $+0::
 >!`::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkGraveAccent.item[key]
+  Send % dkGraveAccent.item[funcSendSecondChar(key)]
   key := ""
   Send {blind}{vkE8}
   return
 >!~::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkTilde.item[key]
+  Send % dkTilde.item[funcSendSecondChar(key)]
   key := ""
   Send {blind}{vkE8}
   return
@@ -1636,14 +1688,14 @@ $+0::
 >!\::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkNotSign.item[key]
+  Send % dkNotSign.item[funcSendSecondChar(key)]
   key := ""
   Send {blind}{vkE8}
   return
 >!|::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkBrokenBar.item[key]
+  Send % dkBrokenBar.item[funcSendSecondChar(key)]
   key := ""
   Send {blind}{vkE8}
   return
@@ -1651,14 +1703,14 @@ $+0::
 >!m::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkGreekAlphabet.item[key]
+  Send % dkGreekAlphabet.item[funcSendSecondChar(key)]
   key := ""
   Send {blind}{vkE8}
   return
 >!+m::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkMathSymbols.item[key]
+  Send % dkMathSymbols.item[funcSendSecondChar(key)]
   key := ""
   Send {blind}{vkE8}
   return

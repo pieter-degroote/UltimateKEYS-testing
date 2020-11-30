@@ -905,6 +905,58 @@ dkMathSymbols["|"] := "{u+2228}"  ; (∨) logical or
 dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 
 
+funcSendSecondChar(char) {
+; keeps correct operation after dead key press when Scroll Lock is on
+
+  if GetKeyState("ScrollLock", "T") {
+    if (char == "1")
+      return "!"
+    else if (char == "2")
+      return "@"
+    else if (char == "3")
+      return "#"
+    else if (char == "4")
+      return "$"
+    else if (char == "5")
+      return "%"
+    else if (char == "6")
+      return "^"
+    else if (char == "7")
+      return "&"
+    else if (char == "8")
+      return "*"
+    else if (char == "9")
+      return "("
+    else if (char == "0")
+      return ")"
+    else if (char == "!")
+      return "1"
+    else if (char == "@")
+      return "2"
+    else if (char == "#")
+      return "3"
+    else if (char == "$")
+      return "4"
+    else if (char == "%")
+      return "5"
+    else if (char == "^")
+      return "6"
+    else if (char == "&")
+      return "7"
+    else if (char == "*")
+      return "8"
+    else if (char == "(")
+      return "9"
+    else if (char == ")")
+      return "0"
+    else
+      return char
+  }
+  else
+    return char
+}
+
+
 ; Configuration :  Switch positions of symbols and digits with Scroll Lock toggle
 
 $1:: {
@@ -1568,8 +1620,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkCircumflex.Has(ih.Input)
-    Send dkCircumflex[ih.Input]
+  if dkCircumflex.Has(funcSendSecondChar(ih.Input))
+    Send dkCircumflex[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues (for second character)
 }
 >!+6:: {
@@ -1577,8 +1629,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkCaron.Has(ih.Input)
-    Send dkCaron[ih.Input]
+  if dkCaron.Has(funcSendSecondChar(ih.Input))
+    Send dkCaron[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues (for second character)
 }
 
@@ -1587,8 +1639,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkRingDotAbove.Has(ih.Input)
-    Send dkRingDotAbove[ih.Input]
+  if dkRingDotAbove.Has(funcSendSecondChar(ih.Input))
+    Send dkRingDotAbove[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!+7:: {
@@ -1596,8 +1648,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkMacronStroke.Has(ih.Input)
-    Send dkMacronStroke[ih.Input]
+  if dkMacronStroke.Has(funcSendSecondChar(ih.Input))
+    Send dkMacronStroke[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 
@@ -1606,8 +1658,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkCedillaOgonek.Has(ih.Input)
-    Send dkCedillaOgonek[ih.Input]
+  if dkCedillaOgonek.Has(funcSendSecondChar(ih.Input))
+    Send dkCedillaOgonek[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!_:: {
@@ -1615,8 +1667,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkBreveSpecial.Has(ih.Input)
-    Send dkBreveSpecial[ih.Input]
+  if dkBreveSpecial.Has(funcSendSecondChar(ih.Input))
+    Send dkBreveSpecial[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 
@@ -1625,8 +1677,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkAcuteAccent.Has(ih.Input)
-    Send dkAcuteAccent[ih.Input]
+  if dkAcuteAccent.Has(funcSendSecondChar(ih.Input))
+    Send dkAcuteAccent[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!":: {
@@ -1634,8 +1686,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkDiaeresis.Has(ih.Input)
-    Send dkDiaeresis[ih.Input]
+  if dkDiaeresis.Has(funcSendSecondChar(ih.Input))
+    Send dkDiaeresis[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 
@@ -1644,8 +1696,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkGraveAccent.Has(ih.Input)
-    Send dkGraveAccent[ih.Input]
+  if dkGraveAccent.Has(funcSendSecondChar(ih.Input))
+    Send dkGraveAccent[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!~:: {
@@ -1653,8 +1705,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkTilde.Has(ih.Input)
-    Send dkTilde[ih.Input]
+  if dkTilde.Has(funcSendSecondChar(ih.Input))
+    Send dkTilde[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 
@@ -1663,8 +1715,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkNotSign.Has(ih.Input)
-    Send dkNotSign[ih.Input]
+  if dkNotSign.Has(funcSendSecondChar(ih.Input))
+    Send dkNotSign[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!|:: {
@@ -1672,8 +1724,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkBrokenBar.Has(ih.Input)
-    Send dkBrokenBar[ih.Input]
+  if dkBrokenBar.Has(funcSendSecondChar(ih.Input))
+    Send dkBrokenBar[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 
@@ -1682,8 +1734,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkGreekAlphabet.Has(ih.Input)
-    Send dkGreekAlphabet[ih.Input]
+  if dkGreekAlphabet.Has(funcSendSecondChar(ih.Input))
+    Send dkGreekAlphabet[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!+m:: {
@@ -1691,7 +1743,7 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkMathSymbols.Has(ih.Input)
-    Send dkMathSymbols[ih.Input]
+  if dkMathSymbols.Has(funcSendSecondChar(ih.Input))
+    Send dkMathSymbols[funcSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
