@@ -957,7 +957,7 @@ funcSendSecondChar(char) {
 }
 
 
-; Configuration :  Switch positions of symbols and digits with Scroll Lock toggle
+; Configuration :  Switch positions of symbols and digits with Scroll Lock
 
 $1:: {
   if GetKeyState("ScrollLock", "T")

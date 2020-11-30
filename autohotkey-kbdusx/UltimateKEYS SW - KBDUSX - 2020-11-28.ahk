@@ -953,7 +953,7 @@ funcSendSecondChar(char) {
 }
 
 
-; Configuration :  Switch positions of symbols and digits with Scroll Lock toggle; no dead keys on standard layout
+; Configuration :  Switch positions of symbols and digits with Scroll Lock; no dead keys on standard layout
 
 $1::
   if GetKeyState("ScrollLock", "T")
