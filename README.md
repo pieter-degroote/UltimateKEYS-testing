@@ -6,9 +6,9 @@ Testing repository for UltimateKEYS
 ## Switching between 'Classic' and 'SW' behavior with Scroll Lock toggle
 
 This version allows you to switch dynamically between 'Classic' and 'SW' by using the Scroll Lock.  
-Scroll Lock disabled :  Classic behavior  
-Scroll Lock enabled :  SW behavior  
--&gt; See the folder **`scroll-lock`**.
+Scroll Lock off : &nbsp;Classic operation  
+Scroll Lock on : &nbsp;&nbsp;SW operation  
+-&gt; **Implemented into the SW editions for AutoHotkey** (except for 'azerty-test').
 
 ## Experimental support for AutoHotkey v2.0 alpha :
 
