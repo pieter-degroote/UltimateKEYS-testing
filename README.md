@@ -3,12 +3,11 @@ Testing repository for UltimateKEYS
 
 **Official release :**&emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)
 
-## Switching between 'classic' and 'SW' operation with Scroll Lock
+## Compact Edition (CE) :
 
-This version allows you to switch dynamically between 'classic' and 'SW' by using the Scroll Lock.  
-Scroll Lock off : &nbsp;classic operation  
-Scroll Lock on : &nbsp;SW operation  
-**-&gt; Implemented into the SW editions for AutoHotkey.**
+This slimmed down 'Compact Edition' (CE) allows for easier input when using Western languages.  
+Please note that this is a test version.  
+See the folder **`compact-edition`** for the overlay scripts and images.
 
 ## Executables for Windows x64 :
 
@@ -33,11 +32,12 @@ See the folder **`azerty-test`** for an experimental edition featuring an AZERTY
 
 Belgian AZERTY layouts in AHK (overlay scripts for US QWERTY). These scripts can also be used to learn about the different key remappings and assignments in AutoHotkey.
 
-## Compact Edition (CE) :
+## Switching between 'classic' and 'SW' operation with Scroll Lock
 
-This slimmed down 'Compact Edition' (CE) allows for easier input when using Western languages.  
-Please note that this is a test version.  
-See the folder **`compact-edition`** for the overlay scripts and images.
+This version allows you to switch dynamically between 'classic' and 'SW' by using the Scroll Lock.  
+Scroll Lock off : &nbsp;classic operation  
+Scroll Lock on : &nbsp;SW operation  
+**-&gt; Implemented into the SW editions for AutoHotkey.**
 
 ## Important - Security Warning :
 
