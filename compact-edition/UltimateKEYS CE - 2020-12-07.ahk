@@ -1,4 +1,4 @@
-; UltimateKEYS SW CE - 2020-12-07.ahk
+; UltimateKEYS CE - 2020-12-07.ahk
 
 ; Created by :  Pieter Degroote
 
@@ -22,59 +22,59 @@ ListLines Off  ; omits recently executed lines from history (for privacy and sec
 ; Dead Key :  Miscellaneous
 
 dkMisc := ComObjCreate("Scripting.Dictionary")
-dkMisc.item("a") := "{u+0101}"  ; (ā) a with macron
-dkMisc.item("A") := "{u+0100}"  ; (Ā) A with macron
-dkMisc.item("e") := "{u+0113}"  ; (ē) e with macron
-dkMisc.item("E") := "{u+0112}"  ; (Ē) E with macron
-dkMisc.item("i") := "{u+012b}"  ; (ī) i with macron
-dkMisc.item("I") := "{u+012a}"  ; (Ī) I with macron
-dkMisc.item("o") := "{u+014d}"  ; (ō) o with macron
-dkMisc.item("O") := "{u+014c}"  ; (Ō) O with macron
-dkMisc.item("u") := "{u+016b}"  ; (ū) u with macron
-dkMisc.item("U") := "{u+016a}"  ; (Ū) U with macron
-dkMisc.item("y") := "{u+0233}"  ; (ȳ) y with macron
-dkMisc.item("Y") := "{u+0232}"  ; (Ȳ) Y with macron
+dkMisc.item["a"] := "{u+0101}"  ; (ā) a with macron
+dkMisc.item["A"] := "{u+0100}"  ; (Ā) A with macron
+dkMisc.item["e"] := "{u+0113}"  ; (ē) e with macron
+dkMisc.item["E"] := "{u+0112}"  ; (Ē) E with macron
+dkMisc.item["i"] := "{u+012b}"  ; (ī) i with macron
+dkMisc.item["I"] := "{u+012a}"  ; (Ī) I with macron
+dkMisc.item["o"] := "{u+014d}"  ; (ō) o with macron
+dkMisc.item["O"] := "{u+014c}"  ; (Ō) O with macron
+dkMisc.item["u"] := "{u+016b}"  ; (ū) u with macron
+dkMisc.item["U"] := "{u+016a}"  ; (Ū) U with macron
+dkMisc.item["y"] := "{u+0233}"  ; (ȳ) y with macron
+dkMisc.item["Y"] := "{u+0232}"  ; (Ȳ) Y with macron
 dkMisc.item["b"] := "{u+2022}"  ; (•) bullet
 dkMisc.item["B"] := "{u+2022}"  ; (•) bullet
-dkMisc.item("c") := "{u+00a4}"  ; (¤) currency sign
-dkMisc.item("C") := "{u+00a4}"  ; (¤) currency sign
+dkMisc.item["c"] := "{u+00a4}"  ; (¤) currency sign
+dkMisc.item["C"] := "{u+00a4}"  ; (¤) currency sign
 dkMisc.item["f"] := "{u+0192}"  ; (ƒ) f with hook
 dkMisc.item["F"] := "{u+0192}"  ; (ƒ) f with hook
-dkMisc.item("n") := "{u+207f}"  ; (ⁿ) superscript n
-dkMisc.item("N") := "{u+207f}"  ; (ⁿ) superscript n
-dkMisc.item("r") := "{u+00ae}"  ; (®) registered sign
-dkMisc.item("R") := "{u+00ae}"  ; (®) registered sign
-dkMisc.item("s") := "{u+0161}"  ; (š) s with caron
-dkMisc.item("S") := "{u+0160}"  ; (Š) S with caron
+dkMisc.item["n"] := "{u+207f}"  ; (ⁿ) superscript n
+dkMisc.item["N"] := "{u+207f}"  ; (ⁿ) superscript n
+dkMisc.item["r"] := "{u+00ae}"  ; (®) registered sign
+dkMisc.item["R"] := "{u+00ae}"  ; (®) registered sign
+dkMisc.item["s"] := "{u+0161}"  ; (š) s with caron
+dkMisc.item["S"] := "{u+0160}"  ; (Š) S with caron
 dkMisc.item["t"] := "{u+2122}"  ; (™) trademark symbol
 dkMisc.item["T"] := "{u+2122}"  ; (™) trademark symbol
-dkMisc.item("z") := "{u+017e}"  ; (ž) z with caron
-dkMisc.item("Z") := "{u+017d}"  ; (Ž) Z with caron
-dkMisc.item("1") := "{u+2260}"  ; (≠) not equal to
-dkMisc.item("!") := "{u+2260}"  ; (≠) not equal to
-dkMisc.item("5") := "{u+2030}"  ; (‰) per mille sign
-dkMisc.item("%") := "{u+2030}"  ; (‰) per mille sign
-dkMisc.item("8") := "{u+221e}"  ; (∞) infinity symbol
-dkMisc.item("*") := "{u+221e}"  ; (∞) infinity symbol
-dkMisc.item("``") := "{u+2248}" ; (≈) almost equal to
-dkMisc.item("~") := "{u+2248}"  ; (≈) almost equal to
-dkMisc.item(",") := "{u+2264}"  ; (≤) less-than or equal to
-dkMisc.item("<") := "{u+2264}"  ; (≤) less-than or equal to
-dkMisc.item(".") := "{u+2265}"  ; (≥) greater-than or equal to
-dkMisc.item(">") := "{u+2265}"  ; (≥) greater-than or equal to
-dkMisc.item(" ") := "{u+00ac}"  ; (¬) not sign
+dkMisc.item["z"] := "{u+017e}"  ; (ž) z with caron
+dkMisc.item["Z"] := "{u+017d}"  ; (Ž) Z with caron
+dkMisc.item["1"] := "{u+2260}"  ; (≠) not equal to
+dkMisc.item["!"] := "{u+2260}"  ; (≠) not equal to
+dkMisc.item["5"] := "{u+2030}"  ; (‰) per mille sign
+dkMisc.item["%"] := "{u+2030}"  ; (‰) per mille sign
+dkMisc.item["8"] := "{u+221e}"  ; (∞) infinity symbol
+dkMisc.item["*"] := "{u+221e}"  ; (∞) infinity symbol
+dkMisc.item["``"] := "{u+2248}" ; (≈) almost equal to
+dkMisc.item["~"] := "{u+2248}"  ; (≈) almost equal to
+dkMisc.item[","] := "{u+2264}"  ; (≤) less-than or equal to
+dkMisc.item["<"] := "{u+2264}"  ; (≤) less-than or equal to
+dkMisc.item["."] := "{u+2265}"  ; (≥) greater-than or equal to
+dkMisc.item[">"] := "{u+2265}"  ; (≥) greater-than or equal to
+dkMisc.item[" "] := "{u+00ac}"  ; (¬) not sign
 
 
 ; Dead Key :  Tilde
 
 dkTilde := ComObjCreate("Scripting.Dictionary")
-dkTilde.item("a") := "{u+00e3}"  ; (ã) a with tilde
-dkTilde.item("A") := "{u+00c3}"  ; (Ã) A with tilde
-dkTilde.item("n") := "{u+00f1}"  ; (ñ) n with tilde
-dkTilde.item("N") := "{u+00d1}"  ; (Ñ) N with tilde
-dkTilde.item("o") := "{u+00f5}"  ; (õ) o with tilde
-dkTilde.item("O") := "{u+00d5}"  ; (Õ) O with tilde
-dkTilde.item(" ") := "{u+00a6}"  ; (¦) broken bar
+dkTilde.item["a"] := "{u+00e3}"  ; (ã) a with tilde
+dkTilde.item["A"] := "{u+00c3}"  ; (Ã) A with tilde
+dkTilde.item["n"] := "{u+00f1}"  ; (ñ) n with tilde
+dkTilde.item["N"] := "{u+00d1}"  ; (Ñ) N with tilde
+dkTilde.item["o"] := "{u+00f5}"  ; (õ) o with tilde
+dkTilde.item["O"] := "{u+00d5}"  ; (Õ) O with tilde
+dkTilde.item[" "] := "{u+00a6}"  ; (¦) broken bar
 
 
 ; Configuration :  'Right Alt' and 'Right Alt + Shift' on US QWERTY

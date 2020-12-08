@@ -1,4 +1,4 @@
-; UltimateKEYS CE SW - 2020-12-08.ahk
+; UltimateKEYS CE - 2020-12-08.ahk
 
 ; Created by :  Pieter Degroote
 
@@ -22,59 +22,59 @@ ListLines Off  ; omits recently executed lines from history (for privacy and sec
 ; Dead Key :  Not Sign
 
 dkNotSign := ComObjCreate("Scripting.Dictionary")
-dkNotSign.item("a") := "{u+0101}"  ; (ā) a with macron
-dkNotSign.item("A") := "{u+0100}"  ; (Ā) A with macron
-dkNotSign.item("d") := "{u+00f0}"  ; (ð) small letter eth
-dkNotSign.item("D") := "{u+00d0}"  ; (Ð) capital letter eth
-dkNotSign.item("e") := "{u+0113}"  ; (ē) e with macron
-dkNotSign.item("E") := "{u+0112}"  ; (Ē) E with macron
-dkNotSign.item("i") := "{u+012b}"  ; (ī) i with macron
-dkNotSign.item("I") := "{u+012a}"  ; (Ī) I with macron
-dkNotSign.item("o") := "{u+014d}"  ; (ō) o with macron
-dkNotSign.item("O") := "{u+014c}"  ; (Ō) O with macron
-dkNotSign.item("u") := "{u+016b}"  ; (ū) u with macron
-dkNotSign.item("U") := "{u+016a}"  ; (Ū) U with macron
-dkNotSign.item("y") := "{u+0233}"  ; (ȳ) y with macron
-dkNotSign.item("Y") := "{u+0232}"  ; (Ȳ) Y with macron
+dkNotSign.item["a"] := "{u+0101}"  ; (ā) a with macron
+dkNotSign.item["A"] := "{u+0100}"  ; (Ā) A with macron
+dkNotSign.item["d"] := "{u+00f0}"  ; (ð) small letter eth
+dkNotSign.item["D"] := "{u+00d0}"  ; (Ð) capital letter eth
+dkNotSign.item["e"] := "{u+0113}"  ; (ē) e with macron
+dkNotSign.item["E"] := "{u+0112}"  ; (Ē) E with macron
+dkNotSign.item["i"] := "{u+012b}"  ; (ī) i with macron
+dkNotSign.item["I"] := "{u+012a}"  ; (Ī) I with macron
+dkNotSign.item["o"] := "{u+014d}"  ; (ō) o with macron
+dkNotSign.item["O"] := "{u+014c}"  ; (Ō) O with macron
+dkNotSign.item["u"] := "{u+016b}"  ; (ū) u with macron
+dkNotSign.item["U"] := "{u+016a}"  ; (Ū) U with macron
+dkNotSign.item["y"] := "{u+0233}"  ; (ȳ) y with macron
+dkNotSign.item["Y"] := "{u+0232}"  ; (Ȳ) Y with macron
 dkNotSign.item["b"] := "{u+2022}"  ; (•) bullet
 dkNotSign.item["B"] := "{u+2022}"  ; (•) bullet
-dkNotSign.item("c") := "{u+00a4}"  ; (¤) currency sign
-dkNotSign.item("C") := "{u+00a4}"  ; (¤) currency sign
+dkNotSign.item["c"] := "{u+00a4}"  ; (¤) currency sign
+dkNotSign.item["C"] := "{u+00a4}"  ; (¤) currency sign
 dkNotSign.item["f"] := "{u+0192}"  ; (ƒ) f with hook
 dkNotSign.item["F"] := "{u+0192}"  ; (ƒ) f with hook
-dkNotSign.item("s") := "{u+0161}"  ; (š) s with caron
-dkNotSign.item("S") := "{u+0160}"  ; (Š) S with caron
+dkNotSign.item["s"] := "{u+0161}"  ; (š) s with caron
+dkNotSign.item["S"] := "{u+0160}"  ; (Š) S with caron
 dkNotSign.item["t"] := "{u+00fe}"  ; (þ) small letter thorn
 dkNotSign.item["T"] := "{u+00de}"  ; (Þ) capital letter thorn
-dkNotSign.item("z") := "{u+017e}"  ; (ž) z with caron
-dkNotSign.item("Z") := "{u+017d}"  ; (Ž) Z with caron
-dkNotSign.item("1") := "{u+2260}"  ; (≠) not equal to
-dkNotSign.item("!") := "{u+2260}"  ; (≠) not equal to
-dkNotSign.item("5") := "{u+2030}"  ; (‰) per mille sign
-dkNotSign.item("%") := "{u+2030}"  ; (‰) per mille sign
-dkNotSign.item("8") := "{u+221e}"  ; (∞) infinity symbol
-dkNotSign.item("*") := "{u+221e}"  ; (∞) infinity symbol
-dkNotSign.item("``") := "{u+2248}" ; (≈) almost equal to
-dkNotSign.item("~") := "{u+2248}"  ; (≈) almost equal to
-dkNotSign.item(",") := "{u+2264}"  ; (≤) less-than or equal to
-dkNotSign.item("<") := "{u+2264}"  ; (≤) less-than or equal to
-dkNotSign.item(".") := "{u+2265}"  ; (≥) greater-than or equal to
-dkNotSign.item(">") := "{u+2265}"  ; (≥) greater-than or equal to
-dkNotSign.item(" ") := "{u+00ac}"  ; (¬) not sign
+dkNotSign.item["z"] := "{u+017e}"  ; (ž) z with caron
+dkNotSign.item["Z"] := "{u+017d}"  ; (Ž) Z with caron
+dkNotSign.item["1"] := "{u+2260}"  ; (≠) not equal to
+dkNotSign.item["!"] := "{u+2260}"  ; (≠) not equal to
+dkNotSign.item["5"] := "{u+2030}"  ; (‰) per mille sign
+dkNotSign.item["%"] := "{u+2030}"  ; (‰) per mille sign
+dkNotSign.item["8"] := "{u+221e}"  ; (∞) infinity symbol
+dkNotSign.item["*"] := "{u+221e}"  ; (∞) infinity symbol
+dkNotSign.item["``"] := "{u+2248}" ; (≈) almost equal to
+dkNotSign.item["~"] := "{u+2248}"  ; (≈) almost equal to
+dkNotSign.item[","] := "{u+2264}"  ; (≤) less-than or equal to
+dkNotSign.item["<"] := "{u+2264}"  ; (≤) less-than or equal to
+dkNotSign.item["."] := "{u+2265}"  ; (≥) greater-than or equal to
+dkNotSign.item[">"] := "{u+2265}"  ; (≥) greater-than or equal to
+dkNotSign.item[" "] := "{u+00ac}"  ; (¬) not sign
 
 
 ; Dead Key :  Broken Bar
 
 dkBrokenBar := ComObjCreate("Scripting.Dictionary")
-dkBrokenBar.item("a") := "{u+00aa}"  ; (ª) feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
-dkBrokenBar.item("A") := "{u+00aa}"  ; (ª) feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
-dkBrokenBar.item("o") := "{u+00ba}"  ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
-dkBrokenBar.item("O") := "{u+00ba}"  ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+dkBrokenBar.item["a"] := "{u+00aa}"  ; (ª) feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+dkBrokenBar.item["A"] := "{u+00aa}"  ; (ª) feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+dkBrokenBar.item["o"] := "{u+00ba}"  ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+dkBrokenBar.item["O"] := "{u+00ba}"  ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 dkBrokenBar.item["t"] := "{u+2122}"  ; (™) trademark symbol
 dkBrokenBar.item["T"] := "{u+2122}"  ; (™) trademark symbol
 dkBrokenBar.item["y"] := "{u+00fd}"  ; (ý) y with acute
 dkBrokenBar.item["Y"] := "{u+00dd}"  ; (Ý) Y with acute
-dkBrokenBar.item(" ") := "{u+00a6}"  ; (¦) broken bar
+dkBrokenBar.item[" "] := "{u+00a6}"  ; (¦) broken bar
 
 
 ; Configuration :  'Right Alt' and 'Right Alt + Shift' on US QWERTY
@@ -84,14 +84,14 @@ dkBrokenBar.item(" ") := "{u+00a6}"  ; (¦) broken bar
     Send {u+00c4}  ; (Ä) A with diaeresis
   else
     Send {u+00e4}  ; (ä) a with diaeresis
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues
+  Send {blind}{vkE8}
   return
 >!+a::
   if GetKeyState("CapsLock", "T")
     Send {u+00e4}  ; (ä) a with diaeresis
   else
     Send {u+00c4}  ; (Ä) A with diaeresis
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues
+  Send {blind}{vkE8}
   return
 
 >!z::
@@ -680,16 +680,16 @@ dkBrokenBar.item(" ") := "{u+00a6}"  ; (¦) broken bar
 ; Configuration :  Dead Keys on 'Right Alt' and 'Right Alt + Shift'
 
 >!\::
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues
+  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkNotSign.item[key]
-  key := ""  ; avoids leaking content via debug properties
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues (for second character)
+  key := ""
+  Send {blind}{vkE8}
   return
 >!|::
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues
+  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkBrokenBar.item[key]
-  key := ""  ; avoids leaking content via debug properties
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues (for second character)
+  key := ""
+  Send {blind}{vkE8}
   return
