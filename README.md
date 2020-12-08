@@ -35,7 +35,8 @@ Belgian AZERTY layouts in AHK (overlay scripts for US QWERTY). These scripts can
 
 ## Compact Edition (CE) :
 
-This slimmed down 'Compact Edition' (CE) allows for easier input when using Western languages. Please note that this is a test version.  
+This slimmed down 'Compact Edition' (CE) allows for easier input when using Western languages.  
+Please note that this is a test version.  
 See the folder **`compact-edition`** for the overlay scripts and images.
 
 ## Important - Security Warning :
