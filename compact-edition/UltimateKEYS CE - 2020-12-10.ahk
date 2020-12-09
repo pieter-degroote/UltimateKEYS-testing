@@ -56,10 +56,14 @@ dkNotSign.item["5"] := "{u+2030}"  ; (‰) per mille sign
 dkNotSign.item["%"] := "{u+2030}"  ; (‰) per mille sign
 dkNotSign.item["8"] := "{u+221e}"  ; (∞) infinity symbol
 dkNotSign.item["*"] := "{u+221e}"  ; (∞) infinity symbol
+dkNotSign.item["9"] := "{u+2002}"  ;     en space
+dkNotSign.item["("] := "{u+2002}"  ;     en space
+dkNotSign.item["0"] := "{u+2003}"  ;     em space
+dkNotSign.item[")"] := "{u+2003}"  ;     em space
 dkNotSign.item["-"] := "{u+2013}"  ; (–) en dash
-dkNotSign.item["_"] := "{u+2014}"  ; (—) em dash
-dkNotSign.item["="] := "{u+2002}"  ;     en space
-dkNotSign.item["+"] := "{u+2003}"  ;     em space
+dkNotSign.item["_"] := "{u+2013}"  ; (–) en dash
+dkNotSign.item["="] := "{u+2014}"  ; (—) em dash
+dkNotSign.item["+"] := "{u+2014}"  ; (—) em dash
 dkNotSign.item["``"] := "{u+2248}" ; (≈) almost equal to
 dkNotSign.item["~"] := "{u+2248}"  ; (≈) almost equal to
 dkNotSign.item[","] := "{u+2264}"  ; (≤) less-than or equal to
