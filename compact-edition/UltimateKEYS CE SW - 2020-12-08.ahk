@@ -632,15 +632,6 @@ $+0::
   Send {blind}{vkE8}
   return
 
->!-::
-  Send {u+00ae}  ; (®) registered sign
-  Send {blind}{vkE8}
-  return
->!_::
-  Send {u+207f}  ; (ⁿ) superscript n
-  Send {blind}{vkE8}
-  return
-
 >!'::
   if GetKeyState("CapsLock", "T")
     Send {u+00db}  ; (Û) U with circumflex
@@ -680,15 +671,6 @@ $+0::
   return
 >!+s::
   Send {u+00a7}  ; (§) section sign
-  Send {blind}{vkE8}
-  return
-
->!/::
-  Send {u+00bf}  ; (¿) inverted question mark
-  Send {blind}{vkE8}
-  return
->!?::
-  Send {u+2026}  ; (…) horizontal ellipsis
   Send {blind}{vkE8}
   return
 
@@ -764,6 +746,15 @@ $+0::
   Send {blind}{vkE8}
   return
 
+>!-::
+  Send {u+00ae}  ; (®) registered sign
+  Send {blind}{vkE8}
+  return
+>!_::
+  Send {u+207f}  ; (ⁿ) superscript n
+  Send {blind}{vkE8}
+  return
+
 >!=::
   Send {u+00d7}  ; (×) multiplication sign
   Send {blind}{vkE8}
@@ -797,6 +788,15 @@ $+0::
   return
 >!+;::
   Send {u+00b7}  ; (·) middle dot
+  Send {blind}{vkE8}
+  return
+
+>!/::
+  Send {u+00bf}  ; (¿) inverted question mark
+  Send {blind}{vkE8}
+  return
+>!?::
+  Send {u+2026}  ; (…) horizontal ellipsis
   Send {blind}{vkE8}
   return
 
