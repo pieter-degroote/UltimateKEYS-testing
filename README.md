@@ -32,6 +32,11 @@ See the folder **`azerty-test`** for an experimental edition featuring an AZERTY
 
 Belgian AZERTY layouts in AHK (overlay scripts for US QWERTY). These scripts can also be used to learn about the different key remappings and assignments in AutoHotkey.
 
+## Romanian Programmers :
+
+A keyboard layout (for AutoHotkey), tailored for Romanian programmers.  
+See the folder **`romanian-prog`** for the overlay scripts and images.
+
 ## Switching between 'classic' and 'SW' operation with Scroll Lock
 
 This version allows you to switch dynamically between 'classic' and 'SW' by using the Scroll Lock.  
