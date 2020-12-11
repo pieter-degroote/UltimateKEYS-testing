@@ -1357,14 +1357,14 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 >!6::
   Send {blind}{vkE8}  ; suppresses circles around mouse pointer
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkCircumflex.item[funcSendSecondChar(key)]
+  Send % dkCircumflex.item[key]
   key := ""  ; avoids leaking content via debug properties
   Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
   return
 >!+6::
   Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkCaron.item[funcSendSecondChar(key)]
+  Send % dkCaron.item[key]
   key := ""  ; avoids leaking content via debug properties
   Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
   return
@@ -1372,14 +1372,14 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 >!7::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkRingDotAbove.item[funcSendSecondChar(key)]
+  Send % dkRingDotAbove.item[key]
   key := ""
   Send {blind}{vkE8}
   return
 >!+7::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkMacronStroke.item[funcSendSecondChar(key)]
+  Send % dkMacronStroke.item[key]
   key := ""
   Send {blind}{vkE8}
   return
@@ -1387,14 +1387,14 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 >!-::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkCedillaOgonek.item[funcSendSecondChar(key)]
+  Send % dkCedillaOgonek.item[key]
   key := ""
   Send {blind}{vkE8}
   return
 >!_::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkBreveSpecial.item[funcSendSecondChar(key)]
+  Send % dkBreveSpecial.item[key]
   key := ""
   Send {blind}{vkE8}
   return
@@ -1402,14 +1402,14 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 >!'::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkAcuteAccent.item[funcSendSecondChar(key)]
+  Send % dkAcuteAccent.item[key]
   key := ""
   Send {blind}{vkE8}
   return
 >!"::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkDiaeresis.item[funcSendSecondChar(key)]
+  Send % dkDiaeresis.item[key]
   key := ""
   Send {blind}{vkE8}
   return
@@ -1417,14 +1417,14 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 >!`::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkGraveAccent.item[funcSendSecondChar(key)]
+  Send % dkGraveAccent.item[key]
   key := ""
   Send {blind}{vkE8}
   return
 >!~::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkTilde.item[funcSendSecondChar(key)]
+  Send % dkTilde.item[key]
   key := ""
   Send {blind}{vkE8}
   return
@@ -1432,14 +1432,14 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 >!\::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkNotSign.item[funcSendSecondChar(key)]
+  Send % dkNotSign.item[key]
   key := ""
   Send {blind}{vkE8}
   return
 >!|::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkBrokenBar.item[funcSendSecondChar(key)]
+  Send % dkBrokenBar.item[key]
   key := ""
   Send {blind}{vkE8}
   return
@@ -1447,14 +1447,14 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 >!m::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkGreekAlphabet.item[funcSendSecondChar(key)]
+  Send % dkGreekAlphabet.item[key]
   key := ""
   Send {blind}{vkE8}
   return
 >!+m::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkMathSymbols.item[funcSendSecondChar(key)]
+  Send % dkMathSymbols.item[key]
   key := ""
   Send {blind}{vkE8}
   return
