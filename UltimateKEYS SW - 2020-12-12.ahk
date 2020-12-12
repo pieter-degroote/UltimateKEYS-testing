@@ -1088,7 +1088,7 @@ $+0::
   return
 
 
-; Configuration :  Right Alt on US QWERTY
+; Configuration :  'Right Alt' and 'Right Alt + Shift' on US QWERTY
 
 >!a::
   if GetKeyState("CapsLock", "T")
