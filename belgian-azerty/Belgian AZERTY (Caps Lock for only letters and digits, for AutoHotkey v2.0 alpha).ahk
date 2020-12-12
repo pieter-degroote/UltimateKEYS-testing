@@ -15,8 +15,8 @@
 
 
 
-ListLines False  ; omits recently executed lines from history (for privacy and security)
-#KeyHistory 0    ; disables the key history (for privacy and security)
+ListLines False   ; omits recently executed lines from history (for privacy and security)
+#KeyHistory 0     ; disables the key history (for privacy and security)
 
 SendMode "Event"  ; allows chaining of customized key combinations
 
@@ -189,21 +189,18 @@ z::w
 
 $1:: {
   if GetKeyState("CapsLock", "T")
-    Send "1"  ; digit 1
+    Send "1"   ; digit 1
   else
-    Send "&"  ; ampersand
+    Send "&"   ; ampersand
 }
 $+1:: {
   if GetKeyState("CapsLock", "T")
-    Send "&"  ; ampersand
+    Send "&"   ; ampersand
   else
-    Send "1"  ; digit 1
+    Send "1"   ; digit 1
 }
 
->!1:: {
-  Send "|"  ; vertical line
-  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues
-}
+>!1::Send "|"  ; vertical line
 
 $2:: {
   if GetKeyState("CapsLock", "T")
@@ -218,64 +215,52 @@ $+2:: {
     Send "2"         ; digit 2
 }
 
->!2:: {
-  Send "@"  ; at sign
-  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues
-}
+>!2::Send "@"        ; at sign
 
 $3:: {
   if GetKeyState("CapsLock", "T")
-    Send "3"   ; digit 3
+    Send "3"     ; digit 3
   else
-    Send "`""  ; quotation mark
+    Send "`""    ; quotation mark
 }
 $+3:: {
   if GetKeyState("CapsLock", "T")
-    Send "`""  ; quotation mark
+    Send "`""    ; quotation mark
   else
-    Send "3"   ; digit 3
+    Send "3"     ; digit 3
 }
 
->!3:: {
-  Send "{#}"  ; number sign
-  Send "{blind}{vkE8}"
-}
+>!3::Send "{#}"  ; number sign
 
 $4:: {
   if GetKeyState("CapsLock", "T")
-    Send "4"  ; digit 4
+    Send "4"     ; digit 4
   else
-    Send "'"  ; apostrophe
+    Send "'"     ; apostrophe
 }
 $+4:: {
   if GetKeyState("CapsLock", "T")
-    Send "'"  ; apostrophe
+    Send "'"     ; apostrophe
   else
-    Send "4"  ; digit 4
+    Send "4"     ; digit 4
 }
 
->!4:: {
-  Send "{{}"  ; left curly bracket
-  Send "{blind}{vkE8}"
-}
+>!4::Send "{{}"  ; left curly bracket
 
 $5:: {
   if GetKeyState("CapsLock", "T")
-    Send "5"  ; digit 5
+    Send "5"   ; digit 5
   else
-    Send "("  ; left parenthesis
+    Send "("   ; left parenthesis
 }
 $+5:: {
   if GetKeyState("CapsLock", "T")
-    Send "("  ; left parenthesis
+    Send "("   ; left parenthesis
   else
-    Send "5"  ; digit 5
+    Send "5"   ; digit 5
 }
 
->!5:: {
-  Send "["  ; left square bracket
-  Send "{blind}{vkE8}"
-}
+>!5::Send "["  ; left square bracket
 
 $6:: {
   if GetKeyState("CapsLock", "T")
@@ -290,10 +275,7 @@ $+6:: {
     Send "6"         ; digit 6
 }
 
->!6:: {
-  Send "{^}"  ; circumflex accent
-  Send "{blind}{vkE8}"
-}
+>!6::Send "{^}"      ; circumflex accent
 
 $7:: {
   if GetKeyState("CapsLock", "T")
@@ -334,10 +316,7 @@ $+9:: {
     Send "9"         ; digit 9
 }
 
->!9:: {
-  Send "{{}"  ; left curly bracket
-  Send "{blind}{vkE8}"
-}
+>!9::Send "{{}"      ; left curly bracket
 
 $0:: {
   if GetKeyState("CapsLock", "T")
@@ -352,10 +331,7 @@ $+0:: {
     Send "0"         ; digit 0
 }
 
->!0:: {
-  Send "{}}"  ; right curly bracket
-  Send "{blind}{vkE8}"
-}
+>!0::Send "{}}"      ; left curly bracket
 
 $-::Send ")"         ; right parenthesis
 $_::Send "{u+00b0}"  ; (°) degree sign
@@ -379,39 +355,27 @@ $+;:: {
 
 $m::Send ","   ; comma
 $+m::Send "?"  ; question mark
+>!m::Send "\"  ; reverse solidus (backslash)
 
->!m:: {
-  Send "\"  ; reverse solidus (backslash)
-  Send "{blind}{vkE8}"
-}
+$,::Send ";"   ; semicolon
+$<::Send "."   ; full stop (period)
+>!,::Send "<"  ; less-than sign
 
-$,::Send ";"  ; semicolon
-$<::Send "."  ; full stop (period)
-
->!,:: {
-  Send "<"  ; less-than sign
-  Send "{blind}{vkE8}"
-}
-
-$.::Send ":"  ; colon
-$>::Send "/"  ; solidus (slash)
-
->!.:: {
-  Send ">"  ; greater-than sign
-  Send "{blind}{vkE8}"
-}
+$.::Send ":"   ; colon
+$>::Send "/"   ; solidus (slash)
+>!.::Send ">"  ; greater-than sign
 
 $/::Send "="    ; equals sign
 $?::Send "{+}"  ; plus sign
 
 >!/:: {
-  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues
+  Send "{blind}{vkE8}"  ; suppresses circles around mouse pointer
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
   if dkTilde.Has(ih.Input)
     Send dkTilde[ih.Input]
-  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues (for second character)
+  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
 }
 
 >!q:: {
@@ -419,7 +383,6 @@ $?::Send "{+}"  ; plus sign
     Send "{u+00c6}"  ; (Æ) letter AE
   else
     Send "{u+00e6}"  ; (æ) letter ae
-  Send "{blind}{vkE8}"
 }
 >!+q:: {
   if GetKeyState("CapsLock", "T")
@@ -434,7 +397,6 @@ $?::Send "{+}"  ; plus sign
     Send "{u+00c5}"  ; (Å) A with ring above
   else
     Send "{u+00e5}"  ; (å) a with ring above
-  Send "{blind}{vkE8}"
 }
 >!+w:: {
   if GetKeyState("CapsLock", "T")
@@ -449,7 +411,6 @@ $?::Send "{+}"  ; plus sign
     Send "{u+00c7}"  ; (Ç) C with cedilla
   else
     Send "{u+00e7}"  ; (ç) c with cedilla
-  Send "{blind}{vkE8}"
 }
 >!+c:: {
   if GetKeyState("CapsLock", "T")
@@ -464,7 +425,6 @@ $?::Send "{+}"  ; plus sign
     Send "{u+00d0}"  ; (Ð) capital letter eth
   else
     Send "{u+00f0}"  ; (ð) small letter eth
-  Send "{blind}{vkE8}"
 }
 >!+d:: {
   if GetKeyState("CapsLock", "T")
@@ -479,7 +439,6 @@ $?::Send "{+}"  ; plus sign
     Send "{u+00d1}"  ; (Ñ) N with tilde
   else
     Send "{u+00f1}"  ; (ñ) n with tilde
-  Send "{blind}{vkE8}"
 }
 >!+n:: {
   if GetKeyState("CapsLock", "T")
@@ -494,7 +453,6 @@ $?::Send "{+}"  ; plus sign
     Send "{u+0152}"  ; (Œ) ligature OE
   else
     Send "{u+0153}"  ; (œ) ligature oe
-  Send "{blind}{vkE8}"
 }
 >!+k:: {
   if GetKeyState("CapsLock", "T")
@@ -509,7 +467,6 @@ $?::Send "{+}"  ; plus sign
     Send "{u+00d8}"  ; (Ø) O with stroke
   else
     Send "{u+00f8}"  ; (ø) o with stroke
-  Send "{blind}{vkE8}"
 }
 >!+l:: {
   if GetKeyState("CapsLock", "T")
@@ -524,7 +481,6 @@ $?::Send "{+}"  ; plus sign
     Send "{u+00de}"  ; (Þ) capital letter thorn
   else
     Send "{u+00fe}"  ; (þ) small letter thorn
-  Send "{blind}{vkE8}"
 }
 >!+t:: {
   if GetKeyState("CapsLock", "T")
@@ -534,27 +490,21 @@ $?::Send "{+}"  ; plus sign
   Send "{blind}{vkE8}"
 }
 
->!e:: {
-  Send "{u+20ac}"  ; (€) euro sign
-  Send "{blind}{vkE8}"
-}
+>!e::Send "{u+20ac}"  ; (€) euro sign
 
->!s:: {
-  Send "{u+00df}"  ; (ß) small sharp s (Eszett)
-  Send "{blind}{vkE8}"
-}
+>!s::Send "{u+00df}"  ; (ß) small sharp s (Eszett)
 
 $'::Send "{u+00f9}"  ; (ù) u with grave
-$"::Send "`%"        ;     percent sign
+$"::Send "`%"        ; percent sign
 
 >!':: {
-  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues
+  Send "{blind}{vkE8}"  ; suppresses circles around mouse pointer
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
   if dkAcuteAccent.Has(ih.Input)
     Send dkAcuteAccent[ih.Input]
-  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues (for second character)
+  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
 }
 
 $[:: {
@@ -563,7 +513,7 @@ $[:: {
   ih.Wait()
   if dkCircumflex.Has(ih.Input)
     Send dkCircumflex[ih.Input]
-  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues (for second character)
+  Send "{blind}{vkE8}"
 }
 ${:: {
   ih := InputHook("L1", dkEndKeys)
@@ -571,33 +521,27 @@ ${:: {
   ih.Wait()
   if dkDiaeresis.Has(ih.Input)
     Send dkDiaeresis[ih.Input]
-  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues (for second character)
-}
-
->![:: {
-  Send "["  ; left square bracket
   Send "{blind}{vkE8}"
 }
+
+>![::Send "["  ; left square bracket
 
 $]::Send "$"  ; dollar sign
 $}::Send "*"  ; asterisk
 
->!]:: {
-  Send "]"  ; right square bracket
-  Send "{blind}{vkE8}"
-}
+>!]::Send "]"  ; right square bracket
 
 $\::Send "{u+00b5}"  ; (µ) micro sign
 $|::Send "{u+00a3}"  ; (£) pound sign
 
 >!\:: {
-  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues
+  Send "{blind}{vkE8}"
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
   if dkGraveAccent.Has(ih.Input)
     Send dkGraveAccent[ih.Input]
-  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues (for second character)
+  Send "{blind}{vkE8}"
 }
 
 $`::Send "{u+00b2}"  ; (²) superscript 2
@@ -605,17 +549,10 @@ $~::Send "{u+00b3}"  ; (³) superscript 3
 
 $sc056::Send "<"   ; less-than sign
 $+sc056::Send ">"  ; greater-than sign
+>!sc056::Send "\"  ; reverse solidus (backslash)
 
->!sc056:: {
-  Send "\"  ; reverse solidus (backslash)
-  Send "{blind}{vkE8}"
-}
-
->!space:: {
-  Send "{u+00a0}"  ; non-breaking space
-  Send "{blind}{vkE8}"
-}
+>!space::Send "{u+00a0}"  ; non-breaking space
 >!+space:: {
-  Send "{u+00a0}"  ; non-breaking space
+  Send "{u+00a0}"         ; non-breaking space
   Send "{blind}{vkE8}"
 }
