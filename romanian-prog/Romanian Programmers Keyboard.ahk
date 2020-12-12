@@ -15,8 +15,10 @@
 
 
 
-ListLines Off  ; omits recently executed lines from history (for privacy and security)
-#KeyHistory 0  ; disables the key history (for privacy and security)
+ListLines Off   ; omits recently executed lines from history (for privacy and security)
+#KeyHistory 0   ; disables the key history (for privacy and security)
+
+SendMode Event  ; allows chaining of customized key combinations (default)
 
 
 ; Dead Key :  Tilde
@@ -340,14 +342,13 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
     Send {u+0103}  ; (ă) a with breve
   else
     Send {u+0102}  ; (Ă) A with breve
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues
   return
 >!+a::
   if GetKeyState("CapsLock", "T")
     Send {u+0103}  ; (ă) a with breve
   else
     Send {u+0102}  ; (Ă) A with breve
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues
+  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
   return
 
 >!q::
@@ -355,14 +356,13 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
     Send {u+00c2}  ; (Â) A with circumflex
   else
     Send {u+00e2}  ; (â) a with circumflex
-  Send {blind}{vkE8}
   return
 >!+q::
   if GetKeyState("CapsLock", "T")
     Send {u+00e2}  ; (â) a with circumflex
   else
     Send {u+00c2}  ; (Â) A with circumflex
-  Send {blind}{vkE8}
+  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
   return
 
 >!z::
@@ -370,7 +370,6 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
     Send {u+00c6}  ; (Æ) letter AE
   else
     Send {u+00e6}  ; (æ) letter ae
-  Send {blind}{vkE8}
   return
 >!+z::
   if GetKeyState("CapsLock", "T")
@@ -385,7 +384,6 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
     Send {u+1e9e}  ; (ẞ) capital sharp S (capital Eszett)
   else
     Send {u+00df}  ; (ß) small sharp s (Eszett)
-  Send {blind}{vkE8}
   return
 >!+w::
   if GetKeyState("CapsLock", "T")
@@ -400,7 +398,6 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
     Send {u+0110}  ; (Đ) D with stroke
   else
     Send {u+0111}  ; (đ) d with stroke
-  Send {blind}{vkE8}
   return
 >!+d::
   if GetKeyState("CapsLock", "T")
@@ -415,7 +412,6 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
     Send {u+00ce}  ; (Î) I with circumflex
   else
     Send {u+00ee}  ; (î) i with circumflex
-  Send {blind}{vkE8}
   return
 >!+i::
   if GetKeyState("CapsLock", "T")
@@ -430,7 +426,6 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
     Send {u+0152}  ; (Œ) ligature OE
   else
     Send {u+0153}  ; (œ) ligature oe
-  Send {blind}{vkE8}
   return
 >!+k::
   if GetKeyState("CapsLock", "T")
@@ -445,7 +440,6 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
     Send {u+0141}  ; (Ł) L with stroke
   else
     Send {u+0142}  ; (ł) l with stroke
-  Send {blind}{vkE8}
   return
 >!+l::
   if GetKeyState("CapsLock", "T")
@@ -460,7 +454,6 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
     Send {u+00d8}  ; (Ø) O with stroke
   else
     Send {u+00f8}  ; (ø) o with stroke
-  Send {blind}{vkE8}
   return
 >!+o::
   if GetKeyState("CapsLock", "T")
@@ -475,7 +468,6 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
     Send {u+0218}  ; (Ș) S with comma below
   else
     Send {u+0219}  ; (ș) s with comma below
-  Send {blind}{vkE8}
   return
 >!+s::
   if GetKeyState("CapsLock", "T")
@@ -490,7 +482,6 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
     Send {u+021a}  ; (Ț) T with comma below
   else
     Send {u+021b}  ; (ț) t with comma below
-  Send {blind}{vkE8}
   return
 >!+t::
   if GetKeyState("CapsLock", "T")
@@ -500,179 +491,107 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
   Send {blind}{vkE8}
   return
 
->!b::
-  Send {u+2022}  ; (•) bullet
-  Send {blind}{vkE8}
-  return
+>!b::Send {u+2022}  ; (•) bullet
 
->!c::
-  Send {u+00a9}  ; (©) copyright sign
-  Send {blind}{vkE8}
-  return
+>!c::Send {u+00a9}  ; (©) copyright sign
 >!+c::
-  Send {u+00a2}  ; (¢) cent sign (dollar)
+  Send {u+00a2}     ; (¢) cent sign (dollar)
   Send {blind}{vkE8}
   return
 
->!e::
-  Send {u+20ac}  ; (€) euro sign
-  Send {blind}{vkE8}
-  return
+>!e::Send {u+20ac}  ; (€) euro sign
 
->!f::
-  Send {u+0192}  ; (ƒ) f with hook
-  Send {blind}{vkE8}
-  return
+>!f::Send {u+0192}  ; (ƒ) f with hook
 
->!g::
-  Send {u+2122}  ; (™) trademark symbol
-  Send {blind}{vkE8}
-  return
+>!g::Send {u+2122}  ; (™) trademark symbol
 
->!h::
-  Send {u+2020}  ; (†) dagger
-  Send {blind}{vkE8}
-  return
+>!h::Send {u+2020}  ; (†) dagger
 >!+h::
-  Send {u+2021}  ; (‡) double dagger
+  Send {u+2021}     ; (‡) double dagger
   Send {blind}{vkE8}
   return
 
->!j::
-  Send {u+00f7}  ; (÷) division sign
-  Send {blind}{vkE8}
-  return
+>!j::Send {u+00f7}  ; (÷) division sign
 
->!m::
-  Send {u+00b5}  ; (µ) micro sign
-  Send {blind}{vkE8}
-  return
+>!m::Send {u+00b5}  ; (µ) micro sign
 >!+m::
-  Send {u+221a}  ; (√) square root
+  Send {u+221a}     ; (√) square root
   Send {blind}{vkE8}
   return
 
->!n::
-  Send {u+207f}  ; (ⁿ) superscript n
-  Send {blind}{vkE8}
-  return
+>!n::Send {u+207f}  ; (ⁿ) superscript n
 >!+n::
-  Send {u+00b9}  ; (¹) superscript 1
+  Send {u+00b9}     ; (¹) superscript 1
   Send {blind}{vkE8}
   return
 
->!p::
-  Send {u+00a7}  ; (§) section sign
-  Send {blind}{vkE8}
-  return
+>!p::Send {u+00a7}  ; (§) section sign
 >!+p::
-  Send {u+00b6}  ; (¶) pilcrow sign
+  Send {u+00b6}     ; (¶) pilcrow sign
   Send {blind}{vkE8}
   return
 
->!r::
-  Send {u+00a3}  ; (£) pound sign
-  Send {blind}{vkE8}
-  return
+>!r::Send {u+00a3}  ; (£) pound sign
 
->!u::
-  Send {u+00d7}  ; (×) multiplication sign
-  Send {blind}{vkE8}
-  return
+>!u::Send {u+00d7}  ; (×) multiplication sign
 
->!v::
-  Send {u+00ae}  ; (®) registered sign
-  Send {blind}{vkE8}
-  return
+>!v::Send {u+00ae}  ; (®) registered sign
 
->!x::
-  Send {u+00a4}  ; (¤) currency sign
-  Send {blind}{vkE8}
-  return
+>!x::Send {u+00a4}  ; (¤) currency sign
 
->!y::
-  Send {u+00a5}  ; (¥) yen sign
-  Send {blind}{vkE8}
-  return
+>!y::Send {u+00a5}  ; (¥) yen sign
 
->![::
-  Send {u+201e}  ; („) double low-9 quotation mark
-  Send {blind}{vkE8}
-  return
+>![::Send {u+201e}  ; („) double low-9 quotation mark
 >!{::
-  Send {u+201a}  ; (‚) single low-9 quotation mark
+  Send {u+201a}     ; (‚) single low-9 quotation mark
   Send {blind}{vkE8}
   return
 
->!]::
-  Send {u+201d}  ; (”) right double quotation mark
-  Send {blind}{vkE8}
-  return
->!+}::
-  Send {u+2019}  ; (’) right single quotation mark
+>!]::Send {u+201d}  ; (”) right double quotation mark
+>!}::
+  Send {u+2019}     ; (’) right single quotation mark
   Send {blind}{vkE8}
   return
 
->!'::
-  Send {u+201c}  ; (“) left double quotation mark
-  Send {blind}{vkE8}
-  return
+>!'::Send {u+201c}  ; (“) left double quotation mark
 >!"::
-  Send {u+2018}  ; (‘) left single quotation mark
+  Send {u+2018}     ; (‘) left single quotation mark
   Send {blind}{vkE8}
   return
 
->!,::
-  Send {u+00ab}  ; («) left-pointing double angle quotation mark
-  Send {blind}{vkE8}
-  return
+>!,::Send {u+00ab}  ; («) left-pointing double angle quotation mark
 >!<::
-  Send {u+2039}  ; (‹) left-pointing single angle quotation mark
+  Send {u+2039}     ; (‹) left-pointing single angle quotation mark
   Send {blind}{vkE8}
   return
 
->!.::
-  Send {u+00bb}  ; (») right-pointing double angle quotation mark
-  Send {blind}{vkE8}
-  return
+>!.::Send {u+00bb}  ; (») right-pointing double angle quotation mark
 >!>::
-  Send {u+203a}  ; (›) right-pointing single angle quotation mark
+  Send {u+203a}     ; (›) right-pointing single angle quotation mark
   Send {blind}{vkE8}
   return
 
->!;::
-  Send {u+00b0}  ; (°) degree sign
-  Send {blind}{vkE8}
-  return
+>!;::Send {u+00b0}  ; (°) degree sign
 >!+;::
-  Send {u+00b7}  ; (·) middle dot
+  Send {u+00b7}     ; (·) middle dot
   Send {blind}{vkE8}
   return
 
->!/::
-  Send {u+2026}  ; (…) horizontal ellipsis
-  Send {blind}{vkE8}
-  return
+>!/::Send {u+2026}  ; (…) horizontal ellipsis
 >!?::
-  Send {u+00bf}  ; (¿) inverted question mark
+  Send {u+00bf}     ; (¿) inverted question mark
   Send {blind}{vkE8}
   return
 
->!\::
-  Send {u+00ac}  ; (¬) not sign
-  Send {blind}{vkE8}
-  return
+>!\::Send {u+00ac}  ; (¬) not sign
 >!|::
-  Send {u+00a6}  ; (¦) broken bar
+  Send {u+00a6}     ; (¦) broken bar
   Send {blind}{vkE8}
   return
 
->!space::
-  Send {u+00a0}  ; non-breaking space
-  Send {blind}{vkE8}
-  return
+>!space::Send {u+00a0}  ; non-breaking space
 >!+space::
-  Send {u+00a0}  ; non-breaking space
+  Send {u+00a0}         ; non-breaking space
   Send {blind}{vkE8}
   return
 
@@ -680,11 +599,11 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
 ; Configuration :  Dead Keys on 'Right Alt' and 'Right Alt + Shift'
 
 >!1::
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues
+  Send {blind}{vkE8}  ; suppresses circles around mouse pointer
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkTilde.item[key]
   key := ""  ; avoids leaking content via debug properties
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues (for second character)
+  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
   return
 >!+1::
   Send {u+00a1}  ; (¡) inverted exclamation mark
