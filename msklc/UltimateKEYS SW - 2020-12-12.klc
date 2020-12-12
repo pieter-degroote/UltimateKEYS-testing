@@ -516,6 +516,8 @@ DEADKEY	00b4	// Dead Key :  Acute Accent
 0036	273d	// 6 -> ✽    heavy teardrop-spoked asterisk
 0037	273b	// 7 -> ✻    teardrop-spoked asterisk
 0038	266a	// 8 -> ♪    eighth note
+0039	2706	// 9 -> ✆    telephone location sign
+0030	2709	// 0 -> ✉   envolope
 0040	266b	// @ -> ♫    beamed eighth notes
 0023	2042	// # -> ⁂    asterism
 0024	2605	// $ -> ★    black star
@@ -523,6 +525,8 @@ DEADKEY	00b4	// Dead Key :  Acute Accent
 005e	273d	// ^ -> ✽    heavy teardrop-spoked asterisk
 0026	273b	// & -> ✻    teardrop-spoked asterisk
 002a	266a	// * -> ♪    eighth note
+0028	2706	// ( -> ✆    telephone location sign
+0029	2709	// ) -> ✉   envolope
 0020	00b4	//   -> ´    acute accent
 
 DEADKEY	00a8	// Dead Key :  Diaeresis
