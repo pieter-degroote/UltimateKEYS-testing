@@ -905,8 +905,8 @@ dkMathSymbols["|"] := "{u+2228}"  ; (∨) logical or
 dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 
 
-funcSendSecondChar(char) {
-; keeps correct operation after dead key press when Scroll Lock is on
+fSendSecondChar(char) {
+; function for keeping correct operation after dead key press when Scroll Lock is on
 
   if GetKeyState("ScrollLock", "T") {
     if (char == "1")
@@ -1445,98 +1445,97 @@ $+0:: {
 >!p::Send "{u+2020}"  ; (†) dagger
 >!+p:: {
   Send "{u+2021}"     ; (‡) double dagger
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey
 }
 
 >!s::Send "{u+00df}"  ; (ß) small sharp s (Eszett)
 >!+s:: {
   Send "{u+00a7}"     ; (§) section sign
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
-}
-
->!/::Send "{u+00bf}"  ; (¿) inverted question mark
->!?:: {
-  Send "{u+2026}"     ; (…) horizontal ellipsis
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey
 }
 
 >!1::Send "{u+00a1}"  ; (¡) inverted exclamation mark
 >!+1:: {
   Send "{u+00b9}"     ; (¹) superscript 1
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >!2::Send "{u+00a9}"  ; (©) copyright sign
 >!+2:: {
   Send "{u+00b2}"     ; (²) superscript 2
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >!3::Send "{u+00b1}"  ; (±) plus-minus sign
 >!+3:: {
   Send "{u+00b3}"     ; (³) superscript 3
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >!4::Send "{u+00a3}"  ; (£) pound sign
 >!+4:: {
   Send "{u+00a5}"     ; (¥) yen sign
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >!5::Send "{u+20ac}"  ; (€) euro sign
 >!+5:: {
   Send "{u+00a2}"     ; (¢) cent sign (dollar)
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >!8::Send "{u+201e}"  ; („) double low-9 quotation mark
 >!+8:: {
   Send "{u+00b6}"     ; (¶) pilcrow sign
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >!9::Send "{u+201c}"  ; (“) left double quotation mark
 >!+9:: {
   Send "{u+2018}"     ; (‘) left single quotation mark
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >!0::Send "{u+201d}"  ; (”) right double quotation mark
 >!+0:: {
   Send "{u+2019}"     ; (’) right single quotation mark
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >!=::Send "{u+00d7}"  ; (×) multiplication sign
 >!+=:: {
   Send "{u+00f7}"     ; (÷) division sign
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >![::Send "{u+00ab}"  ; («) left-pointing double angle quotation mark
 >!{:: {
   Send "{u+2039}"     ; (‹) left-pointing single angle quotation mark
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >!]::Send "{u+00bb}"  ; (») right-pointing double angle quotation mark
 >!}:: {
   Send "{u+203a}"     ; (›) right-pointing single angle quotation mark
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >!;::Send "{u+00b0}"  ; (°) degree sign
 >!+;:: {
   Send "{u+00b7}"     ; (·) middle dot
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
+>!/::Send "{u+00bf}"  ; (¿) inverted question mark
+>!?:: {
+  Send "{u+2026}"     ; (…) horizontal ellipsis
+  Send "{blind}{vkE8}"
+}
 
 >!space::Send "{u+00a0}"  ; non-breaking space
 >!+space:: {
   Send "{u+00a0}"         ; non-breaking space
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 
@@ -1547,8 +1546,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkCircumflex.Has(funcSendSecondChar(ih.Input))
-    Send dkCircumflex[funcSendSecondChar(ih.Input)]
+  if dkCircumflex.Has(fSendSecondChar(ih.Input))
+    Send dkCircumflex[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
 }
 >!+6:: {
@@ -1556,8 +1555,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkCaron.Has(funcSendSecondChar(ih.Input))
-    Send dkCaron[funcSendSecondChar(ih.Input)]
+  if dkCaron.Has(fSendSecondChar(ih.Input))
+    Send dkCaron[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
 }
 
@@ -1566,8 +1565,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkRingDotAbove.Has(funcSendSecondChar(ih.Input))
-    Send dkRingDotAbove[funcSendSecondChar(ih.Input)]
+  if dkRingDotAbove.Has(fSendSecondChar(ih.Input))
+    Send dkRingDotAbove[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!+7:: {
@@ -1575,8 +1574,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkMacronStroke.Has(funcSendSecondChar(ih.Input))
-    Send dkMacronStroke[funcSendSecondChar(ih.Input)]
+  if dkMacronStroke.Has(fSendSecondChar(ih.Input))
+    Send dkMacronStroke[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 
@@ -1585,8 +1584,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkCedillaOgonek.Has(funcSendSecondChar(ih.Input))
-    Send dkCedillaOgonek[funcSendSecondChar(ih.Input)]
+  if dkCedillaOgonek.Has(fSendSecondChar(ih.Input))
+    Send dkCedillaOgonek[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!_:: {
@@ -1594,8 +1593,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkBreveSpecial.Has(funcSendSecondChar(ih.Input))
-    Send dkBreveSpecial[funcSendSecondChar(ih.Input)]
+  if dkBreveSpecial.Has(fSendSecondChar(ih.Input))
+    Send dkBreveSpecial[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 
@@ -1604,8 +1603,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkAcuteAccent.Has(funcSendSecondChar(ih.Input))
-    Send dkAcuteAccent[funcSendSecondChar(ih.Input)]
+  if dkAcuteAccent.Has(fSendSecondChar(ih.Input))
+    Send dkAcuteAccent[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!":: {
@@ -1613,8 +1612,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkDiaeresis.Has(funcSendSecondChar(ih.Input))
-    Send dkDiaeresis[funcSendSecondChar(ih.Input)]
+  if dkDiaeresis.Has(fSendSecondChar(ih.Input))
+    Send dkDiaeresis[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 
@@ -1623,8 +1622,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkGraveAccent.Has(funcSendSecondChar(ih.Input))
-    Send dkGraveAccent[funcSendSecondChar(ih.Input)]
+  if dkGraveAccent.Has(fSendSecondChar(ih.Input))
+    Send dkGraveAccent[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!~:: {
@@ -1632,8 +1631,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkTilde.Has(funcSendSecondChar(ih.Input))
-    Send dkTilde[funcSendSecondChar(ih.Input)]
+  if dkTilde.Has(fSendSecondChar(ih.Input))
+    Send dkTilde[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 
@@ -1642,8 +1641,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkNotSign.Has(funcSendSecondChar(ih.Input))
-    Send dkNotSign[funcSendSecondChar(ih.Input)]
+  if dkNotSign.Has(fSendSecondChar(ih.Input))
+    Send dkNotSign[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!|:: {
@@ -1651,8 +1650,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkBrokenBar.Has(funcSendSecondChar(ih.Input))
-    Send dkBrokenBar[funcSendSecondChar(ih.Input)]
+  if dkBrokenBar.Has(fSendSecondChar(ih.Input))
+    Send dkBrokenBar[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 
@@ -1661,8 +1660,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkGreekAlphabet.Has(funcSendSecondChar(ih.Input))
-    Send dkGreekAlphabet[funcSendSecondChar(ih.Input)]
+  if dkGreekAlphabet.Has(fSendSecondChar(ih.Input))
+    Send dkGreekAlphabet[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!+m:: {
@@ -1670,7 +1669,7 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkMathSymbols.Has(funcSendSecondChar(ih.Input))
-    Send dkMathSymbols[funcSendSecondChar(ih.Input)]
+  if dkMathSymbols.Has(fSendSecondChar(ih.Input))
+    Send dkMathSymbols[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }

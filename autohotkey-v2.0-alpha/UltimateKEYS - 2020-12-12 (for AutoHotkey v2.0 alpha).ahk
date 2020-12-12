@@ -1260,98 +1260,97 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 >!p::Send "{u+2020}"  ; (†) dagger
 >!+p:: {
   Send "{u+2021}"     ; (‡) double dagger
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey
 }
 
 >!s::Send "{u+00df}"  ; (ß) small sharp s (Eszett)
 >!+s:: {
   Send "{u+00a7}"     ; (§) section sign
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
-}
-
->!/::Send "{u+00bf}"  ; (¿) inverted question mark
->!?:: {
-  Send "{u+2026}"     ; (…) horizontal ellipsis
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey
 }
 
 >!1::Send "{u+00a1}"  ; (¡) inverted exclamation mark
 >!+1:: {
   Send "{u+00b9}"     ; (¹) superscript 1
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >!2::Send "{u+00a9}"  ; (©) copyright sign
 >!+2:: {
   Send "{u+00b2}"     ; (²) superscript 2
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >!3::Send "{u+00b1}"  ; (±) plus-minus sign
 >!+3:: {
   Send "{u+00b3}"     ; (³) superscript 3
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >!4::Send "{u+00a3}"  ; (£) pound sign
 >!+4:: {
   Send "{u+00a5}"     ; (¥) yen sign
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >!5::Send "{u+20ac}"  ; (€) euro sign
 >!+5:: {
   Send "{u+00a2}"     ; (¢) cent sign (dollar)
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >!8::Send "{u+201e}"  ; („) double low-9 quotation mark
 >!+8:: {
   Send "{u+00b6}"     ; (¶) pilcrow sign
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >!9::Send "{u+201c}"  ; (“) left double quotation mark
 >!+9:: {
   Send "{u+2018}"     ; (‘) left single quotation mark
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >!0::Send "{u+201d}"  ; (”) right double quotation mark
 >!+0:: {
   Send "{u+2019}"     ; (’) right single quotation mark
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >!=::Send "{u+00d7}"  ; (×) multiplication sign
 >!+=:: {
   Send "{u+00f7}"     ; (÷) division sign
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >![::Send "{u+00ab}"  ; («) left-pointing double angle quotation mark
 >!{:: {
   Send "{u+2039}"     ; (‹) left-pointing single angle quotation mark
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >!]::Send "{u+00bb}"  ; (») right-pointing double angle quotation mark
 >!}:: {
   Send "{u+203a}"     ; (›) right-pointing single angle quotation mark
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 >!;::Send "{u+00b0}"  ; (°) degree sign
 >!+;:: {
   Send "{u+00b7}"     ; (·) middle dot
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
+>!/::Send "{u+00bf}"  ; (¿) inverted question mark
+>!?:: {
+  Send "{u+2026}"     ; (…) horizontal ellipsis
+  Send "{blind}{vkE8}"
+}
 
 >!space::Send "{u+00a0}"  ; non-breaking space
 >!+space:: {
   Send "{u+00a0}"         ; non-breaking space
-  Send "{blind}{vkE8}"  ; suppresses RAlt+Shift hotkey
+  Send "{blind}{vkE8}"
 }
 
 
