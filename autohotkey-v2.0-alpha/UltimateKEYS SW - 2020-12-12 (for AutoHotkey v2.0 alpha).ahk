@@ -478,6 +478,8 @@ dkAcuteAccent["5"] := "{u+2606}"          ; (☆) white star
 dkAcuteAccent["6"] := "{u+273d}"          ; (✽) heavy teardrop-spoked asterisk
 dkAcuteAccent["7"] := "{u+273b}"          ; (✻) teardrop-spoked asterisk
 dkAcuteAccent["8"] := "{u+266a}"          ; (♪) eighth note
+dkAcuteAccent["9"] := "{u+2706}"          ; (✆) telephone location sign
+dkAcuteAccent["0"] := "{u+2709}"          ; (✉) envelope
 dkAcuteAccent["@"] := "{u+266b}"          ; (♫) beamed eighth notes
 dkAcuteAccent["#"] := "{u+2042}"          ; (⁂) asterism
 dkAcuteAccent["$"] := "{u+2605}"          ; (★) black star
@@ -485,6 +487,8 @@ dkAcuteAccent["%"] := "{u+2606}"          ; (☆) white star
 dkAcuteAccent["^"] := "{u+273d}"          ; (✽) heavy teardrop-spoked asterisk
 dkAcuteAccent["&"] := "{u+273b}"          ; (✻) teardrop-spoked asterisk
 dkAcuteAccent["*"] := "{u+266a}"          ; (♪) eighth note
+dkAcuteAccent["("] := "{u+2706}"          ; (✆) telephone location sign
+dkAcuteAccent[")"] := "{u+2709}"          ; (✉) envelope
 dkAcuteAccent[" "] := "{u+00b4}"          ; (´) acute accent
 
 
@@ -906,7 +910,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 
 
 fSendSecondChar(char) {
-; function for keeping correct operation after dead key press when Scroll Lock is on
+; function for keeping correct operation after dead key press when Scroll Lock enabled
 
   if GetKeyState("ScrollLock", "T") {
     if (char == "1")
