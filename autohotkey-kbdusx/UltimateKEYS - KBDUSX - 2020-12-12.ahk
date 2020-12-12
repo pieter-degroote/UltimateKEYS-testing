@@ -1247,9 +1247,6 @@ $"::Send `"{space}    ; quotation mark
 <^>!s::Send {u+00df}   ; (ß) small sharp s (Eszett)
 <^>!+s::Send {u+00a7}  ; (§) section sign
 
-<^>!/::Send {u+00bf}   ; (¿) inverted question mark
-<^>!?::Send {u+2026}   ; (…) horizontal ellipsis
-
 <^>!1::Send {u+00a1}   ; (¡) inverted exclamation mark
 <^>!+1::Send {u+00b9}  ; (¹) superscript 1
 
@@ -1285,6 +1282,9 @@ $"::Send `"{space}    ; quotation mark
 
 <^>!;::Send {u+00b0}   ; (°) degree sign
 <^>!+;::Send {u+00b7}  ; (·) middle dot
+
+<^>!/::Send {u+00bf}   ; (¿) inverted question mark
+<^>!?::Send {u+2026}   ; (…) horizontal ellipsis
 
 <^>!space::Send {u+00a0}   ; non-breaking space
 <^>!+space::Send {u+00a0}  ; non-breaking space

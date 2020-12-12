@@ -903,8 +903,8 @@ dkMathSymbols.item["|"] := "{u+2228}"  ; (∨) logical or
 dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 
 
-funcSendSecondChar(char) {
-; keeps correct operation after dead key press when Scroll Lock is on
+fSendSecondChar(char) {
+; function for keeping correct operation after dead key press when Scroll Lock is on
 
   if GetKeyState("ScrollLock", "T") {
     if (char == "1")
@@ -1427,9 +1427,6 @@ $"::Send `"{space}  ; quotation mark
 <^>!s::Send {u+00df}   ; (ß) small sharp s (Eszett)
 <^>!+s::Send {u+00a7}  ; (§) section sign
 
-<^>!/::Send {u+00bf}   ; (¿) inverted question mark
-<^>!?::Send {u+2026}   ; (…) horizontal ellipsis
-
 <^>!1::Send {u+00a1}   ; (¡) inverted exclamation mark
 <^>!+1::Send {u+00b9}  ; (¹) superscript 1
 
@@ -1466,6 +1463,9 @@ $"::Send `"{space}  ; quotation mark
 <^>!;::Send {u+00b0}   ; (°) degree sign
 <^>!+;::Send {u+00b7}  ; (·) middle dot
 
+<^>!/::Send {u+00bf}   ; (¿) inverted question mark
+<^>!?::Send {u+2026}   ; (…) horizontal ellipsis
+
 <^>!space::Send {u+00a0}   ; non-breaking space
 <^>!+space::Send {u+00a0}  ; non-breaking space
 
@@ -1474,77 +1474,77 @@ $"::Send `"{space}  ; quotation mark
 
 <^>!6::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkCircumflex.item[funcSendSecondChar(key)]
+  Send % dkCircumflex.item[fSendSecondChar(key)]
   key := ""  ; avoids leaking content via debug properties
   return
 <^>!+6::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkCaron.item[funcSendSecondChar(key)]
+  Send % dkCaron.item[fSendSecondChar(key)]
   key := ""  ; avoids leaking content via debug properties
   return
 
 <^>!7::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkRingDotAbove.item[funcSendSecondChar(key)]
+  Send % dkRingDotAbove.item[fSendSecondChar(key)]
   key := ""
   return
 <^>!+7::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkMacronStroke.item[funcSendSecondChar(key)]
+  Send % dkMacronStroke.item[fSendSecondChar(key)]
   key := ""
   return
 
 <^>!-::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkCedillaOgonek.item[funcSendSecondChar(key)]
+  Send % dkCedillaOgonek.item[fSendSecondChar(key)]
   key := ""
   return
 <^>!_::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkBreveSpecial.item[funcSendSecondChar(key)]
+  Send % dkBreveSpecial.item[fSendSecondChar(key)]
   key := ""
   return
 
 <^>!'::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkAcuteAccent.item[funcSendSecondChar(key)]
+  Send % dkAcuteAccent.item[fSendSecondChar(key)]
   key := ""
   return
 <^>!"::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkDiaeresis.item[funcSendSecondChar(key)]
+  Send % dkDiaeresis.item[fSendSecondChar(key)]
   key := ""
   return
 
 <^>!`::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkGraveAccent.item[funcSendSecondChar(key)]
+  Send % dkGraveAccent.item[fSendSecondChar(key)]
   key := ""
   return
 <^>!~::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkTilde.item[funcSendSecondChar(key)]
+  Send % dkTilde.item[fSendSecondChar(key)]
   key := ""
   return
 
 <^>!\::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkNotSign.item[funcSendSecondChar(key)]
+  Send % dkNotSign.item[fSendSecondChar(key)]
   key := ""
   return
 <^>!|::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkBrokenBar.item[funcSendSecondChar(key)]
+  Send % dkBrokenBar.item[fSendSecondChar(key)]
   key := ""
   return
 
 <^>!m::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkGreekAlphabet.item[funcSendSecondChar(key)]
+  Send % dkGreekAlphabet.item[fSendSecondChar(key)]
   key := ""
   return
 <^>!+m::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkMathSymbols.item[funcSendSecondChar(key)]
+  Send % dkMathSymbols.item[fSendSecondChar(key)]
   key := ""
   return
