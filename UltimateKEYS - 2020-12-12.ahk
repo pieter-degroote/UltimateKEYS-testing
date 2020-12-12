@@ -930,7 +930,7 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00e6}  ; (æ) letter ae
   else
     Send {u+00c6}  ; (Æ) letter AE
-  Send {blind}{vkE8}  ; suppresses ' Right Alt + Shift' hotkey
+  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
   return
 
 >!w::
@@ -1267,12 +1267,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
   Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
   return
 
->!/::Send {u+00bf}  ; (¿) inverted question mark
->!?::
-  Send {u+2026}     ; (…) horizontal ellipsis
-  Send {blind}{vkE8}
-  return
-
 >!1::Send {u+00a1}  ; (¡) inverted exclamation mark
 >!+1::
   Send {u+00b9}     ; (¹) superscript 1
@@ -1342,6 +1336,12 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 >!;::Send {u+00b0}  ; (°) degree sign
 >!+;::
   Send {u+00b7}     ; (·) middle dot
+  Send {blind}{vkE8}
+  return
+
+>!/::Send {u+00bf}  ; (¿) inverted question mark
+>!?::
+  Send {u+2026}     ; (…) horizontal ellipsis
   Send {blind}{vkE8}
   return
 
