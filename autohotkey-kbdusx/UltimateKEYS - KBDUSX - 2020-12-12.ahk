@@ -476,6 +476,8 @@ dkAcuteAccent.item["5"] := "{u+2606}"          ; (☆) white star
 dkAcuteAccent.item["6"] := "{u+273d}"          ; (✽) heavy teardrop-spoked asterisk
 dkAcuteAccent.item["7"] := "{u+273b}"          ; (✻) teardrop-spoked asterisk
 dkAcuteAccent.item["8"] := "{u+266a}"          ; (♪) eighth note
+dkAcuteAccent.item["9"] := "{u+2706}"          ; (✆) telephone location sign
+dkAcuteAccent.item["0"] := "{u+2709}"          ; (✉) envelope
 dkAcuteAccent.item["@"] := "{u+266b}"          ; (♫) beamed eighth notes
 dkAcuteAccent.item["#"] := "{u+2042}"          ; (⁂) asterism
 dkAcuteAccent.item["$"] := "{u+2605}"          ; (★) black star
@@ -483,6 +485,8 @@ dkAcuteAccent.item["%"] := "{u+2606}"          ; (☆) white star
 dkAcuteAccent.item["^"] := "{u+273d}"          ; (✽) heavy teardrop-spoked asterisk
 dkAcuteAccent.item["&"] := "{u+273b}"          ; (✻) teardrop-spoked asterisk
 dkAcuteAccent.item["*"] := "{u+266a}"          ; (♪) eighth note
+dkAcuteAccent.item["("] := "{u+2706}"          ; (✆) telephone location sign
+dkAcuteAccent.item[")"] := "{u+2709}"          ; (✉) envelope
 dkAcuteAccent.item[" "] := "{u+00b4}"          ; (´) acute accent
 
 
