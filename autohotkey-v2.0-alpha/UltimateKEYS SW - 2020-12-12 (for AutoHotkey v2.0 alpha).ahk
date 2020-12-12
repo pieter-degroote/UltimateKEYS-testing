@@ -910,7 +910,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 
 
 fSendSecondChar(char) {
-; function for keeping correct operation after dead key press when Scroll Lock enabled
+; function for keeping correct operation after dead key press when Scroll Lock is enabled
 
   if GetKeyState("ScrollLock", "T") {
     if (char == "1")
