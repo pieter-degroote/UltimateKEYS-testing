@@ -472,9 +472,9 @@ $+0::
 
 >!a::
   if GetKeyState("CapsLock", "T")
-    Send {u+0103}  ; (ă) a with breve
-  else
     Send {u+0102}  ; (Ă) A with breve
+  else
+    Send {u+0103}  ; (ă) a with breve
   return
 >!+a::
   if GetKeyState("CapsLock", "T")
