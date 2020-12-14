@@ -35,7 +35,7 @@ Belgian AZERTY layouts in AHK (overlay scripts for US QWERTY). These scripts can
 ## Polish Programmers :
 
 A keyboard layout (for AutoHotkey), tailored for Polish programmers (testing).  
-See the folder **`romanian-prog`** for the overlay scripts and images.
+See the folder **`polish-prog`** for the overlay scripts and images.
 
 ## Romanian Programmers :
 
