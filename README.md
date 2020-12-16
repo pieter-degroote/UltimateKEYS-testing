@@ -45,7 +45,7 @@ See the folder **`romanian-prog`** for the overlay scripts and images.
 
 ## Colemak keyboard layout :
 
-A test version which features 'Colemak' as the base layout.  
+This is a test version featuring 'Colemak' as the base layout.  
 See the folder **`colemak-test`** for the overlay scripts and images.
 
 ## Switching between 'classic' and 'SW' operation with Scroll Lock
