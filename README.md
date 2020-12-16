@@ -1,7 +1,8 @@
 # UltimateKEYS - Testing
 Testing repository for UltimateKEYS
 
-**Official release :**&emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)
+**Official release :**&emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)  
+**Testing :&emsp;[![GitHub Testing](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing)](https://github.com/pieter-degroote/UltimateKEYS-testing/releases)
 
 ## Compact Edition (CE) :
 
@@ -14,7 +15,7 @@ See the folder **`compact-edition`** for the overlay scripts and images.
 Executable versions of UltimateKEYS and UltimateKEYS SW for Windows x64 have been added.  
 See the 'Read Me.txt' file in the .ZIP archive.
 
-## Experimental support for AutoHotkey v2.0 alpha :
+## Support for AutoHotkey v2.0 alpha :
 
 See the folder **`autohotkey-v2.0-alpha`** for experimental support.
 
@@ -41,6 +42,11 @@ See the folder **`polish-prog`** for the overlay scripts and images.
 
 A keyboard layout (for AutoHotkey), tailored for Romanian programmers (testing).  
 See the folder **`romanian-prog`** for the overlay scripts and images.
+
+## Colemak keyboard layout :
+
+A test version which features 'Colemak' as the base layout.  
+See the folder **`colemak-test`** for the overlay scripts and images.
 
 ## Switching between 'classic' and 'SW' operation with Scroll Lock
 
