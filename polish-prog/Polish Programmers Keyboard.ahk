@@ -173,7 +173,7 @@ dkRingDotAbove.item["x"] := "{u+1e8b}"          ; (ẋ) x with dot above
 dkRingDotAbove.item["X"] := "{u+1e8a}"          ; (Ẋ) X with dot above
 dkRingDotAbove.item["y"] := "{u+1e8f}"          ; (ẏ) y with dot above
 dkRingDotAbove.item["Y"] := "{u+1e8e}"          ; (Ẏ) Y with dot above
-dkRingDotAbove.item[chr(0x00ff)] := "{u+1e99}"  ; (ÿ -> ẙ) y with ring above
+dkRingDotAbove.item[chr(0x00e0)] := "{u+1e99}"  ; (à -> ẙ) y with ring above
 dkRingDotAbove.item["z"] := "{u+017c}"          ; (ż) z with dot above
 dkRingDotAbove.item["Z"] := "{u+017b}"          ; (Ż) Z with dot above
 dkRingDotAbove.item["1"] := "{u+2199}"          ; (↙) south west arrow
@@ -229,8 +229,8 @@ dkMacronStroke.item["h"] := "{u+0127}"          ; (ħ) h with stroke (Maltese)
 dkMacronStroke.item["H"] := "{u+0126}"          ; (Ħ) H with stroke (Maltese)
 dkMacronStroke.item["i"] := "{u+012b}"          ; (ī) i with macron
 dkMacronStroke.item["I"] := "{u+012a}"          ; (Ī) I with macron
-dkMacronStroke.item[chr(0x00ef)] := "{u+0268}"  ; (ï -> ɨ) i with stroke
-dkMacronStroke.item[chr(0x00cf)] := "{u+0197}"  ; (Ï -> Ɨ) I with stroke
+dkMacronStroke.item[chr(0x00f8)] := "{u+0268}"  ; (ø -> ɨ) i with stroke
+dkMacronStroke.item[chr(0x00d8)] := "{u+0197}"  ; (Ø -> Ɨ) I with stroke
 dkMacronStroke.item["j"] := "{u+0249}"          ; (ɉ) j with stroke
 dkMacronStroke.item["J"] := "{u+0248}"          ; (Ɉ) J with stroke
 dkMacronStroke.item["l"] := "{u+0142}"          ; (ł) l with stroke
@@ -250,11 +250,11 @@ dkMacronStroke.item["T"] := "{u+0166}"          ; (Ŧ) T with stroke
 dkMacronStroke.item["u"] := "{u+016b}"          ; (ū) u with macron
 dkMacronStroke.item["U"] := "{u+016a}"          ; (Ū) U with macron
 dkMacronStroke.item[chr(0x20ac)] := "{u+0289}"  ; (€ -> ʉ) u with bar
-dkMacronStroke.item[chr(0x00a3)] := "{u+0244}"  ; (£ -> Ʉ) U with bar
+dkMacronStroke.item[chr(0x00a2)] := "{u+0244}"  ; (¢ -> Ʉ) U with bar
 dkMacronStroke.item["y"] := "{u+0233}"          ; (ȳ) y with macron
 dkMacronStroke.item["Y"] := "{u+0232}"          ; (Ȳ) Y with macron
-dkMacronStroke.item[chr(0x00ff)] := "{u+024f}"  ; (ÿ -> ɏ) y with stroke
-dkMacronStroke.item[chr(0x0178)] := "{u+024c}"  ; (Ÿ -> Ɏ) Y with stroke
+dkMacronStroke.item[chr(0x00e0)] := "{u+024f}"  ; (à -> ɏ) y with stroke
+dkMacronStroke.item[chr(0x00c0)] := "{u+024c}"  ; (À -> Ɏ) Y with stroke
 dkMacronStroke.item["z"] := "{u+01b6}"          ; (ƶ) z with stroke
 dkMacronStroke.item["Z"] := "{u+01b5}"          ; (Ƶ) Z with stroke
 dkMacronStroke.item[" "] := "{u+00af}"          ; (¯) macron
@@ -435,7 +435,7 @@ dkAcuteAccent.item["T"] := "{u+01ac}"          ; (Ƭ) T with hook
 dkAcuteAccent.item["u"] := "{u+00fa}"          ; (ú) u with acute
 dkAcuteAccent.item["U"] := "{u+00da}"          ; (Ú) U with acute
 dkAcuteAccent.item[chr(0x20ac)] := "{u+0171}"  ; (€ -> ű) u with double acute
-dkAcuteAccent.item[chr(0x00a3)] := "{u+0170}"  ; (£ -> Ű) U with double acute
+dkAcuteAccent.item[chr(0x00a2)] := "{u+0170}"  ; (¢ -> Ű) U with double acute
 dkAcuteAccent.item["v"] := "{u+028b}"          ; (ʋ) v with hook
 dkAcuteAccent.item["V"] := "{u+01b2}"          ; (Ʋ) V with hook
 dkAcuteAccent.item[chr(0x00ec)] := "{u+028c}"  ; (ì -> ʌ) latin small letter turned v
@@ -444,8 +444,8 @@ dkAcuteAccent.item["w"] := "{u+1e83}"          ; (ẃ) w with acute
 dkAcuteAccent.item["W"] := "{u+1e82}"          ; (Ẃ) W with acute
 dkAcuteAccent.item["y"] := "{u+00fd}"          ; (ý) y with acute
 dkAcuteAccent.item["Y"] := "{u+00dd}"          ; (Ý) Y with acute
-dkAcuteAccent.item[chr(0x00ff)] := "{u+01b4}"  ; (ÿ -> ƴ) y with hook
-dkAcuteAccent.item[chr(0x0178)] := "{u+01b3}"  ; (Ÿ -> Ƴ) Y with hook
+dkAcuteAccent.item[chr(0x00e0)] := "{u+01b4}"  ; (à -> ƴ) y with hook
+dkAcuteAccent.item[chr(0x00c0)] := "{u+01b3}"  ; (À -> Ƴ) Y with hook
 dkAcuteAccent.item["z"] := "{u+017a}"          ; (ź) z with acute
 dkAcuteAccent.item["Z"] := "{u+0179}"          ; (Ź) Z with acute
 dkAcuteAccent.item[chr(0x017c)] := "{u+0225}"  ; (ż -> ȥ) z with hook
@@ -1038,15 +1038,15 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 
 >!i::
   if GetKeyState("CapsLock", "T")
-    Send {u+00cf}  ; (Ï) I with diaeresis
+    Send {u+00d8}  ; (Ø) O with stroke
   else
-    Send {u+00ef}  ; (ï) i with diaeresis
+    Send {u+00f8}  ; (ø) o with stroke
   return
 >!+i::
   if GetKeyState("CapsLock", "T")
-    Send {u+00ef}  ; (ï) i with diaeresis
+    Send {u+00f8}  ; (ø) o with stroke
   else
-    Send {u+00cf}  ; (Ï) I with diaeresis
+    Send {u+00d8}  ; (Ø) O with stroke
   Send {blind}{vkE8}
   return
 
@@ -1136,15 +1136,15 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 
 >!,::
   if GetKeyState("CapsLock", "T")
-    Send {u+00d8}  ; (Ø) O with stroke
+    Send {u+00c1}  ; (Á) A with acute
   else
-    Send {u+00f8}  ; (ø) o with stroke
+    Send {u+00e1}  ; (á) a with acute
   return
 >!<::
   if GetKeyState("CapsLock", "T")
-    Send {u+00f8}  ; (ø) o with stroke
+    Send {u+00e1}  ; (á) a with acute
   else
-    Send {u+00d8}  ; (Ø) O with stroke
+    Send {u+00c1}  ; (Á) A with acute
   Send {blind}{vkE8}
   return
 
@@ -1206,15 +1206,15 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 
 >!y::
   if GetKeyState("CapsLock", "T")
-    Send {u+0178}  ; (Ÿ) Y with diaeresis
+    Send {u+00c0}  ; (À) A with grave
   else
-    Send {u+00ff}  ; (ÿ) y with diaeresis
+    Send {u+00e0}  ; (à) a with grave
   return
 >!+y::
   if GetKeyState("CapsLock", "T")
-    Send {u+00ff}  ; (ÿ) y with diaeresis
+    Send {u+00e0}  ; (à) a with grave
   else
-    Send {u+0178}  ; (Ÿ) Y with diaeresis
+    Send {u+00c0}  ; (À) A with grave
   Send {blind}{vkE8}
   return
 
@@ -1240,7 +1240,7 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 
 >!u::Send {u+20ac}  ; (€) euro sign
 >!+u::
-  Send {u+00a3}     ; (£) pound sign
+  Send {u+00a2}     ; (¢) cent sign (dollar)
   Send {blind}{vkE8}
   return
 
