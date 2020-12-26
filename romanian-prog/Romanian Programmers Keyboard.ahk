@@ -533,7 +533,7 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
 
 >!f::Send {u+0192}  ; (ƒ) f with hook
 >!+f::
-  Send {u+00b9}     ; (¹) superscript 1
+  Send {u+2116}     ; (№) numero sign
   Send {blind}{vkE8}
   return
 
@@ -543,7 +543,7 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
   Send {blind}{vkE8}
   return
 
->!h::Send {u+2116}  ; (№) numero sign
+>!h::Send {u+00a1}  ; (¡) inverted exclamation mark
 >!+h::
   Send {u+205e}     ; (⁞) vertical four dots
   Send {blind}{vkE8}
@@ -639,9 +639,9 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
   Send {blind}{vkE8}
   return
 
->!/::Send {u+2026}  ; (…) horizontal ellipsis
+>!/::Send {u+00bf}  ; (¿) inverted question mark
 >!?::
-  Send {u+00bf}     ; (¿) inverted question mark
+  Send {u+2026}     ; (…) horizontal ellipsis
   Send {blind}{vkE8}
   return
 
@@ -668,7 +668,7 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
   Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
   return
 >!+1::
-  Send {u+00a1}  ; (¡) inverted exclamation mark
+  Send {u+00b9}  ; (¹) superscript 1
   Send {blind}{vkE8}
   return
 
