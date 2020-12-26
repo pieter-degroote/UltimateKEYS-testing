@@ -491,27 +491,69 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
   Send {blind}{vkE8}
   return
 
->!b::Send {u+2022}  ; (•) bullet
+>!v::
+  if GetKeyState("CapsLock", "T")
+    Send {u+00d0}  ; (Ð) capital letter eth
+  else
+    Send {u+00f0}  ; (ð) small letter eth
+  return
+>!+v::
+  if GetKeyState("CapsLock", "T")
+    Send {u+00f0}  ; (ð) small letter eth
+  else
+    Send {u+00d0}  ; (Ð) capital letter eth
+  Send {blind}{vkE8}
+  return
+
+>!b::
+  if GetKeyState("CapsLock", "T")
+    Send {u+00de}  ; (Þ) capital letter thorn
+  else
+    Send {u+00fe}  ; (þ) small letter thorn
+  return
+>!+b::
+  if GetKeyState("CapsLock", "T")
+    Send {u+00fe}  ; (þ) small letter thorn
+  else
+    Send {u+00de}  ; (Þ) capital letter thorn
+  Send {blind}{vkE8}
+  return
 
 >!c::Send {u+00a9}  ; (©) copyright sign
 >!+c::
-  Send {u+00a2}     ; (¢) cent sign (dollar)
+  Send {u+00ae}     ; (®) registered sign
   Send {blind}{vkE8}
   return
 
 >!e::Send {u+20ac}  ; (€) euro sign
-
->!f::Send {u+0192}  ; (ƒ) f with hook
-
->!g::Send {u+2122}  ; (™) trademark symbol
-
->!h::Send {u+2020}  ; (†) dagger
->!+h::
-  Send {u+2021}     ; (‡) double dagger
+>!+e::
+  Send {u+00a2}     ; (¢) cent sign (dollar)
   Send {blind}{vkE8}
   return
 
->!j::Send {u+00f7}  ; (÷) division sign
+>!f::Send {u+0192}  ; (ƒ) f with hook
+>!+f::
+  Send {u+00b9}     ; (¹) superscript 1
+  Send {blind}{vkE8}
+  return
+
+>!g::Send {u+2264}  ; (≤) less-than or equal to
+>!+g::
+  Send {u+2265}     ; (≥) greater-than or equal to
+  Send {blind}{vkE8}
+  return
+
+>!h::Send {u+2116}  ; (№) numero sign
+>!+h::
+  Send {u+205e}     ; (⁞) vertical four dots
+  Send {blind}{vkE8}
+  return
+
+>!j::Send {u+221b}  ; (∛) cube root
+>!+j::
+  Send {u+221c}     ; (∜) fourth root
+  Send {blind}{vkE8}
+  return
 
 >!m::Send {u+00b5}  ; (µ) micro sign
 >!+m::
@@ -521,7 +563,7 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
 
 >!n::Send {u+207f}  ; (ⁿ) superscript n
 >!+n::
-  Send {u+00b9}     ; (¹) superscript 1
+  Send {u+221e}     ; (∞) infinity symbol
   Send {blind}{vkE8}
   return
 
@@ -532,14 +574,34 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
   return
 
 >!r::Send {u+00a3}  ; (£) pound sign
+>!+r::
+  Send {u+00a4}     ; (¤) currency sign
+  Send {blind}{vkE8}
+  return
 
 >!u::Send {u+00d7}  ; (×) multiplication sign
+>!+u::
+  Send {u+00f7}     ; (÷) division sign
+  Send {blind}{vkE8}
+  return
 
->!v::Send {u+00ae}  ; (®) registered sign
-
->!x::Send {u+00a4}  ; (¤) currency sign
+>!x::Send {u+2020}  ; (†) dagger
+>!+x::
+  Send {u+2021}     ; (‡) double dagger
+  Send {blind}{vkE8}
+  return
 
 >!y::Send {u+00a5}  ; (¥) yen sign
+>!+y::
+  Send {u+2122}     ; (™) trademark symbol
+  Send {blind}{vkE8}
+  return
+
+>!`::Send {u+2260}  ; (≠) not equal to
+>!~::
+  Send {u+2248}     ; (≈) almost equal to
+  Send {blind}{vkE8}
+  return
 
 >![::Send {u+201e}  ; („) double low-9 quotation mark
 >!{::
@@ -641,12 +703,20 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
   key := ""
   Send {blind}{vkE8}
   return
+>!+4::
+  Send {u+22c4}  ; (⋄) diamond operator
+  Send {blind}{vkE8}
+  return
 
 >!5::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkRingAbove.item[key]
   key := ""
+  Send {blind}{vkE8}
+  return
+>!+5::
+  Send {u+2030}  ; (‰) per mille sign
   Send {blind}{vkE8}
   return
 
@@ -657,12 +727,20 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
   key := ""
   Send {blind}{vkE8}
   return
+>!+6::
+  Send {u+2031}  ; (‱) per ten thousand sign
+  Send {blind}{vkE8}
+  return
 
 >!7::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkGraveAccent.item[key]
   key := ""
+  Send {blind}{vkE8}
+  return
+>!+7::
+  Send {u+2043}  ; (⁃) hyphen bullet
   Send {blind}{vkE8}
   return
 
@@ -673,6 +751,10 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
   key := ""
   Send {blind}{vkE8}
   return
+>!+8::
+  Send {u+2022}  ; (•) bullet
+  Send {blind}{vkE8}
+  return
 
 >!9::
   Send {blind}{vkE8}
@@ -681,12 +763,20 @@ dkCedilla.item[" "] := "{u+00b8}"  ; (¸) cedilla
   key := ""
   Send {blind}{vkE8}
   return
+>!+9::
+  Send {u+2713}  ; (✓) check mark
+  Send {blind}{vkE8}
+  return
 
 >!0::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkDoubleAcute.item[key]
   key := ""
+  Send {blind}{vkE8}
+  return
+>!+0::
+  Send {u+2717}  ; (✗) ballot x
   Send {blind}{vkE8}
   return
 
