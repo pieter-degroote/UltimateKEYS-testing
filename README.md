@@ -10,11 +10,6 @@ This slimmed down 'Compact Edition' (CE) allows for easier input when using West
 Please note that this is a test version.  
 See the folder **`compact-edition`** for the overlay scripts and images.
 
-## Executables for Windows x64 :
-
-Executable versions of UltimateKEYS and UltimateKEYS SW for Windows x64 have been added.  
-See the 'Read Me.txt' file in the .ZIP archive.
-
 ## Support for AutoHotkey v2.0 alpha :
 
 See the folder **`autohotkey-v2.0-alpha`** for experimental support.
