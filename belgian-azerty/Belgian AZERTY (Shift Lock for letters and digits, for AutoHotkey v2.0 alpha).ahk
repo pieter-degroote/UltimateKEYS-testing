@@ -11,12 +11,12 @@
 
 ; Keyboard layout (on Windows OS) :  US QWERTY
 
-; AutoHotkey v2.0-a129-78d2aa15 (https://www.autohotkey.com/)
+; AutoHotkey v2.0-a130-c7408b6b (https://www.autohotkey.com/)
 
 
 
 ListLines False   ; omits recently executed lines from history (for privacy and security)
-#KeyHistory 0     ; disables the key history (for privacy and security)
+KeyHistory 0      ; disables the key history (for privacy and security)
 
 SendMode "Event"  ; allows chaining of customized key combinations
 
