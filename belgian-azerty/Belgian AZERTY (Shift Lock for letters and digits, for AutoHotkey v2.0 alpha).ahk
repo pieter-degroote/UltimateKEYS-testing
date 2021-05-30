@@ -11,7 +11,7 @@
 
 ; Keyboard layout (on Windows OS) :  US QWERTY
 
-; AutoHotkey v2.0-a135-b66a8739 (https://www.autohotkey.com/)
+; AutoHotkey v2.0-a136-feda41f4 (https://www.autohotkey.com/)
 
 
 
@@ -180,12 +180,13 @@ dkTilde["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
 dkTilde[" "] := "~"         ;     tilde
 
 
-; Configuration :  Convert form US QWERTY to Belgian AZERTY
+; Configuration :  Convert US QWERTY to Belgian AZERTY
 
-a::q
-w::z
-q::a
-z::w
+q::a   ; assign 'A' to 'Q'
+w::z   ; assign 'Z' to 'W'
+a::q   ; assign 'Q' to 'A'
+z::w   ; assign 'W' to 'Z'
+`;::m  ; assign 'M' to ';/:'
 
 $1:: {
   if GetKeyState("CapsLock", "T")
@@ -338,19 +339,6 @@ $_::Send "{u+00b0}"  ; (°) degree sign
 
 $=::Send "-"         ; hyphen-minus
 $+::Send "_"         ; underscore
-
-$;:: {
-  if GetKeyState("CapsLock", "T")
-    Send "M"  ; letter M
-  else
-    Send "m"  ; letter m
-}
-$+;:: {
-  if GetKeyState("CapsLock", "T")
-    Send "m"  ; letter m
-  else
-    Send "M"  ; letter M
-}
 
 $m::Send ","   ; comma
 $+m::Send "?"  ; question mark
