@@ -11,7 +11,7 @@
 
 ; Keyboard layout (on Windows OS) :  US QWERTY
 
-; AutoHotkey v2.0-a135-b66a8739 (https://www.autohotkey.com/)
+; AutoHotkey v2.0-a136-feda41f4 (https://www.autohotkey.com/)
 
 
 
