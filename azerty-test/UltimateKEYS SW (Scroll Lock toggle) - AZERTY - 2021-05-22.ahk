@@ -963,12 +963,12 @@ fSendSecondChar(char) {
 
 ; Configuration :  Switch letters to AZERTY
 
-a::q
-w::z
-q::a
-z::w
-`;::m
-m::;
+q::a   ; assign 'A' to 'Q'
+w::z   ; assign 'Z' to 'W'
+a::q   ; assign 'Q' to 'A'
+z::w   ; assign 'W' to 'Z'
+`;::m  ; assign 'M' to ';/:'
+m::;   ; assign ';/:' to 'M'
 
 
 ; Configuration :  Switch positions of symbols and digits with Scroll Lock
