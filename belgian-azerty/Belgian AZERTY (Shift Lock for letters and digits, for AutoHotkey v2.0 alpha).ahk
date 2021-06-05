@@ -332,7 +332,7 @@ $+0:: {
     Send "0"         ; digit 0
 }
 
->!0::Send "{}}"      ; left curly bracket
+>!0::Send "{}}"      ; right curly bracket
 
 $-::Send ")"         ; right parenthesis
 $_::Send "{u+00b0}"  ; (°) degree sign
