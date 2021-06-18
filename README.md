@@ -45,9 +45,9 @@ See the folder **`colemak-test`** for the overlay scripts and images.
 
 ## Switching between 'classic' and 'SW' operation with Scroll Lock
 
-This version allows you to switch dynamically between 'classic' and 'SW' by using the Scroll Lock.  
-Scroll Lock off : &nbsp;classic operation  
-Scroll Lock on : &nbsp;SW operation  
+These versions allow you to switch dynamically between 'Classic' and 'SW' by using the Scroll Lock toggle.  
+Scroll Lock off : &nbsp;'Classic' operation  
+Scroll Lock on : &nbsp;'SW' operation  
 **-&gt; Implemented into the SW editions for AutoHotkey.**
 
 ## Important - Security Warning :
