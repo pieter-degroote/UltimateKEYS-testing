@@ -43,7 +43,7 @@ See the folder **`romanian-prog`** for the overlay scripts and images.
 This is a test version featuring 'Colemak' as the base layout.  
 See the folder **`colemak-test`** for the overlay scripts and images.
 
-## Switching between 'classic' and 'SW' operation with Scroll Lock
+## Switching between 'Classic' and 'SW' operation with Scroll Lock
 
 These versions allow you to switch dynamically between 'Classic' and 'SW' by using the Scroll Lock toggle.  
 Scroll Lock off : &nbsp;'Classic' operation  
