@@ -14,7 +14,7 @@ See the folder **`compact-edition`** for the overlay scripts and images.
 
 See the folder **`autohotkey-v2.0-alpha`** for experimental support.
 
-## Overlay scripts for United States-International keyboard layout&nbsp;:
+## Overlay scripts for US-International keyboard layout&nbsp;:
 
 See the folder **`autohotkey-kbdusx`** for the overlay scripts for “United States-International”.
 
