@@ -514,8 +514,8 @@ ${:: {
 
 >![::Send "["  ; left square bracket
 
-$]::Send "$"  ; dollar sign
-$}::Send "*"  ; asterisk
+$]::Send "$"   ; dollar sign
+$}::Send "*"   ; asterisk
 
 >!]::Send "]"  ; right square bracket
 
