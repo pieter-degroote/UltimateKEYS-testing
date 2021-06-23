@@ -335,8 +335,9 @@ $+0::
 $-::Send )         ; right parenthesis
 $_::Send {u+00b0}  ; (°) degree sign
 
-$=::Send -         ; hyphen-minus
-$+::Send _         ; underscore
+$=::Send -          ; hyphen-minus
+$+::Send _          ; underscore
+>!=::Send {u+00c7}  ; (Ç) C with cedilla
 
 $m::Send `,  ; comma
 $+m::Send ?  ; question mark
@@ -522,8 +523,8 @@ $|::Send {u+00a3}  ; (£) pound sign
 $`::Send {u+00b2}  ; (²) superscript 2
 $~::Send {u+00b3}  ; (³) superscript 3
 
-$sc056::Send <   ; less-than sign
-$+sc056::Send >  ; greater-than sign
+sc056::Send <   ; less-than sign
++sc056::Send >  ; greater-than sign
 >!sc056::Send \  ; reverse solidus (backslash)
 
 >!space::Send {u+00a0}  ; non-breaking space
