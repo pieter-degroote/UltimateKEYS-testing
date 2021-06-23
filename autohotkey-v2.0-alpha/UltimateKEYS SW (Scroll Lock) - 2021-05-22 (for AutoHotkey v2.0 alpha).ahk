@@ -1,4 +1,4 @@
-; UltimateKEYS - 2021-05-22 (for AutoHotkey v2.0 alpha).ahk
+; UltimateKEYS SW (Scroll Lock) - 2021-05-22 (for AutoHotkey v2.0 alpha).ahk
 
 ; Created by :  Pieter Degroote
 
@@ -911,6 +911,191 @@ dkMathSymbols["|"] := "{u+2228}"  ; (∨) logical or
 dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 
 
+fSendSecondChar(char) {
+; function for keeping correct operation after dead key press when Scroll Lock is enabled
+
+  if GetKeyState("ScrollLock", "T") {
+    if (char == "1")
+      return "!"
+    else if (char == "2")
+      return "@"
+    else if (char == "3")
+      return "#"
+    else if (char == "4")
+      return "$"
+    else if (char == "5")
+      return "%"
+    else if (char == "6")
+      return "^"
+    else if (char == "7")
+      return "&"
+    else if (char == "8")
+      return "*"
+    else if (char == "9")
+      return "("
+    else if (char == "0")
+      return ")"
+    else if (char == "!")
+      return "1"
+    else if (char == "@")
+      return "2"
+    else if (char == "#")
+      return "3"
+    else if (char == "$")
+      return "4"
+    else if (char == "%")
+      return "5"
+    else if (char == "^")
+      return "6"
+    else if (char == "&")
+      return "7"
+    else if (char == "*")
+      return "8"
+    else if (char == "(")
+      return "9"
+    else if (char == ")")
+      return "0"
+    else
+      return char
+  }
+  else
+    return char
+}
+
+
+; Configuration :  Switch positions of symbols and digits with Scroll Lock
+
+$1:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "{!}"  ; exclamation mark
+  else
+    Send "1"    ; digit 1
+}
+$+1:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "1"    ; digit 1
+  else
+    Send "{!}"  ; exclamation mark
+}
+
+$2:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "@"  ; at sign
+  else
+    Send "2"  ; digit 2
+}
+$+2:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "2"  ; digit 2
+  else
+    Send "@"  ; at sign
+}
+
+$3:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "{#}"  ; number sign
+  else
+    Send "3"    ; digit 3
+}
+$+3:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "3"    ; digit 3
+  else
+    Send "{#}"  ; number sign
+}
+
+$4:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "$"  ; dollar sign
+  else
+    Send "4"  ; digit 4
+}
+$+4:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "4"  ; digit 4
+  else
+    Send "$"  ; dollar sign
+}
+
+$5:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "`%"  ; percent sign
+  else
+    Send "5"   ; digit 5
+}
+$+5:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "5"   ; digit 5
+  else
+    Send "`%"  ; percent sign
+}
+
+$6:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "{^}"  ; circumflex accent
+  else
+    Send "6"    ; digit 6
+}
+$+6:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "6"    ; digit 6
+  else
+    Send "{^}"  ; circumflex accent
+}
+
+$7:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "&"  ; ampersand
+  else
+    Send "7"  ; digit 7
+}
+$+7:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "7"  ; digit 7
+  else
+    Send "&"  ; ampersand
+}
+
+$8:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "*"  ; asterisk
+  else
+    Send "8"  ; digit 8
+}
+$+8:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "8"  ; digit 8
+  else
+    Send "*"  ; asterisk
+}
+
+$9:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "("  ; left parenthesis
+  else
+    Send "9"  ; digit 9
+}
+$+9:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "9"  ; digit 9
+  else
+    Send "("  ; left parenthesis
+}
+
+$0:: {
+  if GetKeyState("ScrollLock", "T")
+    Send ")"  ; right parenthesis
+  else
+    Send "0"  ; digit 0
+}
+$+0:: {
+  if GetKeyState("ScrollLock", "T")
+    Send "0"  ; digit 0
+  else
+    Send ")"  ; right parenthesis
+}
+
+
 ; Configuration :  'Right Alt' and 'Right Alt + Shift' on US QWERTY
 
 >!a:: {
@@ -1367,8 +1552,8 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkCircumflex.Has(ih.Input)
-    Send dkCircumflex[ih.Input]
+  if dkCircumflex.Has(fSendSecondChar(ih.Input))
+    Send dkCircumflex[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
 }
 >!+6:: {
@@ -1376,8 +1561,8 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkCaron.Has(ih.Input)
-    Send dkCaron[ih.Input]
+  if dkCaron.Has(fSendSecondChar(ih.Input))
+    Send dkCaron[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
 }
 
@@ -1386,8 +1571,8 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkRingDotAbove.Has(ih.Input)
-    Send dkRingDotAbove[ih.Input]
+  if dkRingDotAbove.Has(fSendSecondChar(ih.Input))
+    Send dkRingDotAbove[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!+7:: {
@@ -1395,8 +1580,8 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkMacronStroke.Has(ih.Input)
-    Send dkMacronStroke[ih.Input]
+  if dkMacronStroke.Has(fSendSecondChar(ih.Input))
+    Send dkMacronStroke[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 
@@ -1405,8 +1590,8 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkCedillaOgonek.Has(ih.Input)
-    Send dkCedillaOgonek[ih.Input]
+  if dkCedillaOgonek.Has(fSendSecondChar(ih.Input))
+    Send dkCedillaOgonek[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!_:: {
@@ -1414,8 +1599,8 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkBreveSpecial.Has(ih.Input)
-    Send dkBreveSpecial[ih.Input]
+  if dkBreveSpecial.Has(fSendSecondChar(ih.Input))
+    Send dkBreveSpecial[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 
@@ -1424,8 +1609,8 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkAcuteAccent.Has(ih.Input)
-    Send dkAcuteAccent[ih.Input]
+  if dkAcuteAccent.Has(fSendSecondChar(ih.Input))
+    Send dkAcuteAccent[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!":: {
@@ -1433,8 +1618,8 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkDiaeresis.Has(ih.Input)
-    Send dkDiaeresis[ih.Input]
+  if dkDiaeresis.Has(fSendSecondChar(ih.Input))
+    Send dkDiaeresis[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 
@@ -1443,8 +1628,8 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkGraveAccent.Has(ih.Input)
-    Send dkGraveAccent[ih.Input]
+  if dkGraveAccent.Has(fSendSecondChar(ih.Input))
+    Send dkGraveAccent[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!~:: {
@@ -1452,8 +1637,8 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkTilde.Has(ih.Input)
-    Send dkTilde[ih.Input]
+  if dkTilde.Has(fSendSecondChar(ih.Input))
+    Send dkTilde[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 
@@ -1462,8 +1647,8 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkNotSign.Has(ih.Input)
-    Send dkNotSign[ih.Input]
+  if dkNotSign.Has(fSendSecondChar(ih.Input))
+    Send dkNotSign[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!|:: {
@@ -1471,8 +1656,8 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkBrokenBar.Has(ih.Input)
-    Send dkBrokenBar[ih.Input]
+  if dkBrokenBar.Has(fSendSecondChar(ih.Input))
+    Send dkBrokenBar[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 
@@ -1481,8 +1666,8 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkGreekAlphabet.Has(ih.Input)
-    Send dkGreekAlphabet[ih.Input]
+  if dkGreekAlphabet.Has(fSendSecondChar(ih.Input))
+    Send dkGreekAlphabet[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
 >!+m:: {
@@ -1490,7 +1675,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkMathSymbols.Has(ih.Input)
-    Send dkMathSymbols[ih.Input]
+  if dkMathSymbols.Has(fSendSecondChar(ih.Input))
+    Send dkMathSymbols[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
