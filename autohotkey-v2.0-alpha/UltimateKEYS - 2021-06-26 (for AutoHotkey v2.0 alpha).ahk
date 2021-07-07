@@ -2,16 +2,16 @@
 
 ; Created by :  Pieter Degroote
 
-; License :  GNU General Public License Version 3
+; License :     GNU General Public License Version 3
 
-; GitHub :   https://github.com/pieter-degroote/UltimateKEYS
+; GitHub :      https://github.com/pieter-degroote/UltimateKEYS
 
 
 ; Requirements :
 
 ; Keyboard layout (on Windows OS) :  US QWERTY
 
-; AutoHotkey v2.0-a137-f6f65742 (https://www.autohotkey.com/)
+; AutoHotkey v2.0-a138-7538f26f (https://www.autohotkey.com/)
 
 
 
