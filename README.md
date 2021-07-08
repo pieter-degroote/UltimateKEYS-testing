@@ -8,7 +8,7 @@ Testing repository for UltimateKEYS
 
 This slimmed down ‘Compact Edition’ (CE) allows for easier input when using Western languages.  
 Please note that this is a test version.  
-See the folder **`compact-edition`** for the overlay scripts and images.
+See the folder **`compact-edition`** for overlay scripts and images.
 
 ## Support for AutoHotkey v2.0 alpha&nbsp;:
 
@@ -16,7 +16,7 @@ See the folder **`autohotkey-v2.0-alpha`** for experimental support.
 
 ## Overlay scripts for US-International keyboard layout&nbsp;:
 
-See the folder **`autohotkey-kbdusx`** for the overlay scripts for “United States-International”.
+See the folder **`autohotkey-kbdusx`** for overlay scripts for “United States-International”.
 
 These scripts should have the exact same functionality as the main editions, but are intended as overlays for “United States-International” (all other AHK scripts are overlays for standard US QWERTY instead).
 
@@ -31,17 +31,17 @@ Belgian AZERTY layouts in AHK (overlay scripts for US QWERTY). These scripts can
 ## Polish Programmers&nbsp;:
 
 A keyboard layout (for AutoHotkey), tailored for Polish programmers (testing).  
-See the folder **`polish-prog`** for the overlay scripts and images.
+See the folder **`polish-prog`** for overlay scripts and images.
 
 ## Romanian Programmers&nbsp;:
 
 A keyboard layout (for AutoHotkey), tailored for Romanian programmers (testing).  
-See the folder **`romanian-prog`** for the overlay scripts and images.
+See the folder **`romanian-prog`** for overlay scripts and images.
 
 ## Colemak keyboard layout&nbsp;:
 
 This is a test version featuring ‘Colemak’ as the base layout.  
-See the folder **`colemak-test`** for the overlay scripts and images.
+See the folder **`colemak-test`** for overlay scripts and images.
 
 ## Switching between ‘Classic’ and ‘SW’ operation with Scroll Lock
 
