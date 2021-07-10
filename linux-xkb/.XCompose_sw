@@ -1,4 +1,4 @@
-# UltimateKEYS  (~/.XCompose)
+# UltimateKEYS SW  (~/.XCompose)
 
 # Created by :  Pieter Degroote
 
@@ -11,8 +11,8 @@ include "%L"
 
 # Additional dead key descriptions
 
-<dead_caron> <3>          : "ǯ"  U01EF    # small letter ezh with caron
-<dead_caron> <numbersign> : "Ǯ"  U01EE    # capital letter ezh with caron
+<dead_caron> <numbersign> : "ǯ"  U01EF    # small letter ezh with caron
+<dead_caron> <3>          : "Ǯ"  U01EE    # capital letter ezh with caron
 
 <dead_abovedot> <u> : "ů"  U016F    # u with ring above
 <dead_abovedot> <U> : "Ů"  U016E    # U with ring above
@@ -99,8 +99,8 @@ include "%L"
 <dead_breve> <Aring>      :  "Ⱳ"  U2C72    # W with hook
 <dead_breve> <y>          :  "ȝ"  U021D    # small letter yogh
 <dead_breve> <Y>          :  "Ȝ"  U021C    # capital letter yogh
-<dead_breve> <3>          :  "ʒ"  U0292    # small letter ezh
-<dead_breve> <numbersign> :  "Ʒ"  U01B7    # capital letter ezh
+<dead_breve> <numbersign> :  "ʒ"  U0292    # small letter ezh
+<dead_breve> <3>          :  "Ʒ"  U01B7    # capital letter ezh
 
 <dead_acute> <adiaeresis> : "ɑ"  U0251    # latin small letter alpha
 <dead_acute> <Adiaeresis> : "Ɑ"  U2C6D    # latin capital letter alpha
