@@ -1,4 +1,4 @@
-; Belgian AZERTY (Shift Lock for letters and digits).ahk
+; Belgian AZERTY (Shift Lock for letters and digits).ahk - 2021-07-07
 
 ; Created by :  Pieter Degroote
 
