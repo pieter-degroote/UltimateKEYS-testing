@@ -965,32 +965,6 @@ fSendSecondChar(char) {
 }
 
 
-; Configuration :  Switch letters to Colemak
-
-e::f
-r::p
-t::g
-y::j
-u::l
-i::u
-o::y
-p::;
-s::r
-d::s
-f::t
-g::d
-j::n
-k::e
-l::i
-`;::o
-n::k
-
-
-; Configuration :  Assign Backspace also to Caps Lock
-
-CapsLock::Backspace
-
-
 ; Configuration :  Switch positions of symbols and digits with Scroll Lock
 
 $1::
@@ -1122,6 +1096,32 @@ $+0::
   else
     Send )  ; right parenthesis
   return
+
+
+; Configuration :  Switch letters to Colemak
+
+e::f
+r::p
+t::g
+y::j
+u::l
+i::u
+o::y
+p::;
+s::r
+d::s
+f::t
+g::d
+j::n
+k::e
+l::i
+`;::o
+n::k
+
+
+; Configuration :  Assign Backspace also to Caps Lock
+
+CapsLock::Backspace
 
 
 ; Configuration :  'Right Alt' and 'Right Alt + Shift' on US QWERTY
