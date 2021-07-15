@@ -4,12 +4,6 @@ Testing repository for UltimateKEYS
 **Official release&nbsp;:**&emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)  
 **Testing release&nbsp;:**&emsp;[![GitHub Testing](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing)](https://github.com/pieter-degroote/UltimateKEYS-testing/releases)
 
-## Compact Edition (CE)&nbsp;:
-
-This slimmed down ‘Compact Edition’ (CE) allows for easier input when using Western languages.  
-Please note that this is a test version.  
-See the folder **`compact-edition`** for overlay scripts and images.
-
 ## Support for AutoHotkey v2.0 alpha&nbsp;:
 
 See the folder **`autohotkey-v2.0-alpha`** for experimental support.
@@ -27,16 +21,6 @@ See the folder **`azerty-test`** for an experimental edition featuring an AZERTY
 ## Belgian AZERTY&nbsp;:
 
 Belgian AZERTY layouts in AHK (overlay scripts for US QWERTY). These scripts can also be used to learn about the different key remappings and assignments in AutoHotkey v1.1 and v2.0 alpha.
-
-## Polish Programmers&nbsp;:
-
-A keyboard layout (for AutoHotkey), tailored for Polish programmers (testing).  
-See the folder **`polish-prog`** for overlay scripts and images.
-
-## Romanian Programmers&nbsp;:
-
-A keyboard layout (for AutoHotkey), tailored for Romanian programmers (testing).  
-See the folder **`romanian-prog`** for overlay scripts and images.
 
 ## Colemak keyboard layout&nbsp;:
 
