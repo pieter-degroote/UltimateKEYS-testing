@@ -1,4 +1,4 @@
-; UltimateKEYS SW (Scroll Lock) (for AutoHotkey v2.0 alpha).ahk - 2021-07-10
+; UltimateKEYS SW (Scroll Lock) (for AutoHotkey v2.0 alpha).ahk - 2021-07-15
 
 ; Created by :  Pieter Degroote
 
@@ -73,19 +73,6 @@ dkCircumflex["*"] := "{u+21d1}"  ; (⇑) upwards double arrow
 dkCircumflex["("] := "{u+21d7}"  ; (⇗) north east double arrow
 dkCircumflex[")"] := "{u+21d4}"  ; (⇔) left right double arrow
 dkCircumflex[" "] := "{^}"       ;     circumflex accent
-
-; Smart error-tolerant optimization for circumflex in French
-
-dkCircumflex[chr(0x00e4)] := "{u+00e2}"  ; (ä -> â) a with circumflex
-dkCircumflex[chr(0x00c4)] := "{u+00c2}"  ; (Ä -> Â) A with circumflex
-dkCircumflex[chr(0x00eb)] := "{u+00ea}"  ; (ë -> ê) e with circumflex
-dkCircumflex[chr(0x00cb)] := "{u+00ca}"  ; (Ë -> Ê) E with circumflex
-dkCircumflex[chr(0x00ef)] := "{u+00ee}"  ; (ï -> î) i with circumflex
-dkCircumflex[chr(0x00cf)] := "{u+00ce}"  ; (Ï -> Î) I with circumflex
-dkCircumflex[chr(0x00f6)] := "{u+00f4}"  ; (ö -> ô) o with circumflex
-dkCircumflex[chr(0x00d6)] := "{u+00d4}"  ; (Ö -> Ô) O with circumflex
-dkCircumflex[chr(0x00fc)] := "{u+00fb}"  ; (ü -> û) u with circumflex
-dkCircumflex[chr(0x00dc)] := "{u+00db}"  ; (Ü -> Û) U with circumflex
 
 
 ; Dead Key :  Caron
@@ -208,7 +195,7 @@ dkDotAbove["*"] := "{u+2191}"  ; (↑) upwards arrow
 dkDotAbove["("] := "{u+2197}"  ; (↗) north east arrow
 dkDotAbove[")"] := "{u+2194}"  ; (↔) left right arrow
 dkDotAbove[chr(0x00e5)] := "{u+1e98}"  ; (å -> ẘ) w with ring above
-dkDotAbove[chr(0x00ff)] := "{u+1e99}"  ; (ÿ -> ẙ) y with ring above
+dkDotAbove[chr(0x00fb)] := "{u+1e99}"  ; (û -> ẙ) y with ring above
 dkDotAbove[" "] := "{u+02d9}"  ; (˙) dot above
 
 
@@ -257,8 +244,8 @@ dkMacronStroke[chr(0x00fc)] := "{u+0289}"  ; (ü -> ʉ) u with bar
 dkMacronStroke[chr(0x00dc)] := "{u+0244}"  ; (Ü -> Ʉ) U with bar
 dkMacronStroke["y"] := "{u+0233}"          ; (ȳ) y with macron
 dkMacronStroke["Y"] := "{u+0232}"          ; (Ȳ) Y with macron
-dkMacronStroke[chr(0x00ff)] := "{u+024f}"  ; (ÿ -> ɏ) y with stroke
-dkMacronStroke[chr(0x0178)] := "{u+024e}"  ; (Ÿ -> Ɏ) Y with stroke
+dkMacronStroke[chr(0x00fb)] := "{u+024f}"  ; (û -> ɏ) y with stroke
+dkMacronStroke[chr(0x00db)] := "{u+024e}"  ; (Û -> Ɏ) Y with stroke
 dkMacronStroke["z"] := "{u+01b6}"          ; (ƶ) z with stroke
 dkMacronStroke["Z"] := "{u+01b5}"          ; (Ƶ) Z with stroke
 dkMacronStroke["1"] := "{u+21b2}"          ; (↲) downwards arrow with tip leftwards
@@ -374,8 +361,6 @@ dkBreveSpecial["o"] := "{u+014f}"          ; (ŏ) o with breve
 dkBreveSpecial["O"] := "{u+014e}"          ; (Ŏ) O with breve
 dkBreveSpecial[chr(0x00f6)] := "{u+0254}"  ; (ö -> ɔ) small open o
 dkBreveSpecial[chr(0x00d6)] := "{u+0186}"  ; (Ö -> Ɔ) capital open O
-dkBreveSpecial["p"] := "{u+1e55}"          ; (ṕ) p with acute
-dkBreveSpecial["P"] := "{u+1e54}"          ; (Ṕ) P with acute
 dkBreveSpecial["s"] := "{u+0219}"          ; (ș) s with comma below (Romanian)
 dkBreveSpecial["S"] := "{u+0218}"          ; (Ș) S with comma below (Romanian)
 dkBreveSpecial[chr(0x00df)] := "{u+1e9e}"  ; (ß -> ẞ) capital sharp S (capital Eszett)
@@ -445,12 +430,14 @@ dkAcuteAccent[chr(0x00f6)] := "{u+0151}"  ; (ö -> ő) o with double acute
 dkAcuteAccent[chr(0x00d6)] := "{u+0150}"  ; (Ö -> Ő) O with double acute
 dkAcuteAccent["p"] := "{u+01a5}"          ; (ƥ) p with hook
 dkAcuteAccent["P"] := "{u+01a4}"          ; (Ƥ) P with hook
+dkAcuteAccent[chr(0x00f4)] := "{u+1e55}"  ; (ô -> ṕ) p with acute
+dkAcuteAccent[chr(0x00d4)] := "{u+1e54}"  ; (Ô -> Ṕ) P with acute
 dkAcuteAccent["q"] := "{u+024b}"          ; (ɋ) q with hook tail
 dkAcuteAccent["Q"] := "{u+024a}"          ; (Ɋ) Q with hook tail
 dkAcuteAccent["r"] := "{u+0155}"          ; (ŕ) r with acute
 dkAcuteAccent["R"] := "{u+0154}"          ; (Ŕ) R with acute
-dkAcuteAccent[chr(0x00fd)] := "{u+027d}"  ; (ý -> ɽ) r with tail
-dkAcuteAccent[chr(0x00dd)] := "{u+2c64}"  ; (Ý -> Ɽ) R with tail
+dkAcuteAccent[chr(0x00ea)] := "{u+027d}"  ; (ê -> ɽ) r with tail
+dkAcuteAccent[chr(0x00ca)] := "{u+2c64}"  ; (Ê -> Ɽ) R with tail
 dkAcuteAccent["s"] := "{u+015b}"          ; (ś) s with acute
 dkAcuteAccent["S"] := "{u+015a}"          ; (Ś) S with acute
 dkAcuteAccent[chr(0x00df)] := "{u+1e9e}"  ; (ß -> ẞ) capital sharp S (capital Eszett)
@@ -468,8 +455,8 @@ dkAcuteAccent["w"] := "{u+1e83}"          ; (ẃ) w with acute
 dkAcuteAccent["W"] := "{u+1e82}"          ; (Ẃ) W with acute
 dkAcuteAccent["y"] := "{u+00fd}"          ; (ý) y with acute
 dkAcuteAccent["Y"] := "{u+00dd}"          ; (Ý) Y with acute
-dkAcuteAccent[chr(0x00ff)] := "{u+01b4}"  ; (ÿ -> ƴ) y with hook
-dkAcuteAccent[chr(0x0178)] := "{u+01b3}"  ; (Ÿ -> Ƴ) Y with hook
+dkAcuteAccent[chr(0x00fb)] := "{u+01b4}"  ; (û -> ƴ) y with hook
+dkAcuteAccent[chr(0x00db)] := "{u+01b3}"  ; (Û -> Ƴ) Y with hook
 dkAcuteAccent["z"] := "{u+017a}"          ; (ź) z with acute
 dkAcuteAccent["Z"] := "{u+0179}"          ; (Ź) Z with acute
 dkAcuteAccent[chr(0x00e0)] := "{u+0225}"  ; (à -> ȥ) z with hook
@@ -531,6 +518,8 @@ dkDiaeresis[" "] := "{u+00a8}"  ; (¨) diaeresis
 global dkGraveAccent := Map()
 dkGraveAccent["a"] := "{u+00e0}"  ; (à) a with grave
 dkGraveAccent["A"] := "{u+00c0}"  ; (À) A with grave
+dkGraveAccent["d"] := "{u+00f0}"  ; (ð) small letter eth
+dkGraveAccent["D"] := "{u+00d0}"  ; (Ð) capital letter eth
 dkGraveAccent["e"] := "{u+00e8}"  ; (è) e with grave
 dkGraveAccent["E"] := "{u+00c8}"  ; (È) E with grave
 dkGraveAccent["i"] := "{u+00ec}"  ; (ì) i with grave
@@ -539,6 +528,8 @@ dkGraveAccent["n"] := "{u+01f9}"  ; (ǹ) n with grave
 dkGraveAccent["N"] := "{u+01f8}"  ; (Ǹ) N with grave
 dkGraveAccent["o"] := "{u+00f2}"  ; (ò) o with grave
 dkGraveAccent["O"] := "{u+00d2}"  ; (Ò) O with grave
+dkGraveAccent["t"] := "{u+00fe}"  ; (þ) small letter thorn
+dkGraveAccent["T"] := "{u+00de}"  ; (Þ) capital letter thorn
 dkGraveAccent["u"] := "{u+00f9}"  ; (ù) u with grave
 dkGraveAccent["U"] := "{u+00d9}"  ; (Ù) U with grave
 dkGraveAccent["w"] := "{u+1e81}"  ; (ẁ) w with grave
@@ -547,8 +538,8 @@ dkGraveAccent["y"] := "{u+1ef3}"  ; (ỳ) y with grave
 dkGraveAccent["Y"] := "{u+1ef2}"  ; (Ỳ) Y with grave
 dkGraveAccent["c"] := "{u+2663}"  ; (♣) black club suit
 dkGraveAccent["C"] := "{u+2667}"  ; (♧) white club suit
-dkGraveAccent["d"] := "{u+2666}"  ; (♦) black diamond suit
-dkGraveAccent["D"] := "{u+2662}"  ; (♢) white diamond suit
+dkGraveAccent["m"] := "{u+2666}"  ; (♦) black diamond suit
+dkGraveAccent["M"] := "{u+2662}"  ; (♢) white diamond suit
 dkGraveAccent["h"] := "{u+2665}"  ; (♥) black heart suit
 dkGraveAccent["H"] := "{u+2661}"  ; (♡) white heart suit
 dkGraveAccent["s"] := "{u+2660}"  ; (♠) black spade suit
@@ -622,8 +613,10 @@ dkNotSign["c"] := "{u+00a4}"          ; (¤) currency sign
 dkNotSign["C"] := "{u+00a4}"          ; (¤) currency sign
 dkNotSign[chr(0x00e7)] := "{u+2105}"  ; (ç -> ℅) care of
 dkNotSign[chr(0x00c7)] := "{u+2105}"  ; (Ç -> ℅) care of
-dkNotSign["d"] := "{u+22c4}"          ; (⋄) diamond operator
-dkNotSign["D"] := "{u+22c4}"          ; (⋄) diamond operator
+dkNotSign["d"] := "{u+2020}"          ; (†) dagger
+dkNotSign["D"] := "{u+2021}"          ; (‡) double dagger
+dkNotSign[chr(0x00e2)] := "{u+22c4}"  ; (â -> ⋄) diamond operator
+dkNotSign[chr(0x00c2)] := "{u+22c4}"  ; (Â -> ⋄) diamond operator
 dkNotSign["e"] := "{u+212e}"          ; (℮) estimated symbol
 dkNotSign["E"] := "{u+2709}"          ; (✉) envelope
 dkNotSign["f"] := "{u+2640}"          ; (♀) Venus symbol (female)
@@ -640,9 +633,9 @@ dkNotSign["o"] := "{u+00ba}"          ; (º) masculine ordinal indicator (Spanis
 dkNotSign["O"] := "{u+00ba}"          ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 dkNotSign[chr(0x00f6)] := "{u+2126}"  ; (ö -> Ω) ohm sign (backwards compatibility)
 dkNotSign[chr(0x00d6)] := "{u+2126}"  ; (Ö -> Ω) ohm sign (backwards compatibility)
-dkNotSign["p"] := "{u+2117}"          ; (℗) sound recording copyright
+dkNotSign["p"] := "{u+00b6}"          ; (¶) pilcrow sign
 dkNotSign["P"] := "{u+2117}"          ; (℗) sound recording copyright
-dkNotSign["q"] := "{u+201a}"          ; (‚) single low-9 quotation mark
+dkNotSign["q"] := "{u+201e}"          ; („) double low-9 quotation mark
 dkNotSign["Q"] := "{u+201a}"          ; (‚) single low-9 quotation mark
 dkNotSign["r"] := "{u+00ae}"          ; (®) registered sign
 dkNotSign["R"] := "{u+2619}"          ; (☙) reversed rotated floral heart bullet
@@ -875,6 +868,8 @@ dkMathSymbols["u"] := "{u+222a}"  ; (∪) set union
 dkMathSymbols["U"] := "{u+2216}"  ; (∖) set minus
 dkMathSymbols["w"] := "{u+2118}"  ; (℘) Weierstrass elliptic function
 dkMathSymbols["W"] := "{u+2118}"  ; (℘) Weierstrass elliptic function
+dkMathSymbols["x"] := "{u+2295}"  ; (⊕) exclusive or
+dkMathSymbols["X"] := "{u+225d}"  ; (≝) equal to by definition
 dkMathSymbols["z"] := "{u+21af}"  ; (↯) downwards zigzag arrow
 dkMathSymbols["Z"] := "{u+2124}"  ; (ℤ) whole numbers
 dkMathSymbols["1"] := "{u+2260}"  ; (≠) not equal to
@@ -905,10 +900,10 @@ dkMathSymbols["."] := "{u+2265}"  ; (≥) greater-than or equal to
 dkMathSymbols[">"] := "{u+2265}"  ; (≥) greater-than or equal to
 dkMathSymbols["-"] := "{u+2296}"  ; (⊖) circled minus
 dkMathSymbols["_"] := "{u+2298}"  ; (⊘) circled division slash
-dkMathSymbols["="] := "{u+225d}"  ; (≝) equal to by definition
-dkMathSymbols["+"] := "{u+2295}"  ; (⊕) exclusive or
-dkMathSymbols[chr(0x00d7)] := "{u+2261}"  ; (× -> ≡) identical to
-dkMathSymbols[chr(0x00f7)] := "{u+2262}"  ; (÷ -> ≢) not identical to
+dkMathSymbols["="] := "{u+00d7}"  ; (×) multiplication sign
+dkMathSymbols["+"] := "{u+00f7}"  ; (÷) division sign
+dkMathSymbols[chr(0x00f5)] := "{u+2261}"  ; (õ -> ≡) identical to
+dkMathSymbols[chr(0x00d5)] := "{u+2262}"  ; (Õ -> ≢) not identical to
 dkMathSymbols[";"] := "{u+2235}"  ; (∵) because sign
 dkMathSymbols[":"] := "{u+2234}"  ; (∴) therefore sign
 dkMathSymbols["'"] := "{u+2032}"  ; (′) prime
@@ -1177,6 +1172,20 @@ $+0:: {
   Send "{blind}{vkE8}"
 }
 
+>!d:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00c2}"  ; (Â) A with circumflex
+  else
+    Send "{u+00e2}"  ; (â) a with circumflex
+}
+>!+d:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00e2}"  ; (â) a with circumflex
+  else
+    Send "{u+00c2}"  ; (Â) A with circumflex
+  Send "{blind}{vkE8}"
+}
+
 >!c:: {
   if GetKeyState("CapsLock", "T")
     Send "{u+00c7}"  ; (Ç) C with cedilla
@@ -1188,20 +1197,6 @@ $+0:: {
     Send "{u+00e7}"  ; (ç) c with cedilla
   else
     Send "{u+00c7}"  ; (Ç) C with cedilla
-  Send "{blind}{vkE8}"
-}
-
->!d:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00d0}"  ; (Ð) capital letter eth
-  else
-    Send "{u+00f0}"  ; (ð) small letter eth
-}
->!+d:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00f0}"  ; (ð) small letter eth
-  else
-    Send "{u+00d0}"  ; (Ð) capital letter eth
   Send "{blind}{vkE8}"
 }
 
@@ -1247,6 +1242,20 @@ $+0:: {
   Send "{blind}{vkE8}"
 }
 
+>!r:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00ca}"  ; (Ê) E with circumflex
+  else
+    Send "{u+00ea}"  ; (ê) e with circumflex
+}
+>!+r:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00ea}"  ; (ê) e with circumflex
+  else
+    Send "{u+00ca}"  ; (Ê) E with circumflex
+  Send "{blind}{vkE8}"
+}
+
 >!i:: {
   if GetKeyState("CapsLock", "T")
     Send "{u+00cf}"  ; (Ï) I with diaeresis
@@ -1286,6 +1295,20 @@ $+0:: {
     Send "{u+00ed}"  ; (í) i with acute
   else
     Send "{u+00cd}"  ; (Í) I with acute
+  Send "{blind}{vkE8}"
+}
+
+>!t:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00ce}"  ; (Î) I with circumflex
+  else
+    Send "{u+00ee}"  ; (î) i with circumflex
+}
+>!+t:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00ee}"  ; (î) i with circumflex
+  else
+    Send "{u+00ce}"  ; (Î) I with circumflex
   Send "{blind}{vkE8}"
 }
 
@@ -1373,17 +1396,17 @@ $+0:: {
   Send "{blind}{vkE8}"
 }
 
->!t:: {
+>!p:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00de}"  ; (Þ) capital letter thorn
+    Send "{u+00d4}"  ; (Ô) O with circumflex
   else
-    Send "{u+00fe}"  ; (þ) small letter thorn
+    Send "{u+00f4}"  ; (ô) o with circumflex
 }
->!+t:: {
+>!+p:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00fe}"  ; (þ) small letter thorn
+    Send "{u+00f4}"  ; (ô) o with circumflex
   else
-    Send "{u+00de}"  ; (Þ) capital letter thorn
+    Send "{u+00d4}"  ; (Ô) O with circumflex
   Send "{blind}{vkE8}"
 }
 
@@ -1431,36 +1454,44 @@ $+0:: {
 
 >!y:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+0178}"  ; (Ÿ) Y with diaeresis
+    Send "{u+00db}"  ; (Û) U with circumflex
   else
-    Send "{u+00ff}"  ; (ÿ) y with diaeresis
+    Send "{u+00fb}"  ; (û) u with circumflex
 }
 >!+y:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00ff}"  ; (ÿ) y with diaeresis
+    Send "{u+00fb}"  ; (û) u with circumflex
   else
-    Send "{u+0178}"  ; (Ÿ) Y with diaeresis
+    Send "{u+00db}"  ; (Û) U with circumflex
   Send "{blind}{vkE8}"
 }
 
->!r:: {
+>!-:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00dd}"  ; (Ý) Y with acute
+    Send "{u+00c3}"  ; (Ã) A with tilde
   else
-    Send "{u+00fd}"  ; (ý) y with acute
+    Send "{u+00e3}"  ; (ã) a with tilde
 }
->!+r:: {
+>!_:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00fd}"  ; (ý) y with acute
+    Send "{u+00e3}"  ; (ã) a with tilde
   else
-    Send "{u+00dd}"  ; (Ý) Y with acute
+    Send "{u+00c3}"  ; (Ã) A with tilde
   Send "{blind}{vkE8}"
 }
 
->!p::Send "{u+2020}"  ; (†) dagger
->!+p:: {
-  Send "{u+2021}"     ; (‡) double dagger
-  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey
+>!=:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00d5}"  ; (Õ) O with tilde
+  else
+    Send "{u+00f5}"  ; (õ) o with tilde
+}
+>!+=:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00f5}"  ; (õ) o with tilde
+  else
+    Send "{u+00d5}"  ; (Õ) O with tilde
+  Send "{blind}{vkE8}"
 }
 
 >!s::Send "{u+00df}"  ; (ß) small sharp s (Eszett)
@@ -1472,7 +1503,7 @@ $+0:: {
 >!1::Send "{u+00a1}"  ; (¡) inverted exclamation mark
 >!+1:: {
   Send "{u+00b9}"     ; (¹) superscript 1
-  Send "{blind}{vkE8}"
+  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey
 }
 
 >!2::Send "{u+00a9}"  ; (©) copyright sign
@@ -1499,12 +1530,6 @@ $+0:: {
   Send "{blind}{vkE8}"
 }
 
->!8::Send "{u+201e}"  ; („) double low-9 quotation mark
->!+8:: {
-  Send "{u+00b6}"     ; (¶) pilcrow sign
-  Send "{blind}{vkE8}"
-}
-
 >!9::Send "{u+201c}"  ; (“) left double quotation mark
 >!+9:: {
   Send "{u+2018}"     ; (‘) left single quotation mark
@@ -1514,12 +1539,6 @@ $+0:: {
 >!0::Send "{u+201d}"  ; (”) right double quotation mark
 >!+0:: {
   Send "{u+2019}"     ; (’) right single quotation mark
-  Send "{blind}{vkE8}"
-}
-
->!=::Send "{u+00d7}"  ; (×) multiplication sign
->!+=:: {
-  Send "{u+00f7}"     ; (÷) division sign
   Send "{blind}{vkE8}"
 }
 
@@ -1594,7 +1613,7 @@ $+0:: {
   Send "{blind}{vkE8}"
 }
 
->!-:: {
+>!8:: {
   Send "{blind}{vkE8}"
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
@@ -1603,7 +1622,7 @@ $+0:: {
     Send dkCedillaOgonek[fSendSecondChar(ih.Input)]
   Send "{blind}{vkE8}"
 }
->!_:: {
+>!+8:: {
   Send "{blind}{vkE8}"
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
