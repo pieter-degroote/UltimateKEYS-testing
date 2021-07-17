@@ -1,4 +1,4 @@
-; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v2.0 alpha).ahk - 2021-07-07
+; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v2.0 alpha).ahk - 2021-07-17
 
 ; Created by :  Pieter Degroote
 
@@ -60,26 +60,20 @@ dkCircumflex[" "] := "{^}"       ;     circumflex accent
 global dkAcuteAccent := Map()
 dkAcuteAccent["a"] := "{u+00e1}"  ; (á) a with acute
 dkAcuteAccent["A"] := "{u+00c1}"  ; (Á) A with acute
-dkAcuteAccent["b"] := "{u+0253}"  ; (ɓ) b with hook
-dkAcuteAccent["B"] := "{u+0181}"  ; (Ɓ) B with hook
 dkAcuteAccent["c"] := "{u+0107}"  ; (ć) c with acute
 dkAcuteAccent["C"] := "{u+0106}"  ; (Ć) C with acute
-dkAcuteAccent["d"] := "{u+0257}"  ; (ɗ) d with hook
-dkAcuteAccent["D"] := "{u+018a}"  ; (Ɗ) D with hook
 dkAcuteAccent["e"] := "{u+00e9}"  ; (é) e with acute
 dkAcuteAccent["E"] := "{u+00c9}"  ; (É) E with acute
 dkAcuteAccent["f"] := "{u+0192}"  ; (ƒ) f with hook
 dkAcuteAccent["F"] := "{u+0191}"  ; (Ƒ) F with hook
 dkAcuteAccent["g"] := "{u+01f5}"  ; (ǵ) g with acute
 dkAcuteAccent["G"] := "{u+01f4}"  ; (Ǵ) G with acute
-dkAcuteAccent["h"] := "{u+0266}"  ; (ɦ) h with hook
-dkAcuteAccent["H"] := "{u+a7aa}"  ; (Ɦ) H with hook
 dkAcuteAccent["i"] := "{u+00ed}"  ; (í) i with acute
 dkAcuteAccent["I"] := "{u+00cd}"  ; (Í) I with acute
 dkAcuteAccent["j"] := "{u+0133}"  ; (ĳ) ligature ij
 dkAcuteAccent["J"] := "{u+0132}"  ; (Ĳ) ligature IJ
-dkAcuteAccent["k"] := "{u+0199}"  ; (ƙ) k with hook
-dkAcuteAccent["K"] := "{u+0198}"  ; (Ƙ) K with hook
+dkAcuteAccent["k"] := "{u+1e31}"  ; (ḱ) k with acute
+dkAcuteAccent["K"] := "{u+1e30}"  ; (Ḱ) K with acute
 dkAcuteAccent["l"] := "{u+013a}"  ; (ĺ) l with acute
 dkAcuteAccent["L"] := "{u+0139}"  ; (Ĺ) L with acute
 dkAcuteAccent["m"] := "{u+1e3f}"  ; (ḿ) m with acute
@@ -88,20 +82,14 @@ dkAcuteAccent["n"] := "{u+0144}"  ; (ń) n with acute
 dkAcuteAccent["N"] := "{u+0143}"  ; (Ń) N with acute
 dkAcuteAccent["o"] := "{u+00f3}"  ; (ó) o with acute
 dkAcuteAccent["O"] := "{u+00d3}"  ; (Ó) O with acute
-dkAcuteAccent["p"] := "{u+01a5}"  ; (ƥ) p with hook
-dkAcuteAccent["P"] := "{u+01a4}"  ; (Ƥ) P with hook
-dkAcuteAccent["q"] := "{u+024b}"  ; (ɋ) q with hook tail
-dkAcuteAccent["Q"] := "{u+024a}"  ; (Ɋ) Q with hook tail
+dkAcuteAccent["p"] := "{u+1e55}"  ; (ṕ) p with acute
+dkAcuteAccent["P"] := "{u+1e54}"  ; (Ṕ) P with acute
 dkAcuteAccent["r"] := "{u+0155}"  ; (ŕ) r with acute
 dkAcuteAccent["R"] := "{u+0154}"  ; (Ŕ) R with acute
 dkAcuteAccent["s"] := "{u+015b}"  ; (ś) s with acute
 dkAcuteAccent["S"] := "{u+015a}"  ; (Ś) S with acute
-dkAcuteAccent["t"] := "{u+01ad}"  ; (ƭ) t with hook
-dkAcuteAccent["T"] := "{u+01ac}"  ; (Ƭ) T with hook
 dkAcuteAccent["u"] := "{u+00fa}"  ; (ú) u with acute
 dkAcuteAccent["U"] := "{u+00da}"  ; (Ú) U with acute
-dkAcuteAccent["v"] := "{u+028b}"  ; (ʋ) v with hook
-dkAcuteAccent["V"] := "{u+01b2}"  ; (Ʋ) V with hook
 dkAcuteAccent["w"] := "{u+1e83}"  ; (ẃ) w with acute
 dkAcuteAccent["W"] := "{u+1e82}"  ; (Ẃ) W with acute
 dkAcuteAccent["y"] := "{u+00fd}"  ; (ý) y with acute
