@@ -148,8 +148,8 @@ include "%L"
 
 <dead_greek> <v>      : "β"  U03B2  # small beta
 <dead_greek> <V>      : "Β"  U0392  # capital beta
-<dead_greek> <comma>  : "ς"  U03C2  # small sigma, in word-final position
-<dead_greek> <ssharp> : "ς"  U03C2  # small sigma, in word-final position
+<dead_greek> <comma>  : "ς"  U03C2  # small final sigma
+<dead_greek> <ssharp> : "ς"  U03C2  # small final sigma
 <dead_greek> <y>      : "υ"  U03C5  # small upsilon
 <dead_greek> <Y>      : "Υ"  U03A5  # capital upsilon
 <dead_greek> <c>      : "χ"  U03C7  # small chi
