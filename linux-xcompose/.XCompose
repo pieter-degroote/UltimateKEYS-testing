@@ -124,10 +124,6 @@ include "%L"
 <dead_acute> <Eacute>      : "Ɠ"  U0193    # G with hook
 <dead_acute> <h>           : "ɦ"  U0266    # h with hook
 <dead_acute> <H>           : "Ɦ"  UA7AA    # H with hook
-<dead_acute> <k>           : "ḱ"  U1E31    # k with acute
-<dead_acute> <K>           : "Ḱ"  U1E30    # K with acute
-<dead_acute> <p>           : "ṕ"  U1E55    # p with acute
-<dead_acute> <P>           : "Ṕ"  U1E54    # P with acute
 <dead_acute> <q>           : "ɋ"  U024B    # q with tail
 <dead_acute> <Q>           : "Ɋ"  U024A    # Q with tail
 <dead_acute> <t>           : "ƭ"  U01AD    # t with hook
