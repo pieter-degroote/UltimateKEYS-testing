@@ -802,8 +802,8 @@ DEADKEY	03bc	// Dead Key :  Greek Alphabet
 0052	03a1	// R -> Ρ    capital rho
 0073	03c3	// s -> σ    small sigma
 0053	03a3	// S -> Σ    capital sigma
-002c	03c2	// , -> ς    small sigma, in word-final position
-00df	03c2	// ß -> ς    small sigma, in word-final position
+002c	03c2	// , -> ς    small final sigma
+00df	03c2	// ß -> ς    small final sigma
 0074	03c4	// t -> τ    small tau
 0054	03a4	// T -> Τ    capital tau
 0075	03c5	// u -> υ    small upsilon
