@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v2.0 alpha).ahk - 2021-07-17
+; UltimateKEYS (for AutoHotkey v2.0 alpha).ahk - 2021-07-24
 
 ; Created by :  Pieter Degroote
 
@@ -565,6 +565,10 @@ dkGraveAccent["("] := "{u+2007}"  ; figure space
 dkGraveAccent[")"] := "{u+200b}"  ; zero-width space
 dkGraveAccent["-"] := "{u+00a0}"  ; non-breaking space
 dkGraveAccent["="] := "{u+202f}"  ; narrow no-break space
+dkGraveAccent[chr(0x00f6)] := "{u+01a1}"  ; (ö -> ơ) o with horn
+dkGraveAccent[chr(0x00d6)] := "{u+01a0}"  ; (Ö -> Ơ) O with horn
+dkGraveAccent[chr(0x00fc)] := "{u+01b0}"  ; (ü -> ư) u with horn
+dkGraveAccent[chr(0x00dc)] := "{u+01af}"  ; (Ü -> Ư) U with horn
 dkGraveAccent[" "] := "``"        ; grave accent
 
 
@@ -600,136 +604,132 @@ dkTilde[chr(0x00df)] := "{u+017f}"  ; (ß -> ſ) small long s
 dkTilde[" "] := "~"         ; tilde
 
 
-; Dead Key :  Not Sign
+; Dead Key :  Simple Symbols
 
-global dkNotSign := Map()
-dkNotSign["a"] := "{u+00aa}"          ; (ª) feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
-dkNotSign["A"] := "{u+00aa}"          ; (ª) feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
-dkNotSign[chr(0x00e4)] := "{u+214d}"  ; (ä -> ⅍) aktieselskab
-dkNotSign[chr(0x00c4)] := "{u+214d}"  ; (Ä -> ⅍) aktieselskab
-dkNotSign["b"] := "{u+2022}"          ; (•) bullet
-dkNotSign["B"] := "{u+25e6}"          ; (◦) white bullet
-dkNotSign["c"] := "{u+00a4}"          ; (¤) currency sign
-dkNotSign["C"] := "{u+00a4}"          ; (¤) currency sign
-dkNotSign[chr(0x00e7)] := "{u+2105}"  ; (ç -> ℅) care of
-dkNotSign[chr(0x00c7)] := "{u+2105}"  ; (Ç -> ℅) care of
-dkNotSign["d"] := "{u+2020}"          ; (†) dagger
-dkNotSign["D"] := "{u+2021}"          ; (‡) double dagger
-dkNotSign[chr(0x00e2)] := "{u+22c4}"  ; (â -> ⋄) diamond operator
-dkNotSign[chr(0x00c2)] := "{u+22c4}"  ; (Â -> ⋄) diamond operator
-dkNotSign["e"] := "{u+212e}"          ; (℮) estimated symbol
-dkNotSign["E"] := "{u+2709}"          ; (✉) envelope
-dkNotSign["f"] := "{u+2640}"          ; (♀) Venus symbol (female)
-dkNotSign["F"] := "{u+2640}"          ; (♀) Venus symbol (female)
-dkNotSign["h"] := "{u+2766}"          ; (❦) floral heart
-dkNotSign["H"] := "{u+2767}"          ; (❧) rotated floral heart bullet
-dkNotSign["l"] := "{u+2113}"          ; (ℓ) script small l
-dkNotSign["L"] := "{u+2112}"          ; (ℒ) Laplace transform
-dkNotSign["m"] := "{u+2642}"          ; (♂) Mars symbol (male)
-dkNotSign["M"] := "{u+2642}"          ; (♂) Mars symbol (male)
-dkNotSign["n"] := "{u+00ac}"          ; (¬) not sign
-dkNotSign["N"] := "{u+00ac}"          ; (¬) not sign
-dkNotSign["o"] := "{u+00ba}"          ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
-dkNotSign["O"] := "{u+00ba}"          ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
-dkNotSign[chr(0x00f6)] := "{u+2126}"  ; (ö -> Ω) ohm sign (backwards compatibility)
-dkNotSign[chr(0x00d6)] := "{u+2126}"  ; (Ö -> Ω) ohm sign (backwards compatibility)
-dkNotSign["p"] := "{u+00b6}"          ; (¶) pilcrow sign
-dkNotSign["P"] := "{u+2117}"          ; (℗) sound recording copyright
-dkNotSign["q"] := "{u+201e}"          ; („) double low-9 quotation mark
-dkNotSign["Q"] := "{u+201a}"          ; (‚) single low-9 quotation mark
-dkNotSign["r"] := "{u+00ae}"          ; (®) registered sign
-dkNotSign["R"] := "{u+2619}"          ; (☙) reversed rotated floral heart bullet
-dkNotSign["s"] := "{u+2120}"          ; (℠) service mark
-dkNotSign["S"] := "{u+2120}"          ; (℠) service mark
-dkNotSign["t"] := "{u+2122}"          ; (™) trademark symbol
-dkNotSign["T"] := "{u+2706}"          ; (✆) telephone location sign
-dkNotSign["u"] := "{u+2610}"          ; (☐) ballot box
-dkNotSign["U"] := "{u+2610}"          ; (☐) ballot box
-dkNotSign["v"] := "{u+2713}"          ; (✓) check mark
-dkNotSign["V"] := "{u+2714}"          ; (✔) heavy check mark
-dkNotSign["x"] := "{u+2717}"          ; (✗) ballot x
-dkNotSign["X"] := "{u+2718}"          ; (✘) heavy ballot x
-dkNotSign["y"] := "{u+2611}"          ; (☑) ballot box with check
-dkNotSign["Y"] := "{u+2612}"          ; (☒) ballot box with x
-dkNotSign["1"] := "{u+2116}"          ; (№) numero sign
-dkNotSign["2"] := "{u+00bd}"          ; (½) vulgar fraction 1/2
-dkNotSign["3"] := "{u+2153}"          ; (⅓) vulgar fraction 1/3
-dkNotSign["4"] := "{u+00bc}"          ; (¼) vulgar fraction 1/4
-dkNotSign["5"] := "{u+2154}"          ; (⅔) vulgar fraction 2/3
-dkNotSign["6"] := "{u+00be}"          ; (¾) vulgar fraction 3/4
-dkNotSign["7"] := "{u+215b}"          ; (⅛) vulgar fraction 1/8
-dkNotSign["8"] := "{u+215c}"          ; (⅜) vulgar fraction 3/8
-dkNotSign["9"] := "{u+215d}"          ; (⅝) vulgar fraction 5/8
-dkNotSign["0"] := "{u+215e}"          ; (⅞) vulgar fraction 7/8
-dkNotSign["!"] := "{u+2116}"          ; (№) numero sign
-dkNotSign["@"] := "{u+00bd}"          ; (½) vulgar fraction 1/2
-dkNotSign["#"] := "{u+2153}"          ; (⅓) vulgar fraction 1/3
-dkNotSign["$"] := "{u+00bc}"          ; (¼) vulgar fraction 1/4
-dkNotSign["%"] := "{u+2154}"          ; (⅔) vulgar fraction 2/3
-dkNotSign["^"] := "{u+00be}"          ; (¾) vulgar fraction 3/4
-dkNotSign["&"] := "{u+215b}"          ; (⅛) vulgar fraction 1/8
-dkNotSign["*"] := "{u+215c}"          ; (⅜) vulgar fraction 3/8
-dkNotSign["("] := "{u+215d}"          ; (⅝) vulgar fraction 5/8
-dkNotSign[")"] := "{u+215e}"          ; (⅞) vulgar fraction 7/8
-dkNotSign["-"] := "{u+2043}"          ; (⁃) hyphen bullet
-dkNotSign["="] := "{u+2023}"          ; (‣) triangular bullet
-dkNotSign[";"] := "{u+263a}"          ; (☺) white smiling face
-dkNotSign[":"] := "{u+263b}"          ; (☻) black smiling face
-dkNotSign["/"] := "{u+203c}"          ; (‼) double exclamation mark
-dkNotSign["?"] := "{u+203d}"          ; (‽) interrobang
-dkNotSign[chr(0x00bf)] := "{u+2e18}"  ; (¿ -> ⸘) inverted interrobang
-dkNotSign[chr(0x2026)] := "{u+2e2e}"  ; (… -> ⸮) reversed question mark
-dkNotSign["\"] := "{u+205e}"          ; (⁞) vertical four dots
-dkNotSign["|"] := "{u+205e}"          ; (⁞) vertical four dots
-dkNotSign[" "] := "{u+00ac}"          ; (¬) not sign
+global dkSimpleSymbols := Map()
+dkSimpleSymbols["a"] := "{u+00aa}"          ; (ª) feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+dkSimpleSymbols["A"] := "{u+00aa}"          ; (ª) feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+dkSimpleSymbols[chr(0x00e4)] := "{u+214d}"  ; (ä -> ⅍) aktieselskab
+dkSimpleSymbols[chr(0x00c4)] := "{u+214d}"  ; (Ä -> ⅍) aktieselskab
+dkSimpleSymbols["b"] := "{u+2022}"          ; (•) bullet
+dkSimpleSymbols["B"] := "{u+25e6}"          ; (◦) white bullet
+dkSimpleSymbols["c"] := "{u+2105}"          ; (℅) care of
+dkSimpleSymbols["C"] := "{u+2105}"          ; (℅) care of
+dkSimpleSymbols["d"] := "{u+2020}"          ; (†) dagger
+dkSimpleSymbols["D"] := "{u+2021}"          ; (‡) double dagger
+dkSimpleSymbols["e"] := "{u+212e}"          ; (℮) estimated symbol
+dkSimpleSymbols["E"] := "{u+2709}"          ; (✉) envelope
+dkSimpleSymbols["f"] := "{u+2640}"          ; (♀) Venus symbol (female)
+dkSimpleSymbols["F"] := "{u+2640}"          ; (♀) Venus symbol (female)
+dkSimpleSymbols["h"] := "{u+2766}"          ; (❦) floral heart
+dkSimpleSymbols["H"] := "{u+2767}"          ; (❧) rotated floral heart bullet
+dkSimpleSymbols["i"] := "{u+22c4}"          ; (⋄) diamond operator
+dkSimpleSymbols["I"] := "{u+22c4}"          ; (⋄) diamond operator
+dkSimpleSymbols["l"] := "{u+2113}"          ; (ℓ) script small l
+dkSimpleSymbols["L"] := "{u+2112}"          ; (ℒ) Laplace transform
+dkSimpleSymbols["m"] := "{u+2642}"          ; (♂) Mars symbol (male)
+dkSimpleSymbols["M"] := "{u+2642}"          ; (♂) Mars symbol (male)
+dkSimpleSymbols["n"] := "{u+00ac}"          ; (¬) not sign
+dkSimpleSymbols["N"] := "{u+00ac}"          ; (¬) not sign
+dkSimpleSymbols["o"] := "{u+00ba}"          ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+dkSimpleSymbols["O"] := "{u+00ba}"          ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+dkSimpleSymbols[chr(0x00f6)] := "{u+2126}"  ; (ö -> Ω) ohm sign (backwards compatibility)
+dkSimpleSymbols[chr(0x00d6)] := "{u+2126}"  ; (Ö -> Ω) ohm sign (backwards compatibility)
+dkSimpleSymbols["p"] := "{u+00b6}"          ; (¶) pilcrow sign
+dkSimpleSymbols["P"] := "{u+2117}"          ; (℗) sound recording copyright
+dkSimpleSymbols["q"] := "{u+201e}"          ; („) double low-9 quotation mark
+dkSimpleSymbols["Q"] := "{u+201a}"          ; (‚) single low-9 quotation mark
+dkSimpleSymbols["r"] := "{u+00ae}"          ; (®) registered sign
+dkSimpleSymbols["R"] := "{u+2619}"          ; (☙) reversed rotated floral heart bullet
+dkSimpleSymbols["s"] := "{u+2120}"          ; (℠) service mark
+dkSimpleSymbols["S"] := "{u+2120}"          ; (℠) service mark
+dkSimpleSymbols["t"] := "{u+2122}"          ; (™) trademark symbol
+dkSimpleSymbols["T"] := "{u+2706}"          ; (✆) telephone location sign
+dkSimpleSymbols["u"] := "{u+2610}"          ; (☐) ballot box
+dkSimpleSymbols["U"] := "{u+2610}"          ; (☐) ballot box
+dkSimpleSymbols["v"] := "{u+2713}"          ; (✓) check mark
+dkSimpleSymbols["V"] := "{u+2714}"          ; (✔) heavy check mark
+dkSimpleSymbols["x"] := "{u+2717}"          ; (✗) ballot x
+dkSimpleSymbols["X"] := "{u+2718}"          ; (✘) heavy ballot x
+dkSimpleSymbols["y"] := "{u+2611}"          ; (☑) ballot box with check
+dkSimpleSymbols["Y"] := "{u+2612}"          ; (☒) ballot box with x
+dkSimpleSymbols["1"] := "{u+2116}"          ; (№) numero sign
+dkSimpleSymbols["2"] := "{u+00bd}"          ; (½) vulgar fraction 1/2
+dkSimpleSymbols["3"] := "{u+2153}"          ; (⅓) vulgar fraction 1/3
+dkSimpleSymbols["4"] := "{u+00bc}"          ; (¼) vulgar fraction 1/4
+dkSimpleSymbols["5"] := "{u+2154}"          ; (⅔) vulgar fraction 2/3
+dkSimpleSymbols["6"] := "{u+00be}"          ; (¾) vulgar fraction 3/4
+dkSimpleSymbols["7"] := "{u+215b}"          ; (⅛) vulgar fraction 1/8
+dkSimpleSymbols["8"] := "{u+215c}"          ; (⅜) vulgar fraction 3/8
+dkSimpleSymbols["9"] := "{u+215d}"          ; (⅝) vulgar fraction 5/8
+dkSimpleSymbols["0"] := "{u+215e}"          ; (⅞) vulgar fraction 7/8
+dkSimpleSymbols["!"] := "{u+2116}"          ; (№) numero sign
+dkSimpleSymbols["@"] := "{u+00bd}"          ; (½) vulgar fraction 1/2
+dkSimpleSymbols["#"] := "{u+2153}"          ; (⅓) vulgar fraction 1/3
+dkSimpleSymbols["$"] := "{u+00bc}"          ; (¼) vulgar fraction 1/4
+dkSimpleSymbols["%"] := "{u+2154}"          ; (⅔) vulgar fraction 2/3
+dkSimpleSymbols["^"] := "{u+00be}"          ; (¾) vulgar fraction 3/4
+dkSimpleSymbols["&"] := "{u+215b}"          ; (⅛) vulgar fraction 1/8
+dkSimpleSymbols["*"] := "{u+215c}"          ; (⅜) vulgar fraction 3/8
+dkSimpleSymbols["("] := "{u+215d}"          ; (⅝) vulgar fraction 5/8
+dkSimpleSymbols[")"] := "{u+215e}"          ; (⅞) vulgar fraction 7/8
+dkSimpleSymbols["-"] := "{u+2043}"          ; (⁃) hyphen bullet
+dkSimpleSymbols["_"] := "{u+2023}"          ; (‣) triangular bullet
+dkSimpleSymbols["="] := "{u+00d7}"          ; (×) multiplication sign
+dkSimpleSymbols["+"] := "{u+00f7}"          ; (÷) division sign
+dkSimpleSymbols[";"] := "{u+263a}"          ; (☺) white smiling face
+dkSimpleSymbols[":"] := "{u+263b}"          ; (☻) black smiling face
+dkSimpleSymbols["/"] := "{u+203c}"          ; (‼) double exclamation mark
+dkSimpleSymbols["?"] := "{u+203d}"          ; (‽) interrobang
+dkSimpleSymbols[chr(0x00bf)] := "{u+2e18}"  ; (¿ -> ⸘) inverted interrobang
+dkSimpleSymbols[chr(0x2026)] := "{u+2e2e}"  ; (… -> ⸮) reversed question mark
+dkSimpleSymbols["\"] := "{u+205e}"          ; (⁞) vertical four dots
+dkSimpleSymbols["|"] := "{u+00a6}"          ; (¦) broken bar
+dkSimpleSymbols[" "] := "{u+00d7}"          ; (×) multiplication sign
 
 
-; Dead Key :  Broken Bar
+; Dead Key :  Currency
 
-global dkBrokenBar := Map()
-dkBrokenBar["a"] := "{u+20b3}"          ; (₳) Argentine austral
-dkBrokenBar["A"] := "{u+20b3}"          ; (₳) Argentine austral
-dkBrokenBar["b"] := "{u+20bf}"          ; (₿) bitcoin
-dkBrokenBar["B"] := "{u+20bf}"          ; (₿) bitcoin
-dkBrokenBar["c"] := "{u+20a1}"          ; (₡) Costa Rican colón
-dkBrokenBar["C"] := "{u+20b5}"          ; (₵) Ghanaian cedi
-dkBrokenBar[chr(0x00e7)] := "{u+20a2}"  ; (ç -> ₢) Brazilian cruzeiro
-dkBrokenBar[chr(0x00c7)] := "{u+20a2}"  ; (Ç -> ₢) Brazilian cruzeiro
-dkBrokenBar["d"] := "{u+20ab}"          ; (₫) Vietnamese dong
-dkBrokenBar["D"] := "{u+20af}"          ; (₯) Greek drachma
-dkBrokenBar["f"] := "{u+20a3}"          ; (₣) French franc
-dkBrokenBar["F"] := "{u+20a3}"          ; (₣) French franc
-dkBrokenBar["g"] := "{u+20b2}"          ; (₲) Paraguayan guaraní
-dkBrokenBar["G"] := "{u+20b2}"          ; (₲) Paraguayan guaraní
-dkBrokenBar["h"] := "{u+20b4}"          ; (₴) Ukrainian hryvnia
-dkBrokenBar["H"] := "{u+20b4}"          ; (₴) Ukrainian hryvnia
-dkBrokenBar["k"] := "{u+20ad}"          ; (₭) Laotian kip
-dkBrokenBar["K"] := "{u+20ad}"          ; (₭) Laotian kip
-dkBrokenBar["l"] := "{u+20ba}"          ; (₺) Turkish lira
-dkBrokenBar["L"] := "{u+20be}"          ; (₾) Georgian lari
-dkBrokenBar[chr(0x00f8)] := "{u+20a4}"  ; (ø -> ₤) lira
-dkBrokenBar[chr(0x00d8)] := "{u+20b6}"  ; (Ø -> ₶) livre tournois
-dkBrokenBar["m"] := "{u+20bc}"          ; (₼) Azerbaijani manat
-dkBrokenBar["M"] := "{u+20a5}"          ; (₥) mill sign
-dkBrokenBar["n"] := "{u+20a6}"          ; (₦) Nigerian naira
-dkBrokenBar["N"] := "{u+20a6}"          ; (₦) Nigerian naira
-dkBrokenBar["p"] := "{u+20b1}"          ; (₱) Philippine peso
-dkBrokenBar["P"] := "{u+20b1}"          ; (₱) Philippine peso
-dkBrokenBar["r"] := "{u+20b9}"          ; (₹) Indian rupee
-dkBrokenBar["R"] := "{u+20bd}"          ; (₽) Russian ruble
-dkBrokenBar["s"] := "{u+20aa}"          ; (₪) Israeli new shekel
-dkBrokenBar["S"] := "{u+20b7}"          ; (₷) spesmilo
-dkBrokenBar["t"] := "{u+20ae}"          ; (₮) Mongolian tögrög (tugrik)
-dkBrokenBar["T"] := "{u+20b8}"          ; (₸) Kazakh tenge
-dkBrokenBar["w"] := "{u+20a9}"          ; (₩) South Korean won
-dkBrokenBar["W"] := "{u+20a9}"          ; (₩) South Korean won
-dkBrokenBar["o"] := "{u+01a1}"          ; (ơ) o with horn
-dkBrokenBar["O"] := "{u+01a0}"          ; (Ơ) O with horn
-dkBrokenBar["u"] := "{u+01b0}"          ; (ư) u with horn
-dkBrokenBar["U"] := "{u+01af}"          ; (Ư) U with horn
-dkBrokenBar["\"] := "{u+00a6}"          ; (¦) broken bar
-dkBrokenBar["|"] := "{u+00a6}"          ; (¦) broken bar
-dkBrokenBar[" "] := "{u+00a6}"          ; (¦) broken bar
+global dkCurrency := Map()
+dkCurrency["a"] := "{u+20b3}"          ; (₳) Argentine austral
+dkCurrency["A"] := "{u+20b3}"          ; (₳) Argentine austral
+dkCurrency["b"] := "{u+20bf}"          ; (₿) bitcoin
+dkCurrency["B"] := "{u+20bf}"          ; (₿) bitcoin
+dkCurrency["c"] := "{u+20a1}"          ; (₡) Costa Rican colón
+dkCurrency["C"] := "{u+20b5}"          ; (₵) Ghanaian cedi
+dkCurrency[chr(0x00e7)] := "{u+20a2}"  ; (ç -> ₢) Brazilian cruzeiro
+dkCurrency[chr(0x00c7)] := "{u+20a2}"  ; (Ç -> ₢) Brazilian cruzeiro
+dkCurrency["d"] := "{u+20ab}"          ; (₫) Vietnamese dong
+dkCurrency["D"] := "{u+20af}"          ; (₯) Greek drachma
+dkCurrency["f"] := "{u+20a3}"          ; (₣) French franc
+dkCurrency["F"] := "{u+20a3}"          ; (₣) French franc
+dkCurrency["g"] := "{u+20b2}"          ; (₲) Paraguayan guaraní
+dkCurrency["G"] := "{u+20b2}"          ; (₲) Paraguayan guaraní
+dkCurrency["h"] := "{u+20b4}"          ; (₴) Ukrainian hryvnia
+dkCurrency["H"] := "{u+20b4}"          ; (₴) Ukrainian hryvnia
+dkCurrency["k"] := "{u+20ad}"          ; (₭) Laotian kip
+dkCurrency["K"] := "{u+20ad}"          ; (₭) Laotian kip
+dkCurrency["l"] := "{u+20ba}"          ; (₺) Turkish lira
+dkCurrency["L"] := "{u+20be}"          ; (₾) Georgian lari
+dkCurrency[chr(0x00f8)] := "{u+20a4}"  ; (ø -> ₤) lira
+dkCurrency[chr(0x00d8)] := "{u+20b6}"  ; (Ø -> ₶) livre tournois
+dkCurrency["m"] := "{u+20bc}"          ; (₼) Azerbaijani manat
+dkCurrency["M"] := "{u+20a5}"          ; (₥) mill sign
+dkCurrency["n"] := "{u+20a6}"          ; (₦) Nigerian naira
+dkCurrency["N"] := "{u+20a6}"          ; (₦) Nigerian naira
+dkCurrency["p"] := "{u+20b1}"          ; (₱) Philippine peso
+dkCurrency["P"] := "{u+20b1}"          ; (₱) Philippine peso
+dkCurrency["r"] := "{u+20b9}"          ; (₹) Indian rupee
+dkCurrency["R"] := "{u+20bd}"          ; (₽) Russian ruble
+dkCurrency["s"] := "{u+20aa}"          ; (₪) Israeli new shekel
+dkCurrency["S"] := "{u+20b7}"          ; (₷) spesmilo
+dkCurrency["t"] := "{u+20ae}"          ; (₮) Mongolian tögrög (tugrik)
+dkCurrency["T"] := "{u+20b8}"          ; (₸) Kazakh tenge
+dkCurrency["w"] := "{u+20a9}"          ; (₩) South Korean won
+dkCurrency["W"] := "{u+20a9}"          ; (₩) South Korean won
+dkCurrency["x"] := "{u+00a4}"          ; (¤) currency sign
+dkCurrency["X"] := "{u+00a4}"          ; (¤) currency sign
+dkCurrency[" "] := "{u+00a4}"          ; (¤) currency sign
 
 
 ; Dead Key :  Greek Alphabet
@@ -900,10 +900,8 @@ dkMathSymbols["."] := "{u+2265}"  ; (≥) greater-than or equal to
 dkMathSymbols[">"] := "{u+2265}"  ; (≥) greater-than or equal to
 dkMathSymbols["-"] := "{u+2296}"  ; (⊖) circled minus
 dkMathSymbols["_"] := "{u+2298}"  ; (⊘) circled division slash
-dkMathSymbols["="] := "{u+00d7}"  ; (×) multiplication sign
-dkMathSymbols["+"] := "{u+00f7}"  ; (÷) division sign
-dkMathSymbols[chr(0x00f5)] := "{u+2261}"  ; (õ -> ≡) identical to
-dkMathSymbols[chr(0x00d5)] := "{u+2262}"  ; (Õ -> ≢) not identical to
+dkMathSymbols["="] := "{u+2261}"  ; (≡) identical to
+dkMathSymbols["+"] := "{u+2262}"  ; (≢) not identical to
 dkMathSymbols[";"] := "{u+2235}"  ; (∵) because sign
 dkMathSymbols[":"] := "{u+2234}"  ; (∴) therefore sign
 dkMathSymbols["'"] := "{u+2032}"  ; (′) prime
@@ -1490,8 +1488,8 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkNotSign.Has(ih.Input)
-    Send dkNotSign[ih.Input]
+  if dkSimpleSymbols.Has(ih.Input)
+    Send dkSimpleSymbols[ih.Input]
   Send "{blind}{vkE8}"
 }
 >!|:: {
@@ -1499,8 +1497,8 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkBrokenBar.Has(ih.Input)
-    Send dkBrokenBar[ih.Input]
+  if dkCurrency.Has(ih.Input)
+    Send dkCurrency[ih.Input]
   Send "{blind}{vkE8}"
 }
 
