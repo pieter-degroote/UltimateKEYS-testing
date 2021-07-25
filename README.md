@@ -5,9 +5,9 @@ Testing repository for UltimateKEYS
 **Testing release&nbsp;:**&emsp;[![GitHub Testing](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing)](https://github.com/pieter-degroote/UltimateKEYS-testing/releases)  
 **Legacy release&nbsp;:**&emsp;[![GitHub Legacy](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-legacy.svg?label=legacy)](https://github.com/pieter-degroote/UltimateKEYS-legacy/releases)
 
-## Support for AutoHotkey v2.0 alpha&nbsp;:
+## Support for AutoHotkey v2.0 beta&nbsp;:
 
-See the folder **`autohotkey-v2.0-alpha`** for experimental support.
+See the folder **`autohotkey-v2.0-beta`** for support.
 
 ## Overlay scripts for US-International keyboard layout&nbsp;:
 
