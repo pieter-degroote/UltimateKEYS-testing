@@ -21,7 +21,7 @@ See the folder **`azerty-test`** for an experimental edition featuring an AZERTY
 
 ## Belgian AZERTY&nbsp;:
 
-Belgian AZERTY layout in AHK (overlay scripts for US QWERTY). These scripts can also be used to learn about the different key remappings and assignments in AutoHotkey v1.1 and v2.0 alpha.
+Belgian AZERTY layout in AHK (overlay scripts for US QWERTY). These scripts can also be used to learn about the different key remappings and assignments in AutoHotkey v1.1 and v2.0 beta.
 
 ## Colemak keyboard layout&nbsp;:
 
