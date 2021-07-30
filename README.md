@@ -15,10 +15,6 @@ See the folder **`autohotkey-kbdusx`** for overlay scripts for “United States-
 
 These scripts should have the exact same functionality as the main editions, but are intended as overlays for “United States-International” (all other AHK scripts are overlays for standard US QWERTY instead).
 
-## AZERTY version&nbsp;:
-
-See the folder **`azerty-test`** for an experimental edition featuring an AZERTY version of the keyboard layout.
-
 ## Belgian AZERTY&nbsp;:
 
 Belgian AZERTY layout in AHK (overlay scripts for US QWERTY). These scripts can also be used to learn about the different key remappings and assignments in AutoHotkey v1.1 and v2.0 beta. See the folder **`belgian-azerty`**.
