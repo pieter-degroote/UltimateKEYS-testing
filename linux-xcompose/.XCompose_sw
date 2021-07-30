@@ -137,6 +137,8 @@ include "%L"
 <dead_acute> <Eacute>      : "Ɠ"  U0193    # G with hook
 <dead_acute> <h>           : "ɦ"  U0266    # h with hook
 <dead_acute> <H>           : "Ɦ"  UA7AA    # H with hook
+<dead_acute> <i>           : "ɩ"  U0269    # latin small letter iota
+<dead_acute> <I>           : "Ɩ"  U0196    # latin capital letter iota
 <dead_acute> <o>           : "ő"  U0151    # o with double acute
 <dead_acute> <O>           : "Ő"  U0150    # O with double acute
 <dead_acute> <q>           : "ɋ"  U024B    # q with tail
