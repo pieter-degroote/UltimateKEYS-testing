@@ -840,7 +840,7 @@ DEADKEY	0020	// Dead Key :  Math Symbols
 00e7	2245	// ç -> ≅    congruent to
 00c7	2247	// Ç -> ≇    not congruent to
 0064	2206	// d -> ∆    increment operator
-0044	2207	// D -> ∇    nable/del operator
+0044	2207	// D -> ∇    nabla/del operator
 0065	2203	// e -> ∃    there exists
 0045	2204	// E -> ∄    there does not exist
 0066	0192	// f -> ƒ    f with hook
