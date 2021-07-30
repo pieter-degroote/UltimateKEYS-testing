@@ -444,8 +444,8 @@ DEADKEY	00b4	// Dead Key :  Acute Accent
 00c7	1e08	// Ç -> Ḉ    C with cedilla and acute
 0064	0257	// d -> ɗ    d with hook
 0044	018a	// D -> Ɗ    D with hook
-0065	025b	// e -> ɛ    small open e (latin small epsilon)
-0045	0190	// E -> Ɛ    capital open E (latin capital epsilon)
+0065	025b	// e -> ɛ    small letter open e (latin small epsilon)
+0045	0190	// E -> Ɛ    capital letter open E (latin capital epsilon)
 0066	0192	// f -> ƒ    f with hook
 0046	0191	// F -> Ƒ    F with hook
 0067	01f5	// g -> ǵ    g with acute
