@@ -129,8 +129,8 @@ include "%L"
 <dead_acute> <B>           : "Ɓ"  U0181    # B with hook
 <dead_acute> <d>           : "ɗ"  U0257    # d with hook
 <dead_acute> <D>           : "Ɗ"  U018A    # D with hook
-<dead_acute> <e>           : "ɛ"  U025B    # small open e (latin small epsilon)
-<dead_acute> <E>           : "Ɛ"  U0190    # capital open E (latin capital epsilon)
+<dead_acute> <e>           : "ɛ"  U025B    # small letter open e (latin small epsilon)
+<dead_acute> <E>           : "Ɛ"  U0190    # capital letter open E (latin capital epsilon)
 <dead_acute> <f>           : "ƒ"  function # f with hook
 <dead_acute> <F>           : "Ƒ"  U0191    # F with hook
 <dead_acute> <eacute>      : "ɠ"  U0260    # g with hook
