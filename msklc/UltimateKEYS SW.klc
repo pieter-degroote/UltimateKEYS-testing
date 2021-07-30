@@ -454,6 +454,8 @@ DEADKEY	00b4	// Dead Key :  Acute Accent
 00c9	0193	// É -> Ɠ    G with hook
 0068	0266	// h -> ɦ    h with hook
 0048	a7aa	// H -> Ɦ    H with hook
+0069	0269	// i -> ɩ    latin small letter iota
+0049	0196	// I -> Ɩ    latin capital letter iota
 006a	0133	// j -> ĳ    ligature ij
 004a	0132	// J -> Ĳ    ligature IJ
 006b	1e31	// k -> ḱ    k with acute
