@@ -562,10 +562,10 @@ DEADKEY	0060	// Dead Key :  Grave Accent
 0059	1ef2	// Y -> Ỳ    Y with grave
 0063	2663	// c -> ♣    black club suit
 0043	2667	// C -> ♧    white club suit
-006d	2666	// m -> ♦    black diamond suit
-004d	2662	// M -> ♢    white diamond suit
 0068	2665	// h -> ♥    black heart suit
 0048	2661	// H -> ♡    white heart suit
+006d	2666	// m -> ♦    black diamond suit
+004d	2662	// M -> ♢    white diamond suit
 0073	2660	// s -> ♠    black spade suit
 0053	2664	// S -> ♤    white spade suit
 0031	2002	// 1 ->      en space
