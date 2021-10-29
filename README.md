@@ -7,7 +7,7 @@ Testing repository of UltimateKEYS
 
 ## Support for AutoHotkey v2.0-beta.3&nbsp;:
 
-See the folder **`autohotkey-v2.0`**.
+See the folder **`autohotkey-v2.0`** for supported overlay scripts.
 
 ## ‘Caps Lock mod’ editions
 
