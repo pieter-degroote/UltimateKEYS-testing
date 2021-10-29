@@ -1,4 +1,4 @@
-; Belgian AZERTY (Shift Lock for letters and digits).ahk - 2021-07-17
+; Belgian AZERTY (Shift Lock for letters and digits).ahk - 2021-10-26
 
 ; Created by :  Pieter Degroote
 
@@ -448,6 +448,20 @@ $?::Send {+}  ; plus sign
   Send {blind}{vkE8}
   return
 
+>!s::
+  if GetKeyState("CapsLock", "T")
+    Send {u+1e9e}  ; (ẞ) capital sharp S (capital Eszett)
+  else
+    Send {u+00df}  ; (ß) small sharp s (Eszett)
+  return
+>!+s::
+  if GetKeyState("CapsLock", "T")
+    Send {u+00df}  ; (ß) small sharp s (Eszett)
+  else
+    Send {u+1e9e}  ; (ẞ) capital sharp S (capital Eszett)
+  Send {blind}{vkE8}
+  return
+
 >!t::
   if GetKeyState("CapsLock", "T")
     Send {u+00de}  ; (Þ) capital letter thorn
@@ -463,8 +477,6 @@ $?::Send {+}  ; plus sign
   return
 
 >!e::Send {u+20ac}  ; (€) euro sign
-
->!s::Send {u+00df}  ; (ß) small sharp s (Eszett)
 
 $'::Send {u+00f9}  ; (ù) u with grave
 $"::Send `%        ; percent sign
