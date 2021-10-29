@@ -23,7 +23,7 @@ These scripts should have the exact same functionality as the main editions, but
 
 ## Belgian AZERTY
 
-Belgian AZERTY layout in AHK (overlay scripts for US QWERTY). These scripts can also be used to learn about the different key remappings and assignments in AutoHotkey v1.1 and v2.0 beta. See the folder **`belgian-azerty`**.
+Belgian AZERTY layout in AHK (overlay scripts for US QWERTY). These scripts can also be used to learn about the different key remappings and assignments in AutoHotkey v1.1 and v2.0. See the folder **`belgian-azerty`**.
 
 ## Switching between ‘Classic’ and ‘SW’ operation with Scroll Lock
 
