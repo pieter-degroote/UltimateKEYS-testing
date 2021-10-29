@@ -5,24 +5,25 @@ Testing repository of UltimateKEYS
 **Testing release&nbsp;:**&emsp;[![GitHub Testing](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing)](https://github.com/pieter-degroote/UltimateKEYS-testing/releases)  
 **Legacy release&nbsp;:**&emsp;[![GitHub Legacy](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-legacy.svg?label=legacy)](https://github.com/pieter-degroote/UltimateKEYS-legacy/releases)
 
-## Support for AutoHotkey v2.0 beta&nbsp;:
+## Support for AutoHotkey v2.0-beta.3&nbsp;:
 
-See the folder **`autohotkey-v2.0-beta`**.
+See the folder **`autohotkey-v2.0`**.
+
+## ‘Caps Lock mod’ editions
+
+These versions feature a ‘second Right Alt’ (AltGr) key via ‘Caps Lock’.  
+The ‘Caps Lock’ behavior can be triggered (or toggled) by pressing both Shift keys together.  
+See the folder **`autohotkey-capslock-mod`** for the corresponding overlay scripts.
 
 ## Overlay scripts for US-International keyboard layout&nbsp;:
 
-See the folder **`autohotkey-kbdusx`** for overlay scripts for “United States-International”.
+See the folder **`autohotkey-v1.1-kbdusx`** for overlay scripts for “United States-International”.
 
 These scripts should have the exact same functionality as the main editions, but are intended as overlays for “United States-International” (all other AHK scripts are overlays for standard US QWERTY instead).
 
 ## Belgian AZERTY&nbsp;:
 
 Belgian AZERTY layout in AHK (overlay scripts for US QWERTY). These scripts can also be used to learn about the different key remappings and assignments in AutoHotkey v1.1 and v2.0 beta. See the folder **`belgian-azerty`**.
-
-## Colemak keyboard layout&nbsp;:
-
-This is a test version featuring ‘Colemak’ as the base layout.  
-See the folder **`colemak-test`** for overlay scripts and images.
 
 ## Switching between ‘Classic’ and ‘SW’ operation with Scroll Lock
 
