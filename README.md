@@ -11,9 +11,9 @@ See the folder **`autohotkey-v2.0`** for supported overlay scripts.
 
 ## ‘Caps Lock mod’ editions
 
-These versions feature a ‘second Right Alt’ (AltGr) key via ‘Caps Lock’.  
+This modification features a ‘second Right Alt’ (AltGr) key via ‘Caps Lock’.  
 The ‘Caps Lock’ behavior can be triggered (or toggled) by pressing both Shift keys together.  
-See the folder **`autohotkey-capslock-mod`** for the corresponding overlay scripts.
+See the folder **`autohotkey-capslock-mod`** for instructions.
 
 ## Overlay scripts for US-International keyboard layout
 
