@@ -5,7 +5,7 @@ Testing repository of UltimateKEYS
 **Testing release&nbsp;:**&emsp;[![GitHub Testing](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing)](https://github.com/pieter-degroote/UltimateKEYS-testing/releases)  
 **Legacy release&nbsp;:**&emsp;[![GitHub Legacy](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-legacy.svg?label=legacy)](https://github.com/pieter-degroote/UltimateKEYS-legacy/releases)
 
-## Support for AutoHotkey v2.0 (experimental)
+## Support for AutoHotkey v2.0 (beta 3)
 
 See the folder **`autohotkey-v2.0`** for supported overlay scripts.
 
@@ -15,11 +15,15 @@ This modification features a ‘second Right Alt’ (AltGr) key via ‘Caps Lock
 The ‘Caps Lock’ behavior can be triggered (or toggled) by pressing both Shift keys together.  
 See the folder **`autohotkey-capslock-mod`** for instructions.
 
+## UltimateKEYS CE (Compact Edition) (testing)
+
+This slimmed-down version does not have any dead keys on the layout, offering a more simplified approach (testing).  
+See the folder **`compact-edition`** for more information.
+
 ## Overlay scripts for US-International keyboard layout
 
+These scripts should have the exact same functionality as the main editions, but are intended as overlays for “United States-International” (all other AHK scripts are overlays for standard US QWERTY instead).  
 See the folder **`autohotkey-v1.1-kbdusx`** for overlay scripts for “United States-International”.
-
-These scripts should have the exact same functionality as the main editions, but are intended as overlays for “United States-International” (all other AHK scripts are overlays for standard US QWERTY instead).
 
 ## Belgian AZERTY
 
@@ -30,7 +34,7 @@ Belgian AZERTY layout in AHK (overlay scripts for US QWERTY). These scripts can 
 These versions allow you to switch dynamically between ‘Classic’ and ‘SW’ by using the Scroll Lock toggle.  
 Scroll Lock off&nbsp;: &nbsp;‘Classic’ operation  
 Scroll Lock on&nbsp;: &nbsp;‘SW’ operation  
-**-&gt; Implemented into the SW editions for AutoHotkey.**
+**=&gt; Implemented into the SW editions for AutoHotkey.**
 
 ## Important - Security Warning
 
