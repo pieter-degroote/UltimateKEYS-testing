@@ -1,4 +1,4 @@
-# UltimateKEYS CE - Latest (experimental)
+# UltimateKEYS CE (Compact Edition)
 
 Testing of UltimateKEYS CE (Compact Edition)
 
