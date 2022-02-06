@@ -23,7 +23,7 @@ See the folder **`compact-edition`** for more information.
 ## Overlay scripts for US-International keyboard layout
 
 These scripts should have the exact same functionality as the main editions, but are intended as overlays for “United States-International” (all other AHK scripts are overlays for standard US QWERTY instead).  
-See the folder **`autohotkey-v1.1-kbdusx`** for overlay scripts for “United States-International”.
+See the folder **`autohotkey-kbdusx`** for overlay scripts for “United States-International”.
 
 ## Belgian AZERTY
 
