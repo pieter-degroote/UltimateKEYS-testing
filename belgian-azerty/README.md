@@ -7,7 +7,8 @@ These scripts can also be used to learn about the different key remappings and a
 
 ![Belgian AZERTY (Shift Lock for letters and digits)](Belgian%20AZERTY%20(Shift%20Lock%20for%20letters%20and%20digits).png)
 
-Prerequisite&nbsp;:  
+Prerequisite&nbsp;:
+
 The base keyboard layout has to be configured as US QWERTY.
 
 When two or more languages/keyboards are installed on the system, the default ‘Alt + Shift’ sequence will interfere with the AHK scripts.
