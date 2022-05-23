@@ -10,7 +10,7 @@ These scripts can also be used to learn about the different key remappings and a
 Prerequisite&nbsp;:  
 The base keyboard layout has to be configured as US QWERTY.
 
-When two or more languages/keyboards are installed on the system, the default ‘Alt + Shift’ sequence can interfere with the AHK scripts.
+When two or more languages/keyboards are installed on the system, the default ‘Alt + Shift’ sequence will interfere with the AHK scripts.
 
 To avoid this, you can disable the interfering key sequences at&nbsp;:
 
