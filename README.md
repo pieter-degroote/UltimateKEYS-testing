@@ -5,6 +5,10 @@ Testing repository of UltimateKEYS
 **Testing release&nbsp;:**&emsp;[![GitHub Testing](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing)](https://github.com/pieter-degroote/UltimateKEYS-testing/releases)  
 **Legacy release&nbsp;:**&emsp;[![GitHub Legacy](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-legacy.svg?label=legacy)](https://github.com/pieter-degroote/UltimateKEYS-legacy/releases)
 
+## Keyboard Layout Image
+
+![UltimateKEYS - Keyboard Layout Image](images/UltimateKEYS%20-%20Keyboard%20Layout%20Image.png)
+
 ## Support for AutoHotkey v2.0 (beta 3)
 
 See the folder **`autohotkey-v2.0`** for supported overlay scripts.
