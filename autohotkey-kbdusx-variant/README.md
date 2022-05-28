@@ -1,8 +1,6 @@
-# UltimateKEYS - Caps Lock mod
+# UltimateKEYS - KBDUSX Variant
 
-This modification features a 'second Right Alt' (AltGr) key via 'Caps Lock'.
-
-The classic 'Caps Lock' behavior can be triggered (or toggled) by pressing both Shift keys together.
+This modification makes that the scripts will work with “United States-International” as the base layout, instead of the standard “US QWERTY”.
 
 ## 1. Change "SendMode Input" to "SendMode Event"
 
