@@ -1,8 +1,8 @@
-# UltimateKEYS - Caps Lock mod
+# UltimateKEYS - SW (Scroll Lock) Variant
 
-This modification features a 'second Right Alt' (AltGr) key via 'Caps Lock'.
+This modification features the SW (or ‘switched’) variant with the Scroll Lock toggle.
 
-The classic 'Caps Lock' behavior can be triggered (or toggled) by pressing both Shift keys together.
+This means that when the Scroll Lock is on, the symbols !, @, #, $, %, ^, &, \*, (, ) are directly accessible; the numbers via Shift.
 
 ## 1. Change "SendMode Input" to "SendMode Event"
 
@@ -14,9 +14,9 @@ The classic 'Caps Lock' behavior can be triggered (or toggled) by pressing both 
 
     SendMode "Event"  ; allows chaining of customized key combinations
 
-## 2. Append the following code to the regular scripts
+## 2. Append the following code to the script
 
-Add the following code to the end of the regular scripts&nbsp;:
+Add the following code to the end of the regular script&nbsp;:
 
 **AutoHotkey v1.1&nbsp;:**
 
