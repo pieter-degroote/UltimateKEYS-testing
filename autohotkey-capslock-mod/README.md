@@ -14,9 +14,9 @@ The classic 'Caps Lock' behavior can be triggered (or toggled) by pressing both 
 
     SendMode "Event"  ; allows chaining of customized key combinations
 
-## 2. Add the following code at the end of the regular scripts
+## 2. Append the following code to the regular scripts
 
-The following code can be added to the end of the regular scripts (identical for both AutoHotkey v1.1 and v2.0)&nbsp;:
+Add the following code to the end of the regular scripts (identical for both AutoHotkey v1.1 and v2.0)&nbsp;:
 
 **Overlay scripts for US QWERTY&nbsp;:**
 
