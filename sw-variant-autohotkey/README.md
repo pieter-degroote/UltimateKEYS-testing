@@ -2,7 +2,7 @@
 
 This modification features the SW (or ‘switched’) variant with the Scroll Lock toggle.
 
-This means that when the Scroll Lock is on, the symbols !, @, #, $, %, ^, &, \*, (, ) are directly accessible; the numbers via Shift.
+This means that when the Scroll Lock is on, the symbols !, @, #, $, %, ^, &, \*, (, ) are directly accessible and the numbers via Shift.
 
 ## 1. Change "SendMode Input" to "SendMode Event"
 
