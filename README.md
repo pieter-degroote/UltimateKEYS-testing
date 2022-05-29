@@ -25,7 +25,7 @@ See the folder **`autohotkey-capslock-mod`** for instructions.
 ## Modification for US-International keyboard layout
 
 These modification allows you to run the scripts on 'United States-International', instead of US QWERTY.  
-See the folder **`autohotkey-kbdusx-variant`** for overlay scripts for 'United States-International'.
+See the folder **`autohotkey-kbdusx-variant`** for instructions.
 
 ## Belgian AZERTY
 
