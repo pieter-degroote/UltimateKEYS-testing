@@ -12,11 +12,9 @@ This modification makes that the scripts will work with "United States-Internati
 
     SendMode "Event"  ; allows chaining of customized key combinations
 
-## 2. Append the following code to the regular scripts
+## 2. Append the following code to the regular script(s)
 
-Add the following code to the end of the regular scripts&nbsp;:
-
-**AutoHotkey v1.1 - Classic&nbsp;:**
+**AutoHotkey v1.1 - For Classic version&nbsp;:**
 
     ; Configuration :  No dead keys on standard layout
     
@@ -28,7 +26,7 @@ Add the following code to the end of the regular scripts&nbsp;:
     $'::Send '{space}     ; apostrophe
     $"::Send `"{space}    ; quotation mark
 
-**AutoHotkey v2.0 - Classic&nbsp;:**
+**AutoHotkey v2.0 - For Classic version&nbsp;:**
 
     ; Configuration :  No dead keys on standard layout
     
@@ -40,7 +38,7 @@ Add the following code to the end of the regular scripts&nbsp;:
     $'::Send "' "     ; apostrophe
     $"::Send "`" "    ; quotation mark
 
-**AutoHotkey v1.1 - SW variant&nbsp;:**
+**AutoHotkey v1.1 - For SW variant&nbsp;:**
 
     ; Configuration :  Switch positions of symbols and digits with Scroll Lock; no dead keys on standard layout
     
@@ -180,7 +178,7 @@ Add the following code to the end of the regular scripts&nbsp;:
     $'::Send '{space}   ; apostrophe
     $"::Send `"{space}  ; quotation mark
 
-**AutoHotkey v2.0 - SW variant&nbsp;:**
+**AutoHotkey v2.0 - For SW variant&nbsp;:**
 
     ; Configuration :  Switch positions of symbols and digits with Scroll Lock; no dead keys on standard layout
     
