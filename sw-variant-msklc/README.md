@@ -1,4 +1,4 @@
-# UltimateKEYS CE - SW Variant (MSKLC)
+# UltimateKEYS Compact Edition - SW Variant (MSKLC)
 
 This modification features the SW (or 'switched') variant of UltimateKEYS CE for MSKLC (Windows).
 
