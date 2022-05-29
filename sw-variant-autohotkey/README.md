@@ -14,9 +14,7 @@ This means that when Scroll Lock is on, the symbols !, @, #, $, %, ^, &, \*, (, 
 
     SendMode "Event"  ; allows chaining of customized key combinations
 
-## 2. Append the following code to the script
-
-Add the following code to the end of the regular script&nbsp;:
+## 2. Append the following code to the regular script(s)
 
 **AutoHotkey v1.1&nbsp;:**
 
