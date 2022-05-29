@@ -9,15 +9,23 @@ Testing repository of UltimateKEYS
 
 ![UltimateKEYS - Keyboard Layout Image](images/UltimateKEYS%20-%20Keyboard%20Layout%20Image.png)
 
-## Support for AutoHotkey v2.0 (beta 3)
+## UltimateKEYS - SW ('Switched') Variant
 
-See the folder **`autohotkey-v2.0`** for supported overlay scripts.
+With this modification, the symbols !, @, #, $, %, ^, &, \*, (, ) are directly accessible and the numbers via Shift.  
+For AutoHotkey&nbsp;: &nbsp;**`sw-variant-autohotkey`**  
+For Linux&nbsp;: &nbsp;**`sw-variant-linux`**  
+For MSKLC (Compact Edition)&nbsp;: &nbsp;**`sw-variant-msklc`**  
 
-## ‘Caps Lock mod’ editions
+## 'Caps Lock mod' editions
 
-This modification features a ‘second Right Alt’ (AltGr) key via ‘Caps Lock’.  
-The ‘Caps Lock’ behavior can be triggered (or toggled) by pressing both Shift keys together.  
+This modification features a 'second Right Alt' (AltGr) key via 'Caps Lock'.  
+The 'Caps Lock' behavior can be triggered (or toggled) by pressing both Shift keys together.  
 See the folder **`autohotkey-capslock-mod`** for instructions.
+
+## Modification for US-International keyboard layout
+
+These modification allows you to run the scripts on 'United States-International', instead of US QWERTY.  
+See the folder **`autohotkey-kbdusx-variant`** for overlay scripts for 'United States-International'.
 
 ## Belgian AZERTY
 
@@ -25,8 +33,8 @@ Belgian AZERTY layout in AHK (overlay scripts for US QWERTY). These scripts can 
 
 ## Important - Security Warning
 
-**=&gt; Win/Linux&nbsp;: &nbsp;Only use “BASIC LATIN” characters (codes 32 to 126) for your Windows, Microsoft Live and Linux passwords&nbsp;!**  
-Otherwise, it might be impossible to type any Unicode character higher than “Basic Latin” at the login screen/prompt (due to a different keyboard configuration) !&emsp;**=&gt;&emsp;ACCOUNT LOCKOUT**
+**=&gt; Win/Linux&nbsp;: &nbsp;Only use "BASIC LATIN" characters (codes 32 to 126) for your Windows, Microsoft Live and Linux passwords&nbsp;!**  
+Otherwise, it might be impossible to type any Unicode character higher than "Basic Latin" at the login screen/prompt (due to a different keyboard configuration) !&emsp;**=&gt;&emsp;ACCOUNT LOCKOUT**
 
 **=&gt; Win/Linux&nbsp;: &nbsp;ALWAYS make your system passwords VISIBLE during modification&nbsp;!**
 
