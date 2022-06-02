@@ -4,7 +4,7 @@ This modification features a 'second Right Alt' (AltGr) key via 'Caps Lock'.
 
 The classic 'Caps Lock' behavior can be triggered (or toggled) by pressing both Shift keys together.
 
-## 1. Change "SendMode Input" to "SendMode Event"
+## 1. Change "SendMode" from "Input" to "Event"
 
 **AutoHotkey v1.1&nbsp;: &nbsp;Change `SendMode Input` to&nbsp;:**
 
