@@ -22,9 +22,9 @@ This modification features a 'second Right Alt' (AltGr) key via 'Caps Lock'.
 The 'Caps Lock' behavior can be triggered (or toggled) by pressing both Shift keys together.  
 See the folder **`autohotkey-capslock-mod`** for instructions.
 
-## Modification for US-International keyboard layout
+## Modifications for US-International keyboard layout
 
-These modification allows you to run the scripts on 'United States-International', instead of US QWERTY.  
+These modifications allow you to run the scripts on 'United States-International', instead of US QWERTY.  
 See the folder **`autohotkey-kbdusx-variant`** for instructions.
 
 ## Belgian AZERTY
