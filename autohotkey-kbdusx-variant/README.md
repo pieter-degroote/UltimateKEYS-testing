@@ -2,7 +2,7 @@
 
 These modifications allow the scripts to work with "United States-International" as the base layout, instead of the standard "US QWERTY".
 
-## 1. Change "SendMode Input" to "SendMode Event"
+## 1. Change "SendMode" from "Input" to "Event"
 
 **AutoHotkey v1.1&nbsp;: &nbsp;Change `SendMode Input` to&nbsp;:**
 
@@ -38,7 +38,7 @@ These modifications allow the scripts to work with "United States-International"
     $'::Send "' "     ; apostrophe
     $"::Send "`" "    ; quotation mark
 
-**AutoHotkey v1.1 - For SW variant&nbsp;:**
+**AutoHotkey v1.1 - For conversion to SW variant&nbsp;:**
 
     ; Configuration :  Switch positions of symbols and digits with Scroll Lock; no dead keys on standard layout
     
@@ -178,7 +178,7 @@ These modifications allow the scripts to work with "United States-International"
     $'::Send '{space}   ; apostrophe
     $"::Send `"{space}  ; quotation mark
 
-**AutoHotkey v2.0 - For SW variant&nbsp;:**
+**AutoHotkey v2.0 - For conversion to SW variant&nbsp;:**
 
     ; Configuration :  Switch positions of symbols and digits with Scroll Lock; no dead keys on standard layout
     
