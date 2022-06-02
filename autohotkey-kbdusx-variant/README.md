@@ -1,6 +1,6 @@
 # UltimateKEYS - KBDUSX Variant
 
-This modification makes that the scripts will work with "United States-International" as the base layout, instead of the standard "US QWERTY".
+These modifications allow the scripts to work with "United States-International" as the base layout, instead of the standard "US QWERTY".
 
 ## 1. Change "SendMode Input" to "SendMode Event"
 
