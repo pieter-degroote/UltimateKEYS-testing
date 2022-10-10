@@ -8,7 +8,7 @@ Testing repository of UltimateKEYS
 
 ![UltimateKEYS - Keyboard Layout Image](images/UltimateKEYS%20-%20Keyboard%20Layout%20Image.png)
 
-## UltimateKEYS - SW ('Switched') Variant
+## UltimateKEYS - SW ('Switched') variant
 
 With this modification, the symbols !, @, #, $, %, ^, &, \*, (, ) are directly accessible and the numbers via Shift.  
 For AutoHotkey&nbsp;: &nbsp;**`sw-variant-autohotkey`**  
