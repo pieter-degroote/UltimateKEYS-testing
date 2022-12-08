@@ -11,8 +11,7 @@ Testing repository of UltimateKEYS
 ## UltimateKEYS - Colemak Edition
 
 Colemak edition of UltimateKEYS - This variant uses Colemak as its primary (or base) layout and features UltimateKEYS as its secondary (AltGr) layout.  
-For AutoHotkey v1.1/v2.0 (Win) and XKB/Xmodmap (Linux).  
-See the folder **`colemak`**.
+See the folder **`colemak`** (for Windows and Linux).
 
 ## UltimateKEYS - SW ('Switched') variant
 
@@ -21,7 +20,7 @@ For AutoHotkey&nbsp;: &nbsp;**`sw-variant-autohotkey`**
 For Linux&nbsp;: &nbsp;**`sw-variant-linux`**  
 For MSKLC (Compact Edition)&nbsp;: &nbsp;**`sw-variant-msklc`**  
 
-## 'Caps Lock mod' editions
+## 'Caps Lock mod' variant
 
 This modification features a 'second Right Alt' (AltGr) key via 'Caps Lock'.  
 The 'Caps Lock' behavior can be triggered (or toggled) by pressing both Shift keys together.  
