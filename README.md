@@ -8,9 +8,9 @@ Testing repository of UltimateKEYS
 
 ![UltimateKEYS - Keyboard Layout Image](images/UltimateKEYS%20-%20Keyboard%20Layout%20Image.png)
 
-## UltimateKEYS - Colemak
+## UltimateKEYS - Colemak Edition
 
-Colemak variant of UltimateKEYS - This variant uses Colemak as its primary (or base) layout and features UltimateKEYS as its secondary (AltGr) layout.  
+Colemak edition of UltimateKEYS - This variant uses Colemak as its primary (or base) layout and features UltimateKEYS as its secondary (AltGr) layout.  
 For AutoHotkey v1.1/v2.0 (Win) and XKB/Xmodmap (Linux).  
 See the folder **`colemak`**.
 
