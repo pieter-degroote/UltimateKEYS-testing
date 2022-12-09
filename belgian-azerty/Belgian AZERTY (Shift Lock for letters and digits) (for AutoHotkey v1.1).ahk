@@ -1,4 +1,4 @@
-; Belgian AZERTY (Shift Lock for letters and digits).ahk - 2022-02-01
+; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v1.1).ahk - 2022-02-01
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
