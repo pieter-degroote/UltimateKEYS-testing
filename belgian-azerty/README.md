@@ -5,7 +5,7 @@ These scripts can also be used to learn about the different key remappings and a
 
 **Keyboard Layout Image&nbsp;:**
 
-![Belgian AZERTY (Shift Lock for letters and digits)](Belgian%20AZERTY%20(Shift%20Lock%20for%20letters%20and%20digits).png)
+![Belgian AZERTY (Shift Lock for letters and digits) - Keyboard Layout Image](Belgian%20AZERTY%20(Shift%20Lock%20for%20letters%20and%20digits)%20-%20Keyboard%20Layout%20Image.png)
 
 Prerequisite&nbsp;:
 
