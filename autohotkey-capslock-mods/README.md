@@ -1,6 +1,6 @@
 # UltimateKEYS - Caps Lock modifications
 
-This modification defines 'Caps Lock' either as a second 'Right Alt' (AltGr) or as a second 'Backspace' key (like Colemak).
+This modifications define 'Caps Lock' either as a second 'Right Alt' (AltGr) or as a second 'Backspace' key (like Colemak).
 
 The classic 'Caps Lock' behavior can be triggered (or toggled) by pressing both Shift keys together.
 
