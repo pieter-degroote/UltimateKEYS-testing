@@ -4,7 +4,7 @@ This modification defines 'Caps Lock' either as a second 'Right Alt' (AltGr) or 
 
 The classic 'Caps Lock' behavior can be triggered (or toggled) by pressing both Shift keys together.
 
-## 1. Change "SendMode" from "Input" to "Event"
+## 1. Change "SendMode" from "Input" to "Event" in the script
 
 **AutoHotkey v1.1&nbsp;: &nbsp;Change `SendMode Input` to&nbsp;:**
 
@@ -14,9 +14,9 @@ The classic 'Caps Lock' behavior can be triggered (or toggled) by pressing both 
 
     SendMode "Event"  ; allows chaining of customized key combinations
 
-## 2. Append the following code to the regular scripts
+## 2. Append the following code to the script
 
-Add the following code to the end of the regular scripts (identical for both AutoHotkey v1.1 and v2.0)&nbsp;:
+Add one of the following code snippets to the end of the script (identical for both AutoHotkey v1.1 and v2.0)&nbsp;:
 
 **'Caps Lock' as 'Right Alt' - Overlay scripts for US QWERTY&nbsp;:**
 
