@@ -1,4 +1,5 @@
 # UltimateKEYS - Testing
+
 Testing repository of UltimateKEYS
 
 **Official release&nbsp;:**&emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)  
@@ -20,11 +21,11 @@ For AutoHotkey&nbsp;: &nbsp;**`sw-variant-autohotkey`**
 For Linux&nbsp;: &nbsp;**`sw-variant-linux`**  
 For MSKLC (Compact Edition)&nbsp;: &nbsp;**`sw-variant-msklc`**  
 
-## 'Caps Lock mod' variant
+## Caps Lock modifications
 
-This modification features a 'second Right Alt' (AltGr) key via 'Caps Lock'.  
-The 'Caps Lock' behavior can be triggered (or toggled) by pressing both Shift keys together.  
-See the folder **`autohotkey-capslock-mod`** for instructions.
+These modifications feature a second 'Right Alt' (AltGr) or 'Backspace' key via 'Caps Lock'.  
+The classic 'Caps Lock' behavior can be triggered (or toggled) by pressing both Shift keys together.  
+See the folder **`autohotkey-capslock-mods`** for instructions.
 
 ## Modifications for US-International keyboard layout
 
