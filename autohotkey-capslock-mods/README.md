@@ -16,7 +16,7 @@ The classic 'Caps Lock' behavior can be triggered (or toggled) by pressing both 
 
 ## 2. Append the following code to the script
 
-Add one of the following code snippets to the end of the script (identical for both AutoHotkey v1.1 and v2.0)&nbsp;:
+Add one of the following code snippets to the end of the script (identical for AutoHotkey v1.1 and v2.0)&nbsp;:
 
 **'Caps Lock' as 'Right Alt' - Overlay scripts for US QWERTY&nbsp;:**
 
