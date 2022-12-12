@@ -1,6 +1,6 @@
-# UltimateKEYS - Caps Lock mod
+# UltimateKEYS - Caps Lock modifications
 
-This modification features a 'second Right Alt' (AltGr) key via 'Caps Lock'.
+This modification defines 'Caps Lock' either as a second 'Right Alt' (AltGr) or as a second 'Backspace' key (like Colemak).
 
 The classic 'Caps Lock' behavior can be triggered (or toggled) by pressing both Shift keys together.
 
@@ -18,21 +18,30 @@ The classic 'Caps Lock' behavior can be triggered (or toggled) by pressing both 
 
 Add the following code to the end of the regular scripts (identical for both AutoHotkey v1.1 and v2.0)&nbsp;:
 
-**Overlay scripts for US QWERTY&nbsp;:**
+**'Caps Lock' as 'Right Alt' - Overlay scripts for US QWERTY&nbsp;:**
 
 
-    ; ==== Caps Lock mod ====
+    ; Configuration :  Assign 'Caps Lock' to both 'Shift' keys and 'Right Alt' also to 'Caps Lock'
 
     LShift & RShift::CapsLock  ; assigns 'Caps Lock' to 'Left Shift' and 'Right Shift'
     RShift & LShift::CapsLock  ; assigns 'Caps Lock' to 'Right Shift' and 'Left Shift'
 
     CapsLock::RAlt  ; assigns 'Right Alt' also to 'Caps Lock'
 
-**Overlay scripts for United States-International (KBDUSX)&nbsp;:**
+**'Caps Lock' as 'AltGr' - Overlay scripts for United States-International (KBDUSX)&nbsp;:**
 
-    ; ==== Caps Lock mod ====
+    ; Configuration :  Assign 'Caps Lock' to both 'Shift' keys and 'AltGr' also to 'Caps Lock'
 
     LShift & RShift::CapsLock  ; assigns 'Caps Lock' to 'Left Shift' and 'Right Shift'
     RShift & LShift::CapsLock  ; assigns 'Caps Lock' to 'Right Shift' and 'Left Shift'
 
     CapsLock::vkA5  ; assigns 'AltGr' also to 'Caps Lock'
+
+**'Caps Lock' as 'Backspace' - Overlay scripts for all base keyboard layouts&nbsp;:**
+
+    ; Configuration :  Assign 'Caps Lock' to both 'Shift' keys and 'Backspace' also to 'Caps Lock'
+
+    LShift & RShift::CapsLock  ; assigns 'Caps Lock' to 'Left Shift' and 'Right Shift'
+    RShift & LShift::CapsLock  ; assigns 'Caps Lock' to 'Right Shift' and 'Left Shift'
+
+    CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
