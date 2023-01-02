@@ -1,6 +1,6 @@
-# UltimateKEYS Compact Edition - SW Variant (MSKLC)
+# UltimateKEYS - SW Variant (MSKLC)
 
-This modification features the SW (or 'switched') variant of UltimateKEYS CE for MSKLC (Windows).
+This modification features the SW (or 'switched') variant of UltimateKEYS for MSKLC (Windows).
 
 This means that the symbols !, @, #, $, %, ^, &, \*, (, ) are directly accessible and the numbers via Shift.
 
