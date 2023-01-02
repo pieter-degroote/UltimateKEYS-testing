@@ -34,7 +34,7 @@ See the folder **`autohotkey-kbdusx-variant`** for instructions.
 
 ## Belgian AZERTY
 
-Belgian AZERTY layout in AHK (overlay scripts for US QWERTY). These scripts can also be used to learn about the different key remappings and assignments in AutoHotkey v1.1 and v2.0. See the folder **`belgian-azerty`**.
+Belgian AZERTY layout in AHK (overlay scripts for US QWERTY). These scripts can also be used to learn about the different key remappings and assignments in AutoHotkey v2.0 and v1.1. See the folder **`belgian-azerty`**.
 
 ## Important - Security Warning
 
