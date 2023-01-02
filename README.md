@@ -12,7 +12,7 @@ Testing repository of UltimateKEYS
 ## UltimateKEYS - Colemak Edition
 
 Colemak edition of UltimateKEYS - This variant uses Colemak as its primary (or base) layout and features UltimateKEYS as its secondary (AltGr) layout.  
-See the folder **`colemak`** (for Windows and Linux).
+See the folder **`colemak`** (for AutoHotkey v2.0 and v1.1 on Windows and XKB/Xmodmap on Linux).
 
 ## UltimateKEYS - SW ('Switched') variant
 
