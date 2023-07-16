@@ -12,7 +12,7 @@ Testing repository of UltimateKEYS
 ## UltimateKEYS - Colemak Edition
 
 Colemak edition of UltimateKEYS - This variant uses Colemak as its primary (or base) layout and features UltimateKEYS as its secondary (AltGr) layout.  
-See the folder **`colemak`** (for AutoHotkey v2.0 and v1.1 on Windows, and XKB/Xmodmap on Linux).
+See the folder **`colemak`** (for AutoHotkey v2 and v1.1 on Windows, and XKB/Xmodmap on Linux).
 
 ## UltimateKEYS - SW ('Switched') variant
 
@@ -34,7 +34,7 @@ See the folder **`autohotkey-kbdusx-variant`** for instructions.
 
 ## Belgian AZERTY
 
-Belgian AZERTY layout in AHK (overlay scripts for US QWERTY). These scripts can also be used to learn about the different key remappings and assignments in AutoHotkey v2.0 and v1.1. See the folder **`belgian-azerty`**.
+Belgian AZERTY layout in AHK (overlay scripts for US QWERTY). These scripts can also be used to learn about the different key remappings and assignments in AutoHotkey v2 and v1.1. See the folder **`belgian-azerty`**.
 
 ## Important - Security Warning
 
