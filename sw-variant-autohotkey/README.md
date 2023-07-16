@@ -10,7 +10,7 @@ This means that when Scroll Lock is on, the symbols !, @, #, $, %, ^, &, \*, (, 
 
     SendMode Event  ; allows chaining of customized key combinations
 
-**AutoHotkey v2.0&nbsp;: &nbsp;Change `SendMode "Input"` to&nbsp;:**
+**AutoHotkey v2&nbsp;: &nbsp;Change `SendMode "Input"` to&nbsp;:**
 
     SendMode "Event"  ; allows chaining of customized key combinations
 
@@ -150,7 +150,7 @@ This means that when Scroll Lock is on, the symbols !, @, #, $, %, ^, &, \*, (, 
         Send )  ; right parenthesis
       return
 
-**AutoHotkey v2.0&nbsp;:**
+**AutoHotkey v2&nbsp;:**
 
     ; Configuration :  Switch positions of symbols and digits with Scroll Lock
     
