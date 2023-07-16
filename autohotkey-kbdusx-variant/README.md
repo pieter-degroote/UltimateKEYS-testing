@@ -8,7 +8,7 @@ These modifications allow the scripts to work with "United States-International"
 
     SendMode Event  ; allows chaining of customized key combinations
 
-**AutoHotkey v2.0&nbsp;: &nbsp;Change `SendMode "Input"` to&nbsp;:**
+**AutoHotkey v2&nbsp;: &nbsp;Change `SendMode "Input"` to&nbsp;:**
 
     SendMode "Event"  ; allows chaining of customized key combinations
 
@@ -26,7 +26,7 @@ These modifications allow the scripts to work with "United States-International"
     $'::Send '{space}     ; apostrophe
     $"::Send `"{space}    ; quotation mark
 
-**AutoHotkey v2.0 - For Classic version&nbsp;:**
+**AutoHotkey v2 - For Classic version&nbsp;:**
 
     ; Configuration :  No dead keys on standard layout
     
@@ -178,7 +178,7 @@ These modifications allow the scripts to work with "United States-International"
     $'::Send '{space}   ; apostrophe
     $"::Send `"{space}  ; quotation mark
 
-**AutoHotkey v2.0 - For conversion to SW variant&nbsp;:**
+**AutoHotkey v2 - For conversion to SW variant&nbsp;:**
 
     ; Configuration :  Switch positions of symbols and digits with Scroll Lock; no dead keys on standard layout
     
