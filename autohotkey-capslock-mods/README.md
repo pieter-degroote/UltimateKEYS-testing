@@ -10,13 +10,13 @@ The classic 'Caps Lock' behavior can be triggered (or toggled) by pressing both 
 
     SendMode Event  ; allows chaining of customized key combinations
 
-**AutoHotkey v2.0&nbsp;: &nbsp;Change `SendMode "Input"` to&nbsp;:**
+**AutoHotkey v2&nbsp;: &nbsp;Change `SendMode "Input"` to&nbsp;:**
 
     SendMode "Event"  ; allows chaining of customized key combinations
 
 ## 2. Append the following code to the script
 
-Add one of the following code snippets to the end of the script (identical for AutoHotkey v1.1 and v2.0)&nbsp;:
+Add one of the following code snippets to the end of the script (identical for AutoHotkey v1.1 and v2)&nbsp;:
 
 **'Caps Lock' as 'Right Alt' - Overlay scripts for US QWERTY&nbsp;:**
 
