@@ -17,7 +17,7 @@ See the folder **`colemak`** (for AutoHotkey v2 and v1.1 on Windows, and XKB/Xmo
 ## UltimateKEYS - '.keylayout' format (macOS)
 
 A '.keylayout' file for macOS (without Compose Key). Note that this work is still in its testing stage (install/integrate at your own risk!).  
-Please carefully read the 'Known Issues - Disclaimer' section in its README.md _before_ installing/integrating&nbsp;!  
+Please carefully read the 'Known Issues - Disclaimer' section in its README.md *before* installing/integrating&nbsp;!  
 See the folder **`keylayout`** for further details.
 
 ## UltimateKEYS - SW ('Switched') variant
