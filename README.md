@@ -14,12 +14,18 @@ Testing repository of UltimateKEYS
 Colemak edition of UltimateKEYS - This variant uses Colemak as its primary (or base) layout and features UltimateKEYS as its secondary (AltGr) layout.  
 See the folder **`colemak`** (for AutoHotkey v2 and v1.1 on Windows, and XKB/Xmodmap on Linux).
 
+## UltimateKEYS - '.keylayout' format (macOS)
+
+A '.keylayout' file for macOS (without Compose Key). Please note that this work is still in its testing stage (install/integrate at your own risk!).  
+Please read the 'Known Issues - Disclaimer' section in its README.md _before_ installing/integrating&nbsp;!  
+See the folder **`keylayout`** for further details.
+
 ## UltimateKEYS - SW ('Switched') variant
 
 With this modification, the symbols !, @, #, $, %, ^, &, \*, (, ) are directly accessible and the numbers via Shift.  
 For AutoHotkey&nbsp;: &nbsp;**`sw-variant-autohotkey`**  
 For Linux&nbsp;: &nbsp;**`sw-variant-linux`**  
-For MSKLC (Compact Edition)&nbsp;: &nbsp;**`sw-variant-msklc`**  
+For MSKLC (without Compose Key)&nbsp;: &nbsp;**`sw-variant-msklc`**
 
 ## Caps Lock modifications
 
