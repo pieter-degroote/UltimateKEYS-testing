@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS - Colemak (2x Backspace) (for AutoHotkey v2).ahk - 2023-12-12
+; UltimateKEYS - Colemak (2x Backspace) (for AutoHotkey v2).ahk - 2023-12-28
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -991,7 +991,7 @@ cmpSemicolon["o"] := "{u+25e6}"  ; (◦) white bullet
 cmpSemicolon["h"] := "{u+2043}"  ; (⁃) hyphen bullet
 cmpSemicolon["t"] := "{u+2023}"  ; (‣) triangular bullet
 cmpSemicolon["q"] := "{u+25aa}"  ; (▪) black small square
-cmpSemicolon["r"] := "{u+25ab}"  ; (▫) white small square
+cmpSemicolon["u"] := "{u+25ab}"  ; (▫) white small square
 cmpSemicolon["w"] := "{u+25b4}"  ; (▴) black up-pointing small triangle
 cmpSemicolon["a"] := "{u+25c2}"  ; (◂) black left-pointing small triangle
 cmpSemicolon["s"] := "{u+25be}"  ; (▾) black down-pointing small triangle
@@ -1914,8 +1914,8 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
 >!/::Send "{u+00bf}"   ; (¿) inverted question mark
 >!?::Send "{u+2026}"   ; (…) horizontal ellipsis
 
->!space::Send "{u+00a0}"   ; non-breaking space (NBSP)
->!+space::Send "{u+00a0}"  ; non-breaking space (NBSP)
+>!space::Send "{u+00a0}"   ;     non-breaking space (NBSP)
+>!+space::Send "{u+2022}"  ; (•) bullet
 
 
 ; Configuration :  Compose Key Selector
