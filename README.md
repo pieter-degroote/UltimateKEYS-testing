@@ -26,7 +26,7 @@ See the folder **`keylayout`** for further details.
 With this modification, the symbols !, @, #, $, %, ^, &, \*, (, ) are directly accessible and the numbers via Shift.  
 See the folder **`sw-variant`** for further details.
 
-## Caps Lock modifications
+## AutoHotkey - Caps Lock modifications
 
 These modifications feature a second 'Right Alt' (AltGr) or 'Backspace' key via 'Caps Lock'.  
 The classic 'Caps Lock' behavior can be triggered (or toggled) by pressing both Shift keys together.  
