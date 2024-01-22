@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v2).ahk - 2023-12-28
+; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v2).ahk - 2022-02-01
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -17,8 +17,8 @@
 
 
 
-ListLines False   ; omits recently executed lines from history (for privacy and security)
 KeyHistory 0      ; disables the key history (for privacy and security)
+ListLines False   ; omits recently executed lines from history (for privacy and security)
 
 SendMode "Event"  ; allows chaining of customized key combinations
 
@@ -526,5 +526,5 @@ sc056::Send "<"    ; less-than sign
 +sc056::Send ">"   ; greater-than sign
 >!sc056::Send "\"  ; reverse solidus (backslash)
 
->!space::Send "{u+00a0}"   ;     non-breaking space (NBSP)
->!+space::Send "{u+2022}"  ; (•) bullet
+>!space::Send "{u+00a0}"   ; non-breaking space (NBSP)
+>!+space::Send "{u+00a0}"  ; non-breaking space (NBSP)
