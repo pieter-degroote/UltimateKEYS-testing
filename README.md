@@ -4,6 +4,7 @@ Testing repository of UltimateKEYS
 
 **Official release&nbsp;:**&emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)  
 **Testing release&nbsp;:**&emsp;[![GitHub Testing](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing)](https://github.com/pieter-degroote/UltimateKEYS-testing/releases)  
+**Legacy release&nbsp;:**&emsp;[![GitHub Legacy](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-legacy.svg?label=legacy)](https://github.com/pieter-degroote/UltimateKEYS-legacy/releases)
 
 ## Keyboard Layout Image
 
