@@ -24,20 +24,13 @@ See the folder **`keylayout`** for further details.
 ## UltimateKEYS - SW ('Switched') variant
 
 With this modification, the symbols !, @, #, $, %, ^, &, \*, (, ) are directly accessible and the numbers via Shift.  
-For AutoHotkey&nbsp;: &nbsp;**`sw-variant-autohotkey`**  
-For Linux&nbsp;: &nbsp;**`sw-variant-linux`**  
-For MSKLC (without Compose Key)&nbsp;: &nbsp;**`sw-variant-msklc`**
+See the folder **`sw-variant`** for further details.
 
 ## Caps Lock modifications
 
 These modifications feature a second 'Right Alt' (AltGr) or 'Backspace' key via 'Caps Lock'.  
 The classic 'Caps Lock' behavior can be triggered (or toggled) by pressing both Shift keys together.  
 See the folder **`autohotkey-capslock-mods`** for instructions.
-
-## Modifications for US-International keyboard layout
-
-These modifications allow you to run the scripts on 'United States-International', instead of US QWERTY.  
-See the folder **`autohotkey-kbdusx-variant`** for instructions.
 
 ## Belgian AZERTY
 
