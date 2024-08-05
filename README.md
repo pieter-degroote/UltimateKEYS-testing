@@ -21,7 +21,7 @@ A '.keylayout' file for macOS (without Compose Key). Note that this work is stil
 Please carefully read the 'Known Issues - Disclaimer' section in its README.md *before* installing/integrating&nbsp;!  
 See the folder **`keylayout`** for further details.
 
-## UltimateKEYS - SW ('Switched') variant
+## UltimateKEYS - SW ('Switched') Variant
 
 With this modification, the symbols !, @, #, $, %, ^, &, \*, (, ) are directly accessible and the numbers via Shift.  
 See the folder **`sw-variant`** for further details.
