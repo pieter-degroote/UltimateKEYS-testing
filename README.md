@@ -10,6 +10,9 @@ Testing repository of UltimateKEYS
 
 ![UltimateKEYS - Keyboard Layout Image](images/UltimateKEYS%20-%20Keyboard%20Layout%20Image.png)
 
+=&gt; CP key (blue) : &nbsp;[Compose Key](https://pieter-degroote.github.io/UltimateKEYS/documentation.html#Compose_Key_Sequences) (Multi_key), in combination with Right Alt or AltGr.  
+=&gt; Note that the ISO key (next to Left Shift) is not present on standard ANSI keyboards.
+
 ## UltimateKEYS - Colemak Variant
 
 Colemak variant of UltimateKEYS - This variant uses Colemak as its primary (or base) layout and features UltimateKEYS as its secondary (AltGr) layout.  
