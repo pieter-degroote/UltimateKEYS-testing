@@ -35,10 +35,6 @@ These modifications feature a second 'Right Alt' (AltGr) or 'Backspace' key via 
 The classic 'Caps Lock' behavior can be triggered (or toggled) by pressing both Shift keys together.  
 See the folder **`ahk-capslock-mods`** for instructions.
 
-## Belgian AZERTY
-
-Belgian AZERTY layout in AHK (overlay scripts for US QWERTY). These scripts can also be used to learn about the different key remappings and assignments in AutoHotkey v2 and v1.1. See the folder **`belgian-azerty`**.
-
 ## Important - Security Warning
 
 **=&gt; Win/Linux&nbsp;: &nbsp;Only use "BASIC LATIN" characters (codes 32 to 126) for your Windows, Microsoft Live and Linux passwords&nbsp;!**  
