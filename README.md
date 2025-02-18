@@ -19,7 +19,7 @@ These modifications feature a second AltGr (Right Alt) or Backspace key via Caps
 The classic Caps Lock behavior can be triggered (or toggled) by pressing both Shift keys together.  
 See the folder **`ahk-capslock-mods`** for instructions.
 
-## AutoHotkey - Grave Accent mod
+## AutoHotkey - US / KBDUSX (US-Int.)
 
 These modifications allow the AutoHotkey scripts to work on both "US QWERTY" and "US-International" as base layouts.  
 See the folder **`ahk-us-kbdusx`** for instructions.
