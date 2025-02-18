@@ -13,10 +13,27 @@ Testing repository of UltimateKEYS
 =&gt; CP key (blue) : &nbsp;[Compose Key](https://pieter-degroote.github.io/UltimateKEYS/documentation.html#Compose_Key_Sequences) (Multi_key), in combination with AltGr (Right Alt).  
 =&gt; Note that the ISO key (next to Left Shift) is not present on standard ANSI keyboards.
 
+## AutoHotkey - Caps Lock modifications
+
+These modifications feature a second AltGr (Right Alt) or Backspace key via Caps Lock.  
+The classic Caps Lock behavior can be triggered (or toggled) by pressing both Shift keys together.  
+See the folder **`ahk-capslock-mods`** for instructions.
+
+## AutoHotkey - Grave Accent mod
+
+These modifications allow the AutoHotkey scripts to work on both "US QWERTY" and "US-International" as base layouts.  
+See the folder **`ahk-us-kbdusx`** for instructions.
+
 ## UltimateKEYS - Colemak Variant
 
 Colemak variant of UltimateKEYS - This variant uses Colemak as its primary (or base) layout and features UltimateKEYS as its secondary (AltGr) layout.  
 See the folder **`colemak`** (for AutoHotkey v2 and v1.1 on Windows, and XKB/Xmodmap on Linux).
+
+## UltimateKEYS - Grave Accent mod
+
+This version features a dead key on the grave accent (upper-left key) and on the ISO key (if present).  
+These keys allow the user to enter most of the diacritics and symbols as the AltGr (Right Alt) modifier already does (for the main layout).  
+See the folder **`grave-accent-mod`** for instructions.
 
 ## UltimateKEYS - '.keylayout' format (macOS)
 
@@ -28,12 +45,6 @@ See the folder **`keylayout`** for further details.
 
 With this modification, the symbols !, @, #, $, %, ^, &, \*, (, ) are directly accessible and the numbers via Shift.  
 See the folder **`sw-variant`** for further details.
-
-## AutoHotkey - Caps Lock modifications
-
-These modifications feature a second AltGr (Right Alt) or Backspace key via Caps Lock.  
-The classic Caps Lock behavior can be triggered (or toggled) by pressing both Shift keys together.  
-See the folder **`ahk-capslock-mods`** for instructions.
 
 ## Important - Security Warning
 
