@@ -2,9 +2,9 @@
 
 Testing repository of UltimateKEYS
 
-**Official release&nbsp;:**&emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)  
-**Testing release&nbsp;:**&emsp;[![GitHub Testing](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing)](https://github.com/pieter-degroote/UltimateKEYS-testing/releases)  
-**Legacy release&nbsp;:**&emsp;[![GitHub Legacy](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-legacy.svg?label=legacy)](https://github.com/pieter-degroote/UltimateKEYS-legacy/releases)
+**Official release&nbsp;:**&emsp;[![UltimateKEYS Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)  
+**Testing release&nbsp;:**&emsp;[![Testing Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing)](https://github.com/pieter-degroote/UltimateKEYS-testing/releases)  
+**Core release&nbsp;:**&emsp;[![Core Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-core.svg?label=core)](https://github.com/pieter-degroote/UltimateKEYS-core/releases)
 
 ## Keyboard Layout Image
 
@@ -55,8 +55,8 @@ Otherwise, it might be impossible to type any Unicode character higher than "Bas
 
 ## For official releases, please see&nbsp;:
 
-**UltimateKEYS - GitHub&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS**
+**UltimateKEYS&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS**
 
-**Releases&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS/releases**
+**Core repository&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS-core**
 
-**Websites&nbsp;: &nbsp;[www.ultimatekeys.info](https://pieter-degroote.github.io/UltimateKEYS/) ~ [www.pieter-degroote.info](https://pieter-degroote.github.io/)**
+**Website&nbsp;: &nbsp;https://pieter-degroote.github.io/**
