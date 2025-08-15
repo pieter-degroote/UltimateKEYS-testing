@@ -14,6 +14,12 @@ Testing repository of UltimateKEYS
 =&gt; CP key (blue) : &nbsp;**[Compose Key](https://pieter-degroote.github.io/UltimateKEYS/documentation.html#Compose_Key_Sequences)** (Multi_key), in combination with AltGr (Right Alt).  
 =&gt; Note that the ISO key (next to Left Shift) is not present on standard ANSI keyboards.
 
+## Keyboard Layout Image - MSKLC
+
+![UltimateKEYS - Keyboard Layout Image](images/UltimateKEYS%20(MSKLC)%20-%20Keyboard%20Layout%20Image.png)
+
+=&gt; Without Compose Key, since MSKLC does not support multiple keystrokes as a sequence for a dead key.
+
 ## AutoHotkey - Caps Lock modifications
 
 These modifications feature a second AltGr (Right Alt) or Backspace key via Caps Lock.  
