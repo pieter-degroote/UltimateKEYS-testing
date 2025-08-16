@@ -1,6 +1,6 @@
 // UltimateKEYS Keyboard Layout (Public Domain)
 
-// GitHub :  https://github.com/pieter-degroote/UltimateKEYS-core
+// GitHub :  https://github.com/pieter-degroote/UltimateKEYS-testing
 
 default partial alphanumeric_keys modifier_keys
 xkb_symbols "basic" {
