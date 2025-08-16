@@ -66,8 +66,8 @@ These keys allow the user to enter most of the diacritics and symbols as the Alt
 <dead_grave> <m> : "µ"  U00B5  # micro sign
 <dead_grave> <M> : "±"  U00B1  # plus-minus sign
 <dead_grave> <1> : "¡"  U00A1  # inverted exclamation mark
-<dead_grave> <2> : "≤"  U2264  # less-than or equal to
-<dead_grave> <3> : "≥"  U2265  # greater-than or equal to
+<dead_grave> <2> : "²"  U00B2  # superscript 2
+<dead_grave> <3> : "³"  U00B3  # superscript 3
 <dead_grave> <4> : "£"  U00A3  # pound sign
 <dead_grave> <5> : "€"  U20AC  # euro sign
 <dead_grave> <6> : "ã"  U00E3  # a with tilde
@@ -76,13 +76,13 @@ These keys allow the user to enter most of the diacritics and symbols as the Alt
 <dead_grave> <9> : "“"  U201C  # left double quotation mark
 <dead_grave> <0> : "”"  U201D  # right double quotation mark
 <dead_grave> <exclam>       : "¹"  U00B9  # superscript 1
-<dead_grave> <at>           : "²"  U00B2  # superscript 2
-<dead_grave> <numbersign>   : "³"  U00B3  # superscript 3
+<dead_grave> <at>           : "♫"  U266B  # beamed eighth notes
+<dead_grave> <numbersign>   : "§"  U00A7  # section sign
 <dead_grave> <dollar>       : "¥"  U00A5  # yen sign
 <dead_grave> <percent>      : "¢"  U00A2  # cent sign (dollar)
 <dead_grave> <asciicircum>  : "Ã"  U00C3  # A with tilde
 <dead_grave> <ampersand>    : "Õ"  U00D5  # O with tilde
-<dead_grave> <asterisk>     : "§"  U00A7  # section sign
+<dead_grave> <asterisk>     : "♪"  U266A  # eighth note
 <dead_grave> <parenleft>    : "‘"  U2018  # left single quotation mark
 <dead_grave> <parenright>   : "’"  U2019  # right single quotation mark
 <dead_grave> <minus>        : "–"  U2013  # en dash
@@ -94,11 +94,11 @@ These keys allow the user to enter most of the diacritics and symbols as the Alt
 <dead_grave> <braceleft>    : "‹"  U2039  # left-pointing single angle quotation mark
 <dead_grave> <braceright>   : "›"  U203A  # right-pointing single angle quotation mark
 <dead_grave> <semicolon>    : "°"  U00B0  # degree sign
-<dead_grave> <colon>        : "·"  U00B7  # middle dot
+<dead_grave> <colon>        : "≤"  U2264  # less-than or equal to
 <dead_grave> <slash>        : "¿"  U00BF  # inverted question mark
 <dead_grave> <question>     : "•"  U2022  # bullet
-<dead_grave> <apostrophe>   : "♪"  U266A  # eighth note
-<dead_grave> <quotedbl>     : "♫"  U266B  # beamed eighth notes
+<dead_grave> <apostrophe>   : "·"  U00B7  # middle dot
+<dead_grave> <quotedbl>     : "≥"  U2265  # greater-than or equal to
 <dead_grave> <backslash>    : " "  U2002  # en space
 <dead_grave> <bar>          : " "  U2003  # em space
 <dead_grave> <asciitilde>   : " "  U00A0  # non-breaking space
@@ -166,8 +166,8 @@ These keys allow the user to enter most of the diacritics and symbols as the Alt
 <dead_tilde> <m> : "µ"  U00B5  # micro sign
 <dead_tilde> <M> : "±"  U00B1  # plus-minus sign
 <dead_tilde> <1> : "¡"  U00A1  # inverted exclamation mark
-<dead_tilde> <2> : "≤"  U2264  # less-than or equal to
-<dead_tilde> <3> : "≥"  U2265  # greater-than or equal to
+<dead_tilde> <2> : "²"  U00B2  # superscript 2
+<dead_tilde> <3> : "³"  U00B3  # superscript 3
 <dead_tilde> <4> : "£"  U00A3  # pound sign
 <dead_tilde> <5> : "€"  U20AC  # euro sign
 <dead_tilde> <6> : "ã"  U00E3  # a with tilde
@@ -176,13 +176,13 @@ These keys allow the user to enter most of the diacritics and symbols as the Alt
 <dead_tilde> <9> : "“"  U201C  # left double quotation mark
 <dead_tilde> <0> : "”"  U201D  # right double quotation mark
 <dead_tilde> <exclam>       : "¹"  U00B9  # superscript 1
-<dead_tilde> <at>           : "²"  U00B2  # superscript 2
-<dead_tilde> <numbersign>   : "³"  U00B3  # superscript 3
+<dead_tilde> <at>           : "♫"  U266B  # beamed eighth notes
+<dead_tilde> <numbersign>   : "§"  U00A7  # section sign
 <dead_tilde> <dollar>       : "¥"  U00A5  # yen sign
 <dead_tilde> <percent>      : "¢"  U00A2  # cent sign (dollar)
 <dead_tilde> <asciicircum>  : "Ã"  U00C3  # A with tilde
 <dead_tilde> <ampersand>    : "Õ"  U00D5  # O with tilde
-<dead_tilde> <asterisk>     : "§"  U00A7  # section sign
+<dead_tilde> <asterisk>     : "♪"  U266A  # eighth note
 <dead_tilde> <parenleft>    : "‘"  U2018  # left single quotation mark
 <dead_tilde> <parenright>   : "’"  U2019  # right single quotation mark
 <dead_tilde> <minus>        : "–"  U2013  # en dash
@@ -194,11 +194,11 @@ These keys allow the user to enter most of the diacritics and symbols as the Alt
 <dead_tilde> <braceleft>    : "‹"  U2039  # left-pointing single angle quotation mark
 <dead_tilde> <braceright>   : "›"  U203A  # right-pointing single angle quotation mark
 <dead_tilde> <semicolon>    : "°"  U00B0  # degree sign
-<dead_tilde> <colon>        : "·"  U00B7  # middle dot
+<dead_tilde> <colon>        : "≤"  U2264  # less-than or equal to
 <dead_tilde> <slash>        : "¿"  U00BF  # inverted question mark
 <dead_tilde> <question>     : "•"  U2022  # bullet
-<dead_tilde> <apostrophe>   : "♪"  U266A  # eighth note
-<dead_tilde> <quotedbl>     : "♫"  U266B  # beamed eighth notes
+<dead_tilde> <apostrophe>   : "·"  U00B7  # middle dot
+<dead_tilde> <quotedbl>     : "≥"  U2265  # greater-than or equal to
 <dead_tilde> <backslash>    : " "  U2002  # en space
 <dead_tilde> <bar>          : " "  U2003  # em space
 <dead_tilde> <asciitilde>   : " "  U00A0  # non-breaking space
