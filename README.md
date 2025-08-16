@@ -48,11 +48,6 @@ A '.keylayout' file for macOS (without Compose Key). Note that this work is stil
 Please carefully read the 'Known Issues - Disclaimer' section in its README.md *before* installing/integrating&nbsp;!  
 See the folder **`keylayout`** for further details.
 
-## UltimateKEYS - SW ('Switched') Variant
-
-With this modification, the symbols !, @, #, $, %, ^, &, \*, (, ) are directly accessible and the numbers via Shift.  
-See the folder **`sw-variant`** for further details.
-
 ## Important Notice - Security
 
 **=&gt; Win/Linux&nbsp;: &nbsp;Only use "BASIC LATIN" characters (codes 32 to 126) for your Windows, Microsoft Live and Linux passwords&nbsp;!**  
