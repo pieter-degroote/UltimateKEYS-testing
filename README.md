@@ -14,7 +14,7 @@ Testing repository of UltimateKEYS
 =&gt; CP key (blue)&nbsp;: &nbsp;**[Compose Key](https://pieter-degroote.github.io/UltimateKEYS/documentation.html#Compose_Key_Sequences)** (Multi_key), in combination with AltGr (Right Alt) (only with AutoHotkey and Linux).  
 =&gt; Note that the ISO key (next to Left Shift) is not present on standard ANSI keyboards.
 
-## Keyboard Layout Image - MSKLC
+## MSKLC - Keyboard Layout Image
 
 ![UltimateKEYS - Keyboard Layout Image](images/UltimateKEYS%20(MSKLC)%20-%20Keyboard%20Layout%20Image.png)
 
