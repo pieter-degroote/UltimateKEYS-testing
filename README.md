@@ -48,6 +48,12 @@ A '.keylayout' file for macOS (without Compose Key). Note that this work is stil
 Please carefully read the 'Known Issues - Disclaimer' section in its README.md *before* installing/integrating&nbsp;!  
 See the folder **`keylayout`** for further details.
 
+## US Intl AltGr dead keys - AutoHotkey v2/v1.1
+
+US Intl AltGr dead keys layout in AHK (overlay scripts for US QWERTY / US-International / ...).  
+Note that these scripts are based on&nbsp;: &nbsp;**https://github.com/pieter-degroote/us-intl-altgr-dk**  
+See the folder **`us-intl-altgr-dk-ahk`**.
+
 ## Important Notice - Security
 
 **=&gt; Win/Linux&nbsp;: &nbsp;Only use "BASIC LATIN" characters (codes 32 to 126) for your Windows, Microsoft Live and Linux passwords&nbsp;!**  
