@@ -1,8 +1,8 @@
 # US Intl AltGr dead keys - AutoHotkey v2/v1.1
 
-US Intl AltGr dead keys layout in AHK (overlay scripts for US QWERTY / US-International / ...).  
+US Intl AltGr dead keys layout in AHK (overlay scripts for US QWERTY / US-International / ...).
 
-Note that these scripts are based on&nbsp;:
+Note that these scripts are based on (instead of UltimateKEYS)&nbsp;:
 
 **https://github.com/pieter-degroote/us-intl-altgr-dk**
 
