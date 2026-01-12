@@ -1,6 +1,8 @@
-# UltimateKEYS - Testing
+# UltimateKEYS Keyboard Layout - Testing
 
-Testing repository of UltimateKEYS
+International US QWERTY layout with enhanced multilingual support for AutoHotkey (Win), MSKLC (Win) and XKB/Xmodmap (Linux). This layout has borrowed some aspects from EurKEY and US-International.
+
+**=&gt; Testing repository of UltimateKEYS**
 
 **Official release&nbsp;:**&emsp;[![UltimateKEYS Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)  
 **Testing release&nbsp;:**&emsp;[![Testing Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing)](https://github.com/pieter-degroote/UltimateKEYS-testing/releases)  
