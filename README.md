@@ -28,21 +28,10 @@ These modifications feature a second AltGr (Right Alt) or Backspace key via Caps
 The classic Caps Lock behavior can be triggered (or toggled) by pressing both Shift keys together.  
 See the folder **`ahk-capslock-mods`** for instructions.
 
-## AutoHotkey - US / KBDUSX (US-Int.)
-
-These modifications allow the AutoHotkey scripts to work on both "US QWERTY" and "US-International" as base layouts.  
-See the folder **`ahk-us-kbdusx`** for instructions.
-
 ## UltimateKEYS - Colemak Variant
 
 Colemak variant of UltimateKEYS - This variant uses Colemak as its primary (or base) layout and features UltimateKEYS as its secondary (AltGr) layout.  
 See the folder **`colemak`** (for AutoHotkey v2 and v1.1 on Windows, and XKB/Xmodmap on Linux).
-
-## UltimateKEYS - Grave Accent mod
-
-This version features a dead key on the grave accent (upper-left key) and on the ISO key (if present).  
-These keys allow the user to enter most of the diacritics and symbols as the AltGr (Right Alt) modifier already does (for the main layout).  
-See the folder **`grave-accent-mod`** for instructions.
 
 ## UltimateKEYS - '.keylayout' format (macOS)
 
